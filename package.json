@@ -6,7 +6,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig tsconfig.json --watch"
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig tsconfig.json --watch",
+    "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
+    "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
+    "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
