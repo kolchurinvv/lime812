@@ -1,17 +1,14 @@
 <script>
+  import Button from "@smui/button"
   let counter = 0
 </script>
 
 I'm counting ... {counter}
-<button
-  on:click={() => {
-    counter++
-  }}>Count up</button
->
+<Button on:click={() => counter++} variant="raised">Count up</Button>
 
 <style>
-  button {
+  /* button {
     background: green;
     color: #fff;
-  }
+  } */
 </style>
