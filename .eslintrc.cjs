@@ -18,7 +18,7 @@ module.exports = {
     es6: true,
     browser: true,
   },
-  plugins: ["svelte3", "@typescript-eslint", "pug"],
+  plugins: ["svelte3", "@typescript-eslint"],
   overrides: [
     {
       files: ["*.svelte"],
