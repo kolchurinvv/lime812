@@ -1,14 +1,17 @@
-<script>
+<script lang="ts">
   import Button from "@smui/button"
   let counter = 0
+  const clicker = () => {
+    counter++
+  }
 </script>
 
-I'm counting ... {counter}
-<Button on:click={() => counter++} variant="raised">Count up</Button>
+<template lang="pug">
+p I'm counting ... {counter}
+Button(on:click="{clicker}" variant="raised") Count up
+</template>
 
-<style>
-  /* button {
-    background: green;
-    color: #fff;
-  } */
+<style lang="sass">
+p
+  background: green
 </style>
