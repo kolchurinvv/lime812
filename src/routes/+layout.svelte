@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   // import { SvelteUIProvider, Switch } from "@svelteuidev/core"
 
   import {
@@ -29,7 +29,30 @@
   </Header>
 
   <slot>This is the main content</slot>
-</AppShell>
+</AppShell> -->
+<script>
+  import "beercss"
+  import "material-dynamic-colors"
+</script>
+
+<header class="primary">
+  <nav>
+    <button class="circle transparent">
+      <i>arrow_backward</i>
+    </button>
+    <h5>Title large</h5>
+    <div class="max" />
+    <button class="circle transparent">
+      <i>attach_file</i>
+    </button>
+    <button class="circle transparent">
+      <i>today</i>
+    </button>
+    <button class="circle transparent">
+      <i>more_vert</i>
+    </button>
+  </nav>
+</header>
 
 <style lang="sass">
 
