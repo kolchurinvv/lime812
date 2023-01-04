@@ -1,16 +1,28 @@
 <script lang="ts">
-  let counter = 0
-  const clicker = () => {
-    counter++
-  }
+  import { Swiper, SwiperSlide } from "swiper/svelte"
+  import { Navigation, Pagination, Autoplay } from "swiper"
+
+  import "swiper/scss"
+  import "swiper/scss/pagination"
+  import "swiper/scss/navigation"
+  import "@/theme/swiper.scss"
 </script>
 
-<p class="test">
-  I'm counting ... {counter}
-</p>
-<button on:click={clicker}>Count up</button>
+<Swiper
+  spaceBetween={30}
+  centeredSlides={true}
+  autoplay
+  pagination={{
+    clickable: true,
+  }}
+  navigation={true}
+  modules={[Autoplay, Pagination, Navigation]}
+  class="mySwiper">
+  <SwiperSlide>Slide 1</SwiperSlide>
+  <SwiperSlide>Slide 2</SwiperSlide>
+  <SwiperSlide>Slide 3</SwiperSlide>
+  <SwiperSlide>Slide 4</SwiperSlide>
+</Swiper>
 
-<style lang="sass">
-.test
-  background: red
+<style lang="scss">
 </style>
