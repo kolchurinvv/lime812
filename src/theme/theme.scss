@@ -2,9 +2,10 @@
 body.light {
   --primary: #fbde1b;
   --on-primary: #FFFFFF;
+  --on-primary-alt: #232323;
   --primary-container: #EADDFF;
   --on-primary-container: #21005E;
-  --secondary: #625B71;
+  --secondary: #1b262e;
   --on-secondary: #FFFFFF;
   --secondary-container: #E8DEF8;
   --on-secondary-container: #1E192B;
@@ -36,14 +37,15 @@ body.light {
   --speed2: .2s;
   --speed3: .3s;
   --speed4: .4s;
+
 }
 
 body.dark {
   --primary: #fbde1b;
-  --on-primary: #371E73;
+  --on-primary: #232323;
   --primary-container: #4F378B;
   --on-primary-container: #EADDFF;
-  --secondary: #CCC2DC;
+  --secondary: #1b262e;
   --on-secondary: #332D41;
   --secondary-container: #4A4458;
   --on-secondary-container: #E8DEF8;
@@ -75,4 +77,5 @@ body.dark {
   --speed2: .2s;
   --speed3: .3s;
   --speed4: .4s;
+
 }

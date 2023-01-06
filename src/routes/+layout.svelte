@@ -1,13 +1,12 @@
 <script>
   import "material-dynamic-colors"
   import "beercss"
-  import "../theme/style.scss"
-  import HeaderContent from "./HeaderContent.svelte"
+  import "@/theme/theme.scss"
+  import "@/theme/global.sass"
+  import Header from "./Header.svelte"
+  import Footer from "./Footer.svelte"
 </script>
 
-<HeaderContent />
+<Header />
 <slot />
-
-<style lang="sass">
-
-</style>
+<Footer />

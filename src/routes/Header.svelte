@@ -7,7 +7,7 @@
   }
 </script>
 
-<header class="">
+<header class="small-padding">
   <nav>
     <a href="/">
       <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
@@ -36,7 +36,10 @@
 </header>
 
 <style lang="sass">
-.y-border
-  border: 2px solid var(--primary)
-  color: inherit
+  header
+    margin-bottom: 3em
+    position: sticky
+    top: 0
+    z-index: 9999
+    border-bottom: 2px solid var(--primary)
 </style>
