@@ -1,5 +1,5 @@
 <footer class="secondary">
-  <div class="content-grid">
+  <div class="content-grid main-container">
     <div class="location">
       <img src="/logo-w.png" alt="logo-alt" />
       <h6>Магазин-склад ООО «ЛАЙМ»</h6>
@@ -34,8 +34,6 @@
     display: grid
     grid-template-columns: 1.5fr 1fr 1fr 1fr
     column-gap: 2em
-    margin: 0 auto
-    max-width: 1170px
     & > *
       text-transform: capitalize
       display: flex

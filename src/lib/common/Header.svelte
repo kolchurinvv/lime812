@@ -8,7 +8,7 @@
 </script>
 
 <header class="small-padding">
-  <nav>
+  <nav class="main-container">
     <a href="/">
       <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
     </a>

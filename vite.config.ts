@@ -9,10 +9,6 @@ const config = defineConfig(({ mode }) => {
   return {
     envDir: "/",
     plugins: [sveltekit()],
-    build: {
-      // generate manifest.json in outDir
-      manifest: true,
-    },
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),

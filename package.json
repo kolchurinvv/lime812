@@ -35,8 +35,6 @@
     "@rollup/plugin-commonjs": "^24.0.0",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "beercss": "^2.3.0",
-    "material-dynamic-colors": "^0.1.3",
     "rollup": "^3.7.5",
     "swiper": "^8.4.5"
   }

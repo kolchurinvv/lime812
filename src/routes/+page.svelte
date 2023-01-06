@@ -8,7 +8,7 @@
 </script>
 
 <main>
-  <section class="jumbo-container">
+  <section class="jumbo-container main-container">
     <div class="medium-padding jumbo-anno-box">
       <div class="y-border large-padding jumbo-text">
         ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
@@ -36,7 +36,7 @@
     </Swiper>
   </section>
   <section class="primary medium-padding ">
-    <div class="how-to-container">
+    <div class="how-to-container main-container">
       <h4>Как заказать?</h4>
       <div class="steps">
         <div class="request-container">
@@ -56,9 +56,6 @@
 </main>
 
 <style lang="sass">
-.jumbo-container, .how-to-container
-  margin: 0 auto
-  max-width: 1170px
 .jumbo-container
   .jumbo-anno-box
     display: grid

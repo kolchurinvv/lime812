@@ -1,10 +1,10 @@
 <script>
-  import "material-dynamic-colors"
-  import "beercss"
+  // import "beercss"
+  // import "material-dynamic-colors"
   import "@/theme/theme.scss"
   import "@/theme/global.sass"
-  import Header from "./Header.svelte"
-  import Footer from "./Footer.svelte"
+  import Header from "$lib/common/Header.svelte"
+  import Footer from "$lib/common/Footer.svelte"
 </script>
 
 <Header />
