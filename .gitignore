@@ -201,6 +201,6 @@ package
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/svelte,visualstudiocode,macos,node
-build
+
 # bun
 *.lockb
