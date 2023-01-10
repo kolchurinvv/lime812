@@ -1,4 +1,4 @@
-<footer class="secondary">
+<footer class="secondary bottom">
   <div class="content-grid main-container">
     <div class="location">
       <img src="/logo-w.png" alt="logo-alt" />

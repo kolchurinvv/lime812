@@ -50,6 +50,7 @@
             </p>
           </div>
         </div>
+        <div class="collect-email" />
       </div>
     </div>
   </section>

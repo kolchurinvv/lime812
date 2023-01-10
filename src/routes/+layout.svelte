@@ -8,5 +8,7 @@
 </script>
 
 <Header />
-<slot />
+<div class="content">
+  <slot />
+</div>
 <Footer />
