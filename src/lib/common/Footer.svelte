@@ -21,8 +21,8 @@
       <h6>поддержка</h6>
       <div class="field label prefix border">
         <i>email</i>
-        <input type="email" id="email" />
-        <label for="email">Свяжитесь с нами</label>
+        <input type="email" id="support-email" />
+        <label for="support-email">Свяжитесь с нами</label>
       </div>
     </div>
   </div>

@@ -3340,7 +3340,7 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link\n      href="https://cdn.jsdelivr.net/npm/beercss@2.3.0/dist/cdn/beer.min.css"\n      rel="stylesheet" />\n    <!-- Material Icons -->\n    <link\n      rel="stylesheet"\n      href="https://fonts.googleapis.com/icon?family=Material+Icons" />\n    <!-- favicon -->\n    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />\n    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />\n    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />\n    <link rel="manifest" href="/site.webmanifest" />\n    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />\n    <meta name="msapplication-TileColor" content="#2b5797" />\n    <meta name="theme-color" content="#ffffff" />\n    <title>Lime812</title>\n    <meta name="viewport" content="width=device-width" />\n    ' + head + "\n  </head>\n  <body>\n    <div>" + body + '</div>\n  </body>\n  <!-- styles -->\n  <!-- TODO: figure out how to import via npm modules -->\n  <script\n    src="https://cdn.jsdelivr.net/npm/beercss@2.3.0/dist/cdn/beer.min.js"\n    type="text/javascript"><\/script>\n\n  <script\n    src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.0.10/dist/cdn/material-dynamic-colors.min.js"\n    type="text/javascript"><\/script>\n</html>\n';
+const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link\n      href="https://cdn.jsdelivr.net/npm/beercss@2.3.0/dist/cdn/beer.min.css"\n      rel="stylesheet" />\n    <!-- Material Icons -->\n    <link\n      rel="stylesheet"\n      href="https://fonts.googleapis.com/icon?family=Material+Icons" />\n    <!-- favicon -->\n    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />\n    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />\n    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />\n    <link rel="manifest" href="/site.webmanifest" />\n    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />\n    <meta name="msapplication-TileColor" content="#2b5797" />\n    <meta name="theme-color" content="#ffffff" />\n    <title>Lime812</title>\n    <meta name="viewport" content="width=device-width" />\n    ' + head + '\n  </head>\n  <body>\n    <div class="app-wrapper">' + body + '</div>\n  </body>\n  <!-- styles -->\n  <!-- TODO: figure out how to import via npm modules -->\n  <script\n    src="https://cdn.jsdelivr.net/npm/beercss@2.3.0/dist/cdn/beer.min.js"\n    type="text/javascript"><\/script>\n\n  <script\n    src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.0.10/dist/cdn/material-dynamic-colors.min.js"\n    type="text/javascript"><\/script>\n</html>\n';
 const error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -3420,7 +3420,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1673183142721"
+      version: "1673461565688"
     };
   }
   async init({ env }) {

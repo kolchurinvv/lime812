@@ -3,7 +3,7 @@ body.light {
   --primary: #fbde1b;
   --on-primary: #FFFFFF;
   --on-primary-alt: #232323;
-  --primary-container: #EADDFF;
+  --primary-container: #fbde1b;
   --on-primary-container: #21005E;
   --secondary: #1b262e;
   --on-secondary: #FFFFFF;
@@ -17,9 +17,9 @@ body.light {
   --on-error: #FFFFFF;
   --error-container: #F9DEDC;
   --on-error-container: #370B1E;
-  --background: #fff;
+  --background: rgb(255, 251, 245);
   --on-background: #1C1B1F;
-  --surface: #fff;
+  --surface: #FFF;
   --on-surface: #1C1B1F;
   --surface-variant: #E7E0EC;
   --on-surface-variant: #49454E;
@@ -78,4 +78,7 @@ body.dark {
   --speed3: .3s;
   --speed4: .4s;
 
+}
+:root {
+  --swiper-theme-color: var(--primary) !important
 }

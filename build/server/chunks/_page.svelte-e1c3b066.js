@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component, d as compute_rest_props, f as createEventDispatcher, s as setContext, o as onDestroy, h as spread, i as escape_attribute_value, j as escape_object, k as add_attribute, l as is_void, g as getContext, t as tick } from './index-f7f2c7e5.js';
+import { c as create_ssr_component, o as onDestroy, v as validate_component, d as compute_rest_props, f as createEventDispatcher, s as setContext, h as spread, i as escape_attribute_value, j as escape_object, k as add_attribute, l as is_void, g as getContext, t as tick } from './index-f7f2c7e5.js';
 
 /**
  * SSR Window 4.0.2
@@ -5135,15 +5135,21 @@ const Swiper_slide = create_ssr_component(($$result, $$props, $$bindings, slots)
   )}${add_attribute("this", slideEl, 0)}>${zoom ? `<div class="${"swiper-zoom-container"}"${add_attribute("data-swiper-zoom", typeof zoom === "number" ? zoom : void 0, 0)}>${slots.default ? slots.default({ data: slideData }) : ``}</div>` : `${slots.default ? slots.default({ data: slideData }) : ``}`}</div>`;
 });
 const css = {
-  code: '.jumbo-container.svelte-1xpezdy .jumbo-anno-box.svelte-1xpezdy.svelte-1xpezdy{display:grid;position:absolute;bottom:10%;z-index:2;background-color:#fff;line-height:1.1;letter-spacing:1.2px;font-size:1.4em}.jumbo-container.svelte-1xpezdy .jumbo-anno-box.svelte-1xpezdy>.svelte-1xpezdy{text-transform:uppercase;margin-bottom:1em}.jumbo-container.svelte-1xpezdy .jumbo-text.svelte-1xpezdy.svelte-1xpezdy{justify-self:start;font-weight:900}.how-to-container.svelte-1xpezdy.svelte-1xpezdy.svelte-1xpezdy{color:var(--on-primary-alt);text-transform:uppercase}.how-to-container.svelte-1xpezdy h4.svelte-1xpezdy.svelte-1xpezdy::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--on-primary-alt)}.how-to-container.svelte-1xpezdy .steps.svelte-1xpezdy.svelte-1xpezdy{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:2em}.how-to-container.svelte-1xpezdy .steps .request-container.svelte-1xpezdy.svelte-1xpezdy{grid-column:2}.how-to-container.svelte-1xpezdy .steps .request-container .request p.svelte-1xpezdy.svelte-1xpezdy{text-transform:initial}.how-to-container.svelte-1xpezdy .steps .request-container.svelte-1xpezdy.svelte-1xpezdy::before{content:"";display:inline-block;background-image:url("/icons/checklist.png");background-position:center;background-repeat:no-repeat;background-size:contain;width:50px;height:50px;position:absolute;left:-55px}',
+  code: '.jumbo-container.svelte-7sjvsz .jumbo-anno-box.svelte-7sjvsz.svelte-7sjvsz{display:grid;position:absolute;bottom:10%;z-index:2;background-color:#fff;line-height:1.1;letter-spacing:1.2px;font-size:1.4em}.jumbo-container.svelte-7sjvsz .jumbo-anno-box.svelte-7sjvsz>.svelte-7sjvsz{text-transform:uppercase;margin-bottom:1em}.jumbo-container.svelte-7sjvsz .jumbo-text.svelte-7sjvsz.svelte-7sjvsz{justify-self:start;font-weight:900}section.svelte-7sjvsz>div.svelte-7sjvsz.svelte-7sjvsz{text-transform:uppercase}section.svelte-7sjvsz>div h4.svelte-7sjvsz.svelte-7sjvsz::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--primary)}section.svelte-7sjvsz>div nav.svelte-7sjvsz>button.svelte-7sjvsz{position:relative;z-index:1;text-transform:uppercase}section.svelte-7sjvsz>div nav.svelte-7sjvsz>button.svelte-7sjvsz:hover::after,section.svelte-7sjvsz>div nav.svelte-7sjvsz>button.svelte-7sjvsz:focus::after{background-image:radial-gradient(circle, var(--primary) 1%, transparent 1%);z-index:-1}section.svelte-7sjvsz>div .featured-products.svelte-7sjvsz>.svelte-7sjvsz{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-auto-flow:column;column-gap:2em}section.svelte-7sjvsz>div .featured-products>* article.svelte-7sjvsz.svelte-7sjvsz{margin-top:16rem;text-transform:initial}section.svelte-7sjvsz>div .featured-products>* article.svelte-7sjvsz>img.svelte-7sjvsz{object-fit:contain}.how-to-container.svelte-7sjvsz.svelte-7sjvsz.svelte-7sjvsz{color:var(--on-primary-alt)}.how-to-container.svelte-7sjvsz h4.svelte-7sjvsz.svelte-7sjvsz::after{background:var(--on-primary-alt)}.how-to-container.svelte-7sjvsz .steps.svelte-7sjvsz.svelte-7sjvsz{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:2em}.how-to-container.svelte-7sjvsz .steps .request-container.svelte-7sjvsz.svelte-7sjvsz{grid-column:2}.how-to-container.svelte-7sjvsz .steps .request-container #order-email.svelte-7sjvsz.svelte-7sjvsz:focus{border-color:var(--secondary)}.how-to-container.svelte-7sjvsz .steps .request-container .request p.svelte-7sjvsz.svelte-7sjvsz{text-transform:initial}.how-to-container.svelte-7sjvsz .steps .request-container.svelte-7sjvsz.svelte-7sjvsz::before{content:"";display:inline-block;background-image:url("/icons/checklist.png");background-position:center;background-repeat:no-repeat;background-size:contain;width:50px;height:50px;position:absolute;left:-55px}',
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const timeOuts = [];
+  onDestroy(() => {
+    for (const tm of timeOuts) {
+      clearTimeout(tm);
+    }
+  });
   $$result.css.add(css);
-  return `<main><section class="${"jumbo-container main-container svelte-1xpezdy"}"><div class="${"medium-padding jumbo-anno-box svelte-1xpezdy"}"><div class="${"y-border large-padding jumbo-text svelte-1xpezdy"}">ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
+  return `<main><section class="${"jumbo-container main-container svelte-7sjvsz"}"><div class="${"medium-padding jumbo-anno-box svelte-7sjvsz"}"><div class="${"y-border large-padding jumbo-text svelte-7sjvsz"}">ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
       </div>
-      <p class="${"svelte-1xpezdy"}">ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
-      <button class="${"no-margin no-round primary filled svelte-1xpezdy"}">прайсы</button></div>
+      <p class="${"svelte-7sjvsz"}">ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
+      <button class="${"no-margin no-round primary filled svelte-7sjvsz"}">прайсы</button></div>
 
     ${validate_component(Swiper_1, "Swiper").$$render(
     $$result,
@@ -5172,15 +5178,49 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     }
   )}</section>
-  <section class="${"primary medium-padding "}"><div class="${"how-to-container main-container svelte-1xpezdy"}"><h4 class="${"svelte-1xpezdy"}">Как заказать?</h4>
-      <div class="${"steps svelte-1xpezdy"}"><div class="${"request-container svelte-1xpezdy"}"><div class="${"request"}"><h6>Оставить заявку</h6>
-            <p class="${"svelte-1xpezdy"}">Вы можете оставить свой номер телефона в форме для обратной связи
+  <section class="${"background medium-padding svelte-7sjvsz"}"><div class="${"main-container svelte-7sjvsz"}"><h4 class="${"svelte-7sjvsz"}">Теплый пол</h4>
+      <nav class="${"no-space middle-align svelte-7sjvsz"}"><button class="${"y-border no-round svelte-7sjvsz"}" data-ui="${"#page1"}">Кабельный теплый пол в стяжку</button>
+        <button class="${"y-border transparent no-round svelte-7sjvsz"}" data-ui="${"#page2"}">Тонкий теплый пол под плитку</button>
+        <button class="${"y-border transparent no-round svelte-7sjvsz"}" data-ui="${"#page3"}">Нагревательные маты под плитку</button>
+        <button class="${"y-border transparent no-round svelte-7sjvsz"}" data-ui="${"#page4"}">теплый пол под ламинат</button></nav>
+      <div class="${"featured-products svelte-7sjvsz"}"><div class="${"page active right svelte-7sjvsz"}" id="${"page1"}"><article class="${"no-padding round svelte-7sjvsz"}"><img class="${"responsive small top-round svelte-7sjvsz"}" alt="${"featured product"}" src="${"/featured-1/eco_pdsv_20.jpg"}">
+            <div class="${"padding"}"><h6>In-Therm ECO PDSV 20</h6>
+              <p>Кабель для теплого пола используются для укладки в стяжку 3-8
+                см.
+              </p>
+              <nav class="${"svelte-7sjvsz"}"><button class="${"no-round svelte-7sjvsz"}">Скачать Прайс</button></nav></div></article>
+          <article class="${"no-padding round svelte-7sjvsz"}"><img class="${"responsive small top-round svelte-7sjvsz"}" alt="${"featured product"}" src="${"/featured-1/unifloor15.jpg"}">
+            <div class="${"padding"}"><h6>Unifloor 15 Вт/м</h6>
+              <p>Кабель для теплого пола используются для укладки в стяжку 3-8
+                см.
+              </p>
+              <nav class="${"svelte-7sjvsz"}"><button class="${"no-round svelte-7sjvsz"}">Скачать Прайс</button></nav></div></article>
+          <article class="${"no-padding round svelte-7sjvsz"}"><img class="${"responsive small top-round svelte-7sjvsz"}" alt="${"featured product"}" src="${"/featured-1/in-term_adsv_20.jpg"}">
+            <div class="${"padding"}"><h6>In-Therm ADSV 20</h6>
+              <p>Кабель для теплого пола используются для укладки в стяжку 3-8
+                см.
+              </p>
+              <nav class="${"svelte-7sjvsz"}"><button class="${"no-round svelte-7sjvsz"}">Скачать Прайс</button></nav></div></article>
+          <article class="${"no-padding round svelte-7sjvsz"}"><img class="${"responsive small top-round svelte-7sjvsz"}" alt="${"featured product"}" src="${"/featured-1/fenix_adsv_18.jpg"}">
+            <div class="${"padding"}"><h6>Fenix ADSV 18</h6>
+              <p>Кабель для теплого пола используются для укладки в стяжку 3-8
+                см.
+              </p>
+              <nav class="${"svelte-7sjvsz"}"><button class="${"no-round svelte-7sjvsz"}">Скачать Прайс</button></nav></div></article></div>
+        <div class="${"page right svelte-7sjvsz"}" id="${"page2"}"><h6>Tab 2</h6></div>
+        <div class="${"page right svelte-7sjvsz"}" id="${"page3"}"><h6>Tab 3</h6></div>
+        <div class="${"page right svelte-7sjvsz"}" id="${"page4"}"><h6>Tab 4</h6></div></div></div></section>
+  <section class="${"primary-container medium-padding  svelte-7sjvsz"}"><div class="${"how-to-container main-container svelte-7sjvsz"}"><h4 class="${"svelte-7sjvsz"}">Как заказать?</h4>
+      <div class="${"steps svelte-7sjvsz"}"><div class="${"request-container svelte-7sjvsz"}"><div class="${"request"}"><h6>Оставить заявку</h6>
+            <p class="${"svelte-7sjvsz"}">Вы можете оставить свой номер телефона в форме для обратной связи
               и в ближайшее время наши менеджеры обязательно с Вами свяжутся.
-              Либо выберите интересующий Вас товар и добавьте его в корзину,
-              оформив заказ на сайте.
-            </p></div></div></div></div></section>
+              Либо оставьте ваш почтовый адресс, и мы вам обязательно напишем.
+            </p></div>
+          <div class="${"field label prefix border "}"><i>email</i>
+            <input type="${"email"}" id="${"order-email"}" class="${"svelte-7sjvsz"}">
+            <label class="${"secondary transparent"}" for="${"order-email"}">Ваша почта</label></div></div></div></div></section>
 </main>`;
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-0f470619.js.map
+//# sourceMappingURL=_page.svelte-e1c3b066.js.map
