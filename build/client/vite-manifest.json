@@ -4,8 +4,16 @@
     "src": "src/routes/+layout.css"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-e7155cb1.css",
+    "file": "_app/immutable/assets/_page-567d74aa.css",
     "src": "src/routes/+page.css"
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-8cec60bc.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
   },
   ".svelte-kit/generated/nodes/0.js": {
     "file": "_app/immutable/chunks/0-c183f1f8.js",
@@ -23,12 +31,10 @@
       "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-9a284188.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
+  "_singletons-95600987.js": {
+    "file": "_app/immutable/chunks/singletons-95600987.js",
     "imports": [
-      "src/routes/+page.svelte"
+      "_index-fc6c087c.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -38,12 +44,6 @@
     "imports": [
       "_index-fc6c087c.js",
       "_singletons-95600987.js"
-    ]
-  },
-  "_singletons-95600987.js": {
-    "file": "_app/immutable/chunks/singletons-95600987.js",
-    "imports": [
-      "_index-fc6c087c.js"
     ]
   },
   "_index-fc6c087c.js": {
@@ -61,7 +61,7 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-675a0638.js",
+    "file": "_app/immutable/start-a4236af1.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -75,14 +75,14 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-b7c9f10e.js",
+    "file": "_app/immutable/components/pages/_page.svelte-7dede40d.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-fc6c087c.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-e7155cb1.css"
+      "_app/immutable/assets/_page-567d74aa.css"
     ]
   }
 }

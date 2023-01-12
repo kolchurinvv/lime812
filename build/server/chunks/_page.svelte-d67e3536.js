@@ -1,4 +1,4 @@
-import { c as create_ssr_component, o as onDestroy, v as validate_component, e as escape, d as each$1, f as compute_rest_props, h as createEventDispatcher, s as setContext, i as spread, j as escape_attribute_value, k as escape_object, l as add_attribute, p as is_void, g as getContext, t as tick } from './index-78ec5457.js';
+import { c as create_ssr_component, o as onDestroy, v as validate_component, d as each$1, e as escape, f as add_attribute, h as compute_rest_props, i as createEventDispatcher, s as setContext, j as spread, k as escape_attribute_value, l as escape_object, p as is_void, g as getContext, t as tick } from './index-e6cef8e1.js';
 
 /**
  * SSR Window 4.0.2
@@ -928,10 +928,11 @@ function remove() {
 }
 
 const css$1 = {
-  code: 'section.svelte-c1k1xx>div.svelte-c1k1xx.svelte-c1k1xx{text-transform:uppercase}section.svelte-c1k1xx>div h4.svelte-c1k1xx.svelte-c1k1xx::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--primary)}section.svelte-c1k1xx>div nav.svelte-c1k1xx>button.svelte-c1k1xx{position:relative;z-index:1;text-transform:uppercase}section.svelte-c1k1xx>div nav.svelte-c1k1xx>button.svelte-c1k1xx:hover::after,section.svelte-c1k1xx>div nav.svelte-c1k1xx>button.svelte-c1k1xx:focus::after{background-image:radial-gradient(circle, var(--primary) 1%, transparent 1%);z-index:-1}section.svelte-c1k1xx>div .featured-products.svelte-c1k1xx>.svelte-c1k1xx{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-auto-flow:column;column-gap:2em}section.svelte-c1k1xx>div .featured-products>* article.svelte-c1k1xx.svelte-c1k1xx{margin-top:16rem;text-transform:initial;min-width:210px}section.svelte-c1k1xx>div .featured-products>* article.svelte-c1k1xx>img.svelte-c1k1xx{object-fit:contain}',
+  code: 'section.svelte-1kl5wf6.svelte-1kl5wf6.svelte-1kl5wf6:nth-child(2n-2){background-color:var(--background)}section.svelte-1kl5wf6>div.svelte-1kl5wf6.svelte-1kl5wf6{text-transform:uppercase}section.svelte-1kl5wf6>div h4.svelte-1kl5wf6.svelte-1kl5wf6::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--primary)}section.svelte-1kl5wf6>div nav.svelte-1kl5wf6>button.svelte-1kl5wf6{position:relative;z-index:1;text-transform:uppercase}section.svelte-1kl5wf6>div nav.svelte-1kl5wf6>button.svelte-1kl5wf6:hover::after,section.svelte-1kl5wf6>div nav.svelte-1kl5wf6>button.svelte-1kl5wf6:focus::after{background-image:radial-gradient(circle, var(--primary) 1%, transparent 1%);z-index:-1}section.svelte-1kl5wf6>div .featured-products.svelte-1kl5wf6>.svelte-1kl5wf6{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-auto-flow:column;column-gap:2em}section.svelte-1kl5wf6>div .featured-products>* article.svelte-1kl5wf6.svelte-1kl5wf6{margin-top:16rem;text-transform:initial;min-width:210px}section.svelte-1kl5wf6>div .featured-products>* article.svelte-1kl5wf6>img.svelte-1kl5wf6{object-fit:contain}',
   map: null
 };
 const FeaturedProducts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { serialNumber } = $$props;
   let { tabs = { sectionTitle: "", tabContent: [] } } = $$props;
   const timeOuts = [];
   onDestroy(() => {
@@ -939,19 +940,21 @@ const FeaturedProducts = create_ssr_component(($$result, $$props, $$bindings, sl
       clearTimeout(tm);
     }
   });
+  if ($$props.serialNumber === void 0 && $$bindings.serialNumber && serialNumber !== void 0)
+    $$bindings.serialNumber(serialNumber);
   if ($$props.tabs === void 0 && $$bindings.tabs && tabs !== void 0)
     $$bindings.tabs(tabs);
   $$result.css.add(css$1);
-  return `<section class="${"background medium-padding svelte-c1k1xx"}"><div class="${"main-container svelte-c1k1xx"}"><h4 class="${"svelte-c1k1xx"}">${escape(tabs.sectionTitle)}</h4>
-    <nav class="${"no-space middle-align svelte-c1k1xx"}">${each$1(tabs.tabContent, (tab, index2) => {
-    return `<button class="${"y-border no-round transparent svelte-c1k1xx"}" data-ui="${"#page" + escape(index2, true)}">${escape(tab.title)}</button>`;
+  return `<section class="${"medium-padding svelte-1kl5wf6"}"><div class="${"main-container svelte-1kl5wf6"}"><h4 class="${"svelte-1kl5wf6"}">${escape(tabs.sectionTitle)}</h4>
+    <nav class="${"no-space middle-align svelte-1kl5wf6"}">${each$1(tabs.tabContent, (tab, index2) => {
+    return `<button class="${"y-border no-round transparent svelte-1kl5wf6"}" data-ui="${"#page" + escape(index2, true) + escape(serialNumber, true)}">${escape(tab.title)}</button>`;
   })}</nav>
-    <div class="${"featured-products svelte-c1k1xx"}">${each$1(tabs.tabContent, (tab, index2) => {
-    return `<div class="${"page right svelte-c1k1xx"}" id="${"page" + escape(index2, true)}">${each$1(tab.items, (item) => {
-      return `<article class="${"no-padding round svelte-c1k1xx"}"><img class="${"responsive small top-round svelte-c1k1xx"}" alt="${"featured product"}"${add_attribute("src", item.src, 0)}>
+    <div class="${"featured-products svelte-1kl5wf6"}">${each$1(tabs.tabContent, (tab, index2) => {
+    return `<div class="${"page right svelte-1kl5wf6"}" id="${"page" + escape(index2, true) + escape(serialNumber, true)}">${each$1(tab.items, (item) => {
+      return `<article class="${"no-padding round svelte-1kl5wf6"}"><img class="${"responsive small top-round svelte-1kl5wf6"}" alt="${"featured product"}"${add_attribute("src", item.src, 0)}>
               <div class="${"padding"}"><h6>${escape(item.cardTitle)}</h6>
                 <p>${escape(item.description)}</p>
-                <nav class="${"svelte-c1k1xx"}"><button class="${"no-round svelte-c1k1xx"}">Скачать Прайс</button>
+                <nav class="${"svelte-1kl5wf6"}"><button class="${"no-round svelte-1kl5wf6"}">Скачать Прайс</button>
                 </nav></div>
             </article>`;
     })}
@@ -959,6 +962,323 @@ const FeaturedProducts = create_ssr_component(($$result, $$props, $$bindings, sl
   })}</div></div>
 </section>`;
 });
+const featuredProducts = [
+  {
+    sectionTitle: "теплый пол",
+    tabContent: [
+      {
+        title: "Кабельный теплый пол в стяжку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "Тонкий теплый пол под плитку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "Нагревательные маты под плитку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "теплый пол под ламинат",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    sectionTitle: "Термостаты",
+    tabContent: [
+      {
+        title: "Кабельный теплый пол в стяжку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "Тонкий теплый пол под плитку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "Нагревательные маты под плитку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "теплый пол под ламинат",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    sectionTitle: " Наружный обогрев",
+    tabContent: [
+      {
+        title: "Кабельный теплый пол в стяжку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "Тонкий теплый пол под плитку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "Нагревательные маты под плитку",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      },
+      {
+        title: "теплый пол под ламинат",
+        items: [
+          {
+            src: "/featured-1/eco_pdsv_20.jpg",
+            cardTitle: "In-Term ECO PDSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/unifloor15.jpg",
+            cardTitle: "Unifloor 15 Вт/м",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/in-term_adsv_20.jpg",
+            cardTitle: "In-Therm ADSV 20",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          },
+          {
+            src: "/featured-1/fenix_adsv_18.jpg",
+            cardTitle: "Fenix ADSV 18",
+            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+          }
+        ]
+      }
+    ]
+  }
+];
 const Methods = {
   addClass,
   removeClass,
@@ -5210,118 +5530,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     }
   )}</section>
-  ${validate_component(FeaturedProducts, "FeaturedProducts").$$render(
-    $$result,
-    {
-      tabs: {
-        sectionTitle: "теплый пол",
-        tabContent: [
-          {
-            title: "Кабельный теплый пол в стяжку",
-            items: [
-              {
-                src: "/featured-1/eco_pdsv_20.jpg",
-                cardTitle: "In-Term ECO PDSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/unifloor15.jpg",
-                cardTitle: "Unifloor 15 Вт/м",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/in-term_adsv_20.jpg",
-                cardTitle: "In-Therm ADSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/fenix_adsv_18.jpg",
-                cardTitle: "Fenix ADSV 18",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              }
-            ]
-          },
-          {
-            title: "Тонкий теплый пол под плитку",
-            items: [
-              {
-                src: "/featured-1/eco_pdsv_20.jpg",
-                cardTitle: "In-Term ECO PDSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/unifloor15.jpg",
-                cardTitle: "Unifloor 15 Вт/м",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/in-term_adsv_20.jpg",
-                cardTitle: "In-Therm ADSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/fenix_adsv_18.jpg",
-                cardTitle: "Fenix ADSV 18",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              }
-            ]
-          },
-          {
-            title: "Нагревательные маты под плитку",
-            items: [
-              {
-                src: "/featured-1/eco_pdsv_20.jpg",
-                cardTitle: "In-Term ECO PDSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/unifloor15.jpg",
-                cardTitle: "Unifloor 15 Вт/м",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/in-term_adsv_20.jpg",
-                cardTitle: "In-Therm ADSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/fenix_adsv_18.jpg",
-                cardTitle: "Fenix ADSV 18",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              }
-            ]
-          },
-          {
-            title: "теплый пол под ламинат",
-            items: [
-              {
-                src: "/featured-1/eco_pdsv_20.jpg",
-                cardTitle: "In-Term ECO PDSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/unifloor15.jpg",
-                cardTitle: "Unifloor 15 Вт/м",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/in-term_adsv_20.jpg",
-                cardTitle: "In-Therm ADSV 20",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              },
-              {
-                src: "/featured-1/fenix_adsv_18.jpg",
-                cardTitle: "Fenix ADSV 18",
-                description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {},
-    {}
-  )}
+  ${each$1(featuredProducts, (section, i) => {
+    return `${validate_component(FeaturedProducts, "FeaturedProducts").$$render(
+      $$result,
+      {
+        tabs: section,
+        serialNumber: i.toLocaleString()
+      },
+      {},
+      {}
+    )}`;
+  })}
   <section class="${"primary-container medium-padding "}"><div class="${"how-to-container main-container svelte-mu6ykc"}"><h4 class="${"svelte-mu6ykc"}">Как заказать?</h4>
       <div class="${"steps svelte-mu6ykc"}"><div class="${"request-container svelte-mu6ykc"}"><div class="${"request"}"><h6>Оставить заявку</h6>
             <p class="${"svelte-mu6ykc"}">Вы можете оставить свой номер телефона в форме для обратной связи
@@ -5335,4 +5554,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-d247829b.js.map
+//# sourceMappingURL=_page.svelte-d67e3536.js.map

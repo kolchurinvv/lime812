@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component } from './index-78ec5457.js';
+import { c as create_ssr_component, v as validate_component } from './index-e6cef8e1.js';
 
 const css$1 = {
   code: "header.svelte-1migler{margin-bottom:3em;position:sticky;top:0;z-index:9999;border-bottom:2px solid var(--primary)}",
@@ -46,4 +46,4 @@ ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 
 export { Layout as default };
-//# sourceMappingURL=_layout.svelte-75d4d3ef.js.map
+//# sourceMappingURL=_layout.svelte-f95f1f03.js.map
