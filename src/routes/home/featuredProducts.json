@@ -6,22 +6,22 @@
         "title": "Кабельный теплый пол в стяжку",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             "cardTitle": "In-Term ECO PDSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
+            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
             "cardTitle": "Unifloor 15 Вт/м",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             "cardTitle": "In-Therm ADSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
+            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             "cardTitle": "Fenix ADSV 18",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -31,22 +31,22 @@
         "title": "Тонкий теплый пол под плитку",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             "cardTitle": "In-Term ECO PDSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
+            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
             "cardTitle": "Unifloor 15 Вт/м",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             "cardTitle": "In-Therm ADSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
+            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             "cardTitle": "Fenix ADSV 18",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -56,22 +56,22 @@
         "title": "Нагревательные маты под плитку",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             "cardTitle": "In-Term ECO PDSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
+            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
             "cardTitle": "Unifloor 15 Вт/м",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             "cardTitle": "In-Therm ADSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
+            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             "cardTitle": "Fenix ADSV 18",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -81,22 +81,22 @@
         "title": "теплый пол под ламинат",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             "cardTitle": "In-Term ECO PDSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
+            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
             "cardTitle": "Unifloor 15 Вт/м",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
+            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             "cardTitle": "In-Therm ADSV 20",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
+            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             "cardTitle": "Fenix ADSV 18",
             "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -108,7 +108,32 @@
     "sectionTitle": "Термостаты",
     "tabContent": [
       {
-        "title": "Кабельный теплый пол в стяжку",
+        "title": "Аналоговые термостаты для теплого пола",
+        "items": [
+          {
+            "src": "/thermostats/tab-1/eberle_rtr-e_61221.JPG",
+            "cardTitle": "Eberle RTR-E 6121",
+            "description": ""
+          },
+          {
+            "src": "/thermostats/tab-1/in-therm_rtc_70.JPG",
+            "cardTitle": "In-therm RTC 70",
+            "description": ""
+          },
+          {
+            "src": "/thermostats/tab-1/eberle_fre_525-31.JPG",
+            "cardTitle": "Eberle FRE 525-31",
+            "description": ""
+          },
+          {
+            "src": "/thermostats/tab-1/eberle_f2a_50.JPG",
+            "cardTitle": "Eberle F2A-50",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Программируемые термостаты для теплого пола",
         "items": [
           {
             "src": "/featured-1/eco_pdsv_20.jpg",
@@ -133,57 +158,7 @@
         ]
       },
       {
-        "title": "Тонкий теплый пол под плитку",
-        "items": [
-          {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          }
-        ]
-      },
-      {
-        "title": "Нагревательные маты под плитку",
-        "items": [
-          {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          }
-        ]
-      },
-      {
-        "title": "теплый пол под ламинат",
+        "title": "Термостаты для наружного обогрева",
         "items": [
           {
             "src": "/featured-1/eco_pdsv_20.jpg",
@@ -213,7 +188,7 @@
     "sectionTitle": " Наружный обогрев",
     "tabContent": [
       {
-        "title": "Кабельный теплый пол в стяжку",
+        "title": "Обогрев водостоков",
         "items": [
           {
             "src": "/featured-1/eco_pdsv_20.jpg",
@@ -238,7 +213,7 @@
         ]
       },
       {
-        "title": "Тонкий теплый пол под плитку",
+        "title": "Обогрев труб",
         "items": [
           {
             "src": "/featured-1/eco_pdsv_20.jpg",
@@ -263,32 +238,7 @@
         ]
       },
       {
-        "title": "Нагревательные маты под плитку",
-        "items": [
-          {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          }
-        ]
-      },
-      {
-        "title": "теплый пол под ламинат",
+        "title": "Обогрев наружных площадей",
         "items": [
           {
             "src": "/featured-1/eco_pdsv_20.jpg",

@@ -1,5 +1,5 @@
-<footer class="secondary bottom">
-  <div class="content-grid main-container">
+<footer class="secondary-container bottom">
+  <div class="footer-content-grid main-container">
     <div class="location">
       <img src="/logo-w.png" alt="logo-alt" />
       <h6>Магазин-склад ООО «ЛАЙМ»</h6>
@@ -29,7 +29,7 @@
 </footer>
 
 <style lang="sass">
-  .content-grid
+  .footer-content-grid
     padding-top: 1em
     display: grid
     grid-template-columns: 1.5fr 1fr 1fr 1fr

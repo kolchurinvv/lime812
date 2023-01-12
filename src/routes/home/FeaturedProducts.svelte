@@ -49,11 +49,11 @@
 <section class="medium-padding">
   <div class="main-container">
     <h4>{tabs.sectionTitle}</h4>
-    <nav class="no-space middle-align">
+    <nav class="no-space">
       {#each tabs.tabContent as tab, index}
         <button
           on:click={(e) => selectElement(e)}
-          class="y-border no-round transparent"
+          class="y-border no-round transparent tab-title primary filled"
           data-ui="#page{index}{serialNumber}">{tab.title}</button>
       {/each}
     </nav>
@@ -61,9 +61,9 @@
       {#each tabs.tabContent as tab, index}
         <div class="page right" id="page{index}{serialNumber}">
           {#each tab.items as item}
-            <article class="no-padding round">
+            <article class="no-padding no-round">
               <img
-                class="responsive small top-round"
+                class="responsive small no-round"
                 alt="featured product"
                 src={item.src} />
               <div class="padding">
@@ -96,6 +96,8 @@ section > div
     height: 2px
     margin: auto 0 17px 40px
     background: var(--primary)
+  nav
+    width: 100%
   nav > button
     position: relative
     z-index: 1
@@ -103,6 +105,8 @@ section > div
     &:hover::after, &:focus::after
       background-image: radial-gradient(circle,var(--primary) 1%,transparent 1%)
       z-index: -1
+  nav > .tab-title
+    flex-grow: 1
   .featured-products > *
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr

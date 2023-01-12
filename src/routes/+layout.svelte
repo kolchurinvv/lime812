@@ -8,7 +8,7 @@
 </script>
 
 <Header />
-<div class="content">
+<main id="app-content">
   <slot />
-</div>
+</main>
 <Footer />
