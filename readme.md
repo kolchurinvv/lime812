@@ -1,6 +1,6 @@
 # Oddities First
 ## `./build` 
-What the hell is it doing here? Well, my current VSP only has 2 GB of RAM 🙃 So every time I try to build it there - it fails miserably. My machine has 8 times that. It's one of those cases where the ☁️ isn't all powerfull (yet)
+What the hell is it doing here? Well, my current VPS only has 2 GB of RAM 🙃 So every time I try to build it there - it fails miserably. My machine has 8 times that. It's one of those cases where the ☁️ isn't all powerfull (yet)
 
 -----
 ## `./node_modules/swiper/svelte/swiper-svelte.d.ts`
