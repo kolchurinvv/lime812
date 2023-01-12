@@ -242,6 +242,13 @@ function escape_object(obj) {
   }
   return result;
 }
+function each(items, fn) {
+  let str = "";
+  for (let i = 0; i < items.length; i += 1) {
+    str += fn(items[i], i);
+  }
+  return str;
+}
 const missing_component = {
   $$render: () => ""
 };
@@ -298,5 +305,5 @@ function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key) => style_object[key]).map((key) => `${key}: ${escape_attribute_value(style_object[key])};`).join(" ");
 }
 
-export { safe_not_equal as a, subscribe as b, create_ssr_component as c, compute_rest_props as d, escape as e, createEventDispatcher as f, getContext as g, spread as h, escape_attribute_value as i, escape_object as j, add_attribute as k, is_void as l, missing_component as m, noop as n, onDestroy as o, setContext as s, tick as t, validate_component as v };
-//# sourceMappingURL=index-f7f2c7e5.js.map
+export { safe_not_equal as a, subscribe as b, create_ssr_component as c, each as d, escape as e, compute_rest_props as f, getContext as g, createEventDispatcher as h, spread as i, escape_attribute_value as j, escape_object as k, add_attribute as l, missing_component as m, noop as n, onDestroy as o, is_void as p, setContext as s, tick as t, validate_component as v };
+//# sourceMappingURL=index-78ec5457.js.map
