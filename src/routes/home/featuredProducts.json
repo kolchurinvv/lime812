@@ -31,24 +31,19 @@
         "title": "Тонкий теплый пол под плитку",
         "items": [
           {
-            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-2/hemstedt_dr.jpg",
+            "cardTitle": "Hemstedt DR",
+            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола."
           },
           {
-            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-2/Fenix_ADSV_10.JPG",
+            "cardTitle": "Fenix ADSV 10",
+            "description": "Тонкий кабель для укладки под плитку. Монтаж производится на готовую стяжку под напольное покрытие в клеевой раствор или самовыравнивающую смесь. "
           },
           {
-            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-2/Fenix_ADSA_12.JPG",
+            "cardTitle": "Fenix ADSA 12",
+            "description": "Ультратонкий нагревательный кабель ADSA для укладки в плиточный клей для плитки или самовыравнивающую смесь."
           }
         ]
       },
@@ -56,24 +51,24 @@
         "title": "Нагревательные маты под плитку",
         "items": [
           {
-            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-3/unifloor.jpg",
+            "cardTitle": "Unifloor",
+            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола."
           },
           {
-            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-3/in-thermeco.jpg",
+            "cardTitle": "In-Therm ECO",
+            "description": "Рекомендуем использование продукции Fenix и IN-THERM для укладки в плиточный клей"
           },
           {
-            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-3/in-therm_ldts.jpg",
+            "cardTitle": "In-Therm LDTS",
+            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола."
           },
           {
-            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-3/fenix_ldts.jpg",
+            "cardTitle": "Fenix LDTS",
+            "description": "Рекомендуем использование продукции Fenix и IN-THERM для укладки в плиточный клей"
           }
         ]
       },
@@ -81,24 +76,24 @@
         "title": "теплый пол под ламинат",
         "items": [
           {
-            "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-4/in-therm_t.png",
+            "cardTitle": "In-Term T",
+            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания. "
           },
           {
-            "src": "/in-floor_heating/tab-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-4/in-therm_mh.png",
+            "cardTitle": "In-Term MH",
+            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания. "
           },
           {
-            "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-4/in-term_afmat.jpg",
+            "cardTitle": "In-Therm AFMAT",
+            "description": "Алюминиевые маты используются для укладки под ламинат, паркетную доску и толстый ковролин (от 3 мм)."
           },
           {
-            "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/in-floor_heating/tab-4/in-therm_aen.jpg",
+            "cardTitle": "In-Term AEN",
+            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания. "
           }
         ]
       }
