@@ -7,6 +7,12 @@
     "file": "_app/immutable/assets/_page-0228a2d6.css",
     "src": "src/routes/+page.css"
   },
+  "_singletons-95600987.js": {
+    "file": "_app/immutable/chunks/singletons-95600987.js",
+    "imports": [
+      "_index-fc6c087c.js"
+    ]
+  },
   ".svelte-kit/generated/nodes/0.js": {
     "file": "_app/immutable/chunks/0-9aaa4736.js",
     "src": ".svelte-kit/generated/nodes/0.js",
@@ -15,8 +21,16 @@
       "src/routes/+layout.svelte"
     ]
   },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-503c5bff.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-1b01e42f.js",
+    "file": "_app/immutable/chunks/2-7a72cca2.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -32,19 +46,8 @@
       "_singletons-95600987.js"
     ]
   },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-503c5bff.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  "_singletons-95600987.js": {
-    "file": "_app/immutable/chunks/singletons-95600987.js",
-    "imports": [
-      "_index-fc6c087c.js"
-    ]
+  "_index-fc6c087c.js": {
+    "file": "_app/immutable/chunks/index-fc6c087c.js"
   },
   "src/routes/+layout.svelte": {
     "file": "_app/immutable/components/pages/_layout.svelte-b6c73475.js",
@@ -57,11 +60,8 @@
       "_app/immutable/assets/_layout-6a0f973c.css"
     ]
   },
-  "_index-fc6c087c.js": {
-    "file": "_app/immutable/chunks/index-fc6c087c.js"
-  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-25e92900.js",
+    "file": "_app/immutable/start-643d5ec1.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -75,7 +75,7 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-b9648ec9.js",
+    "file": "_app/immutable/components/pages/_page.svelte-1c3f5bb3.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
