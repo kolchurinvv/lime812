@@ -17,12 +17,11 @@
   const selectElement = (event: Event) => {
     const element = event.target as HTMLButtonElement
     if (element.parentElement) {
-      const siblings = [...element.parentElement.children].filter(
-        (elem) => elem !== element
-      )
-      for (const sibling of siblings) {
-        sibling.classList.add("transparent")
-      }
+      ;[...element.parentElement.children].forEach((elem) => {
+        if (elem !== element) {
+          elem.classList.add("transparent")
+        }
+      })
     }
     const classes = element.classList
     timeOuts.push(

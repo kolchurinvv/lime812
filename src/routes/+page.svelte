@@ -8,34 +8,6 @@
   import "swiper/scss"
   import "swiper/scss/pagination"
   import "@/theme/swiper.scss"
-  import { onDestroy, onMount } from "svelte"
-
-  const timeOuts: number[] = []
-  const selectElement = (event: Event) => {
-    const element = event.target as HTMLButtonElement
-    if (element.parentElement) {
-      const siblings = [...element.parentElement.children].filter(
-        (elem) => elem !== element
-      )
-      for (const sibling of siblings) {
-        sibling.classList.add("transparent")
-      }
-    }
-    const classes = element.classList
-    timeOuts.push(
-      window.setTimeout(() => {
-        classes.remove("transparent")
-      }, 200)
-    )
-  }
-  // onMount(() => {
-  //   console.log(featuredProducts)
-  // })
-  onDestroy(() => {
-    for (const tm of timeOuts) {
-      clearTimeout(tm)
-    }
-  })
 </script>
 
 <main>
