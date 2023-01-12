@@ -16,24 +16,24 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 </header>`;
 });
 const css = {
-  code: ".content-grid.svelte-i3yamg.svelte-i3yamg{padding-top:1em;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;column-gap:2em}.content-grid.svelte-i3yamg>.svelte-i3yamg{text-transform:capitalize;display:flex;flex-direction:column;align-items:flex-start;margin-top:1em}.content-grid.svelte-i3yamg .location img.svelte-i3yamg{max-width:100%;object-fit:contain}.content-grid.svelte-i3yamg .links.svelte-i3yamg{grid-column:3}",
+  code: ".footer-content-grid.svelte-yqcjba.svelte-yqcjba{padding-top:1em;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;column-gap:2em}.footer-content-grid.svelte-yqcjba>.svelte-yqcjba{text-transform:capitalize;display:flex;flex-direction:column;align-items:flex-start;margin-top:1em}.footer-content-grid.svelte-yqcjba .location img.svelte-yqcjba{max-width:100%;object-fit:contain}.footer-content-grid.svelte-yqcjba .links.svelte-yqcjba{grid-column:3}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<footer class="${"secondary bottom"}"><div class="${"content-grid main-container svelte-i3yamg"}"><div class="${"location svelte-i3yamg"}"><img src="${"/logo-w.png"}" alt="${"logo-alt"}" class="${"svelte-i3yamg"}">
+  return `<footer class="${"secondary-container bottom"}"><div class="${"footer-content-grid main-container svelte-yqcjba"}"><div class="${"location svelte-yqcjba"}"><img src="${"/logo-w.png"}" alt="${"logo-alt"}" class="${"svelte-yqcjba"}">
       <h6>Магазин-склад ООО «ЛАЙМ»</h6>
       <p>191144, Санкт-Петербург, 8-я Советская, 48, лит А, пом 14Н</p>
       <p>Складские помещения расположены в Москве (Сигнальный проезд) с
         возможностью самовывоза или адресной доставки через транспортную
         компанию.
       </p></div>
-    <nav class="${"links svelte-i3yamg"}"><h6>Навигация</h6>
+    <nav class="${"links svelte-yqcjba"}"><h6>Навигация</h6>
       <a href="${"/"}">о компании</a>
       <a href="${"/"}">акции</a>
       <a href="${"/"}">контакты</a>
       <a href="${"/"}">прайс</a></nav>
-    <div class="${"help svelte-i3yamg"}"><h6>поддержка</h6>
+    <div class="${"help svelte-yqcjba"}"><h6>поддержка</h6>
       <div class="${"field label prefix border"}"><i>email</i>
         <input type="${"email"}" id="${"support-email"}">
         <label for="${"support-email"}">Свяжитесь с нами</label></div></div></div>
@@ -41,9 +41,9 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
-<div class="${"content"}">${slots.default ? slots.default({}) : ``}</div>
+<main id="${"app-content"}">${slots.default ? slots.default({}) : ``}</main>
 ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 
 export { Layout as default };
-//# sourceMappingURL=_layout.svelte-f95f1f03.js.map
+//# sourceMappingURL=_layout.svelte-daf5f960.js.map

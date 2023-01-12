@@ -1,4 +1,4 @@
-import { c as create_ssr_component, o as onDestroy, v as validate_component, d as each$1, e as escape, f as add_attribute, h as compute_rest_props, i as createEventDispatcher, s as setContext, j as spread, k as escape_attribute_value, l as escape_object, p as is_void, g as getContext, t as tick } from './index-e6cef8e1.js';
+import { c as create_ssr_component, v as validate_component, d as each$1, o as onDestroy, e as escape, f as add_attribute, h as compute_rest_props, i as createEventDispatcher, s as setContext, j as spread, k as escape_attribute_value, l as escape_object, p as is_void, g as getContext, t as tick } from './index-e6cef8e1.js';
 
 /**
  * SSR Window 4.0.2
@@ -928,7 +928,7 @@ function remove() {
 }
 
 const css$1 = {
-  code: 'section.svelte-1kl5wf6.svelte-1kl5wf6.svelte-1kl5wf6:nth-child(2n-2){background-color:var(--background)}section.svelte-1kl5wf6>div.svelte-1kl5wf6.svelte-1kl5wf6{text-transform:uppercase}section.svelte-1kl5wf6>div h4.svelte-1kl5wf6.svelte-1kl5wf6::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--primary)}section.svelte-1kl5wf6>div nav.svelte-1kl5wf6>button.svelte-1kl5wf6{position:relative;z-index:1;text-transform:uppercase}section.svelte-1kl5wf6>div nav.svelte-1kl5wf6>button.svelte-1kl5wf6:hover::after,section.svelte-1kl5wf6>div nav.svelte-1kl5wf6>button.svelte-1kl5wf6:focus::after{background-image:radial-gradient(circle, var(--primary) 1%, transparent 1%);z-index:-1}section.svelte-1kl5wf6>div .featured-products.svelte-1kl5wf6>.svelte-1kl5wf6{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-auto-flow:column;column-gap:2em}section.svelte-1kl5wf6>div .featured-products>* article.svelte-1kl5wf6.svelte-1kl5wf6{margin-top:16rem;text-transform:initial;min-width:210px}section.svelte-1kl5wf6>div .featured-products>* article.svelte-1kl5wf6>img.svelte-1kl5wf6{object-fit:contain}',
+  code: 'section.svelte-1glpec4.svelte-1glpec4.svelte-1glpec4:nth-child(2n-2){background-color:var(--background)}section.svelte-1glpec4>div.svelte-1glpec4.svelte-1glpec4{text-transform:uppercase}section.svelte-1glpec4>div h4.svelte-1glpec4.svelte-1glpec4::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--primary)}section.svelte-1glpec4>div nav.svelte-1glpec4.svelte-1glpec4{width:100%}section.svelte-1glpec4>div nav.svelte-1glpec4>button.svelte-1glpec4{position:relative;z-index:1;text-transform:uppercase}section.svelte-1glpec4>div nav.svelte-1glpec4>button.svelte-1glpec4:hover::after,section.svelte-1glpec4>div nav.svelte-1glpec4>button.svelte-1glpec4:focus::after{background-image:radial-gradient(circle, var(--primary) 1%, transparent 1%);z-index:-1}section.svelte-1glpec4>div nav.svelte-1glpec4>.tab-title.svelte-1glpec4{flex-grow:1}section.svelte-1glpec4>div .featured-products.svelte-1glpec4>.svelte-1glpec4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-auto-flow:column;column-gap:2em}section.svelte-1glpec4>div .featured-products>* article.svelte-1glpec4.svelte-1glpec4{margin-top:16rem;text-transform:initial;min-width:210px}section.svelte-1glpec4>div .featured-products>* article.svelte-1glpec4>img.svelte-1glpec4{object-fit:contain}',
   map: null
 };
 const FeaturedProducts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -945,16 +945,16 @@ const FeaturedProducts = create_ssr_component(($$result, $$props, $$bindings, sl
   if ($$props.tabs === void 0 && $$bindings.tabs && tabs !== void 0)
     $$bindings.tabs(tabs);
   $$result.css.add(css$1);
-  return `<section class="${"medium-padding svelte-1kl5wf6"}"><div class="${"main-container svelte-1kl5wf6"}"><h4 class="${"svelte-1kl5wf6"}">${escape(tabs.sectionTitle)}</h4>
-    <nav class="${"no-space middle-align svelte-1kl5wf6"}">${each$1(tabs.tabContent, (tab, index2) => {
-    return `<button class="${"y-border no-round transparent svelte-1kl5wf6"}" data-ui="${"#page" + escape(index2, true) + escape(serialNumber, true)}">${escape(tab.title)}</button>`;
+  return `<section class="${"medium-padding svelte-1glpec4"}"><div class="${"main-container svelte-1glpec4"}"><h4 class="${"svelte-1glpec4"}">${escape(tabs.sectionTitle)}</h4>
+    <nav class="${"no-space svelte-1glpec4"}">${each$1(tabs.tabContent, (tab, index2) => {
+    return `<button class="${"y-border no-round transparent tab-title primary filled svelte-1glpec4"}" data-ui="${"#page" + escape(index2, true) + escape(serialNumber, true)}">${escape(tab.title)}</button>`;
   })}</nav>
-    <div class="${"featured-products svelte-1kl5wf6"}">${each$1(tabs.tabContent, (tab, index2) => {
-    return `<div class="${"page right svelte-1kl5wf6"}" id="${"page" + escape(index2, true) + escape(serialNumber, true)}">${each$1(tab.items, (item) => {
-      return `<article class="${"no-padding round svelte-1kl5wf6"}"><img class="${"responsive small top-round svelte-1kl5wf6"}" alt="${"featured product"}"${add_attribute("src", item.src, 0)}>
+    <div class="${"featured-products svelte-1glpec4"}">${each$1(tabs.tabContent, (tab, index2) => {
+    return `<div class="${"page right svelte-1glpec4"}" id="${"page" + escape(index2, true) + escape(serialNumber, true)}">${each$1(tab.items, (item) => {
+      return `<article class="${"no-padding no-round svelte-1glpec4"}"><img class="${"responsive small no-round svelte-1glpec4"}" alt="${"featured product"}"${add_attribute("src", item.src, 0)}>
               <div class="${"padding"}"><h6>${escape(item.cardTitle)}</h6>
                 <p>${escape(item.description)}</p>
-                <nav class="${"svelte-1kl5wf6"}"><button class="${"no-round svelte-1kl5wf6"}">Скачать Прайс</button>
+                <nav class="${"svelte-1glpec4"}"><button class="${"no-round svelte-1glpec4"}">Скачать Прайс</button>
                 </nav></div>
             </article>`;
     })}
@@ -970,22 +970,22 @@ const featuredProducts = [
         title: "Кабельный теплый пол в стяжку",
         items: [
           {
-            src: "/featured-1/eco_pdsv_20.jpg",
+            src: "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             cardTitle: "In-Term ECO PDSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/unifloor15.jpg",
+            src: "/in-floor_heating/tab-1/unifloor15.jpg",
             cardTitle: "Unifloor 15 Вт/м",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/in-term_adsv_20.jpg",
+            src: "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             cardTitle: "In-Therm ADSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/fenix_adsv_18.jpg",
+            src: "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             cardTitle: "Fenix ADSV 18",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -995,22 +995,22 @@ const featuredProducts = [
         title: "Тонкий теплый пол под плитку",
         items: [
           {
-            src: "/featured-1/eco_pdsv_20.jpg",
+            src: "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             cardTitle: "In-Term ECO PDSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/unifloor15.jpg",
+            src: "/in-floor_heating/tab-1/unifloor15.jpg",
             cardTitle: "Unifloor 15 Вт/м",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/in-term_adsv_20.jpg",
+            src: "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             cardTitle: "In-Therm ADSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/fenix_adsv_18.jpg",
+            src: "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             cardTitle: "Fenix ADSV 18",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -1020,22 +1020,22 @@ const featuredProducts = [
         title: "Нагревательные маты под плитку",
         items: [
           {
-            src: "/featured-1/eco_pdsv_20.jpg",
+            src: "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             cardTitle: "In-Term ECO PDSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/unifloor15.jpg",
+            src: "/in-floor_heating/tab-1/unifloor15.jpg",
             cardTitle: "Unifloor 15 Вт/м",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/in-term_adsv_20.jpg",
+            src: "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             cardTitle: "In-Therm ADSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/fenix_adsv_18.jpg",
+            src: "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             cardTitle: "Fenix ADSV 18",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -1045,22 +1045,22 @@ const featuredProducts = [
         title: "теплый пол под ламинат",
         items: [
           {
-            src: "/featured-1/eco_pdsv_20.jpg",
+            src: "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             cardTitle: "In-Term ECO PDSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/unifloor15.jpg",
+            src: "/in-floor_heating/tab-1/unifloor15.jpg",
             cardTitle: "Unifloor 15 Вт/м",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/in-term_adsv_20.jpg",
+            src: "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             cardTitle: "In-Therm ADSV 20",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           },
           {
-            src: "/featured-1/fenix_adsv_18.jpg",
+            src: "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             cardTitle: "Fenix ADSV 18",
             description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
           }
@@ -1072,7 +1072,32 @@ const featuredProducts = [
     sectionTitle: "Термостаты",
     tabContent: [
       {
-        title: "Кабельный теплый пол в стяжку",
+        title: "Аналоговые термостаты для теплого пола",
+        items: [
+          {
+            src: "/thermostats/tab-1/eberle_rtr-e_61221.JPG",
+            cardTitle: "Eberle RTR-E 6121",
+            description: ""
+          },
+          {
+            src: "/thermostats/tab-1/in-therm_rtc_70.JPG",
+            cardTitle: "In-therm RTC 70",
+            description: ""
+          },
+          {
+            src: "/thermostats/tab-1/eberle_fre_525-31.JPG",
+            cardTitle: "Eberle FRE 525-31",
+            description: ""
+          },
+          {
+            src: "/thermostats/tab-1/eberle_f2a_50.JPG",
+            cardTitle: "Eberle F2A-50",
+            description: ""
+          }
+        ]
+      },
+      {
+        title: "Программируемые термостаты для теплого пола",
         items: [
           {
             src: "/featured-1/eco_pdsv_20.jpg",
@@ -1097,57 +1122,7 @@ const featuredProducts = [
         ]
       },
       {
-        title: "Тонкий теплый пол под плитку",
-        items: [
-          {
-            src: "/featured-1/eco_pdsv_20.jpg",
-            cardTitle: "In-Term ECO PDSV 20",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/unifloor15.jpg",
-            cardTitle: "Unifloor 15 Вт/м",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/in-term_adsv_20.jpg",
-            cardTitle: "In-Therm ADSV 20",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/fenix_adsv_18.jpg",
-            cardTitle: "Fenix ADSV 18",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          }
-        ]
-      },
-      {
-        title: "Нагревательные маты под плитку",
-        items: [
-          {
-            src: "/featured-1/eco_pdsv_20.jpg",
-            cardTitle: "In-Term ECO PDSV 20",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/unifloor15.jpg",
-            cardTitle: "Unifloor 15 Вт/м",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/in-term_adsv_20.jpg",
-            cardTitle: "In-Therm ADSV 20",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/fenix_adsv_18.jpg",
-            cardTitle: "Fenix ADSV 18",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          }
-        ]
-      },
-      {
-        title: "теплый пол под ламинат",
+        title: "Термостаты для наружного обогрева",
         items: [
           {
             src: "/featured-1/eco_pdsv_20.jpg",
@@ -1177,7 +1152,7 @@ const featuredProducts = [
     sectionTitle: " Наружный обогрев",
     tabContent: [
       {
-        title: "Кабельный теплый пол в стяжку",
+        title: "Обогрев водостоков",
         items: [
           {
             src: "/featured-1/eco_pdsv_20.jpg",
@@ -1202,7 +1177,7 @@ const featuredProducts = [
         ]
       },
       {
-        title: "Тонкий теплый пол под плитку",
+        title: "Обогрев труб",
         items: [
           {
             src: "/featured-1/eco_pdsv_20.jpg",
@@ -1227,32 +1202,7 @@ const featuredProducts = [
         ]
       },
       {
-        title: "Нагревательные маты под плитку",
-        items: [
-          {
-            src: "/featured-1/eco_pdsv_20.jpg",
-            cardTitle: "In-Term ECO PDSV 20",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/unifloor15.jpg",
-            cardTitle: "Unifloor 15 Вт/м",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/in-term_adsv_20.jpg",
-            cardTitle: "In-Therm ADSV 20",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            src: "/featured-1/fenix_adsv_18.jpg",
-            cardTitle: "Fenix ADSV 18",
-            description: "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          }
-        ]
-      },
-      {
-        title: "теплый пол под ламинат",
+        title: "Обогрев наружных площадей",
         items: [
           {
             src: "/featured-1/eco_pdsv_20.jpg",
@@ -5487,23 +5437,17 @@ const Swiper_slide = create_ssr_component(($$result, $$props, $$bindings, slots)
   )}${add_attribute("this", slideEl, 0)}>${zoom ? `<div class="${"swiper-zoom-container"}"${add_attribute("data-swiper-zoom", typeof zoom === "number" ? zoom : void 0, 0)}>${slots.default ? slots.default({ data: slideData }) : ``}</div>` : `${slots.default ? slots.default({ data: slideData }) : ``}`}</div>`;
 });
 const css = {
-  code: '.jumbo-container.svelte-mu6ykc .jumbo-anno-box.svelte-mu6ykc.svelte-mu6ykc{display:grid;position:absolute;bottom:10%;z-index:2;background-color:#fff;line-height:1.1;letter-spacing:1.2px;font-size:1.4em}.jumbo-container.svelte-mu6ykc .jumbo-anno-box.svelte-mu6ykc>.svelte-mu6ykc{text-transform:uppercase;margin-bottom:1em}.jumbo-container.svelte-mu6ykc .jumbo-text.svelte-mu6ykc.svelte-mu6ykc{justify-self:start;font-weight:900}.how-to-container.svelte-mu6ykc.svelte-mu6ykc.svelte-mu6ykc{color:var(--on-primary-alt)}.how-to-container.svelte-mu6ykc h4.svelte-mu6ykc.svelte-mu6ykc::after{background:var(--on-primary-alt)}.how-to-container.svelte-mu6ykc .steps.svelte-mu6ykc.svelte-mu6ykc{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:2em}.how-to-container.svelte-mu6ykc .steps .request-container.svelte-mu6ykc.svelte-mu6ykc{grid-column:2}.how-to-container.svelte-mu6ykc .steps .request-container #order-email.svelte-mu6ykc.svelte-mu6ykc:focus{border-color:var(--secondary)}.how-to-container.svelte-mu6ykc .steps .request-container .request p.svelte-mu6ykc.svelte-mu6ykc{text-transform:initial}.how-to-container.svelte-mu6ykc .steps .request-container.svelte-mu6ykc.svelte-mu6ykc::before{content:"";display:inline-block;background-image:url("/icons/checklist.png");background-position:center;background-repeat:no-repeat;background-size:contain;width:50px;height:50px;position:absolute;left:-55px}',
+  code: '.jumbo-container.svelte-1hi14hz .jumbo-anno-box.svelte-1hi14hz.svelte-1hi14hz{display:grid;position:absolute;bottom:10%;z-index:2;line-height:1.1;letter-spacing:1.2px;font-size:1.4em}.jumbo-container.svelte-1hi14hz .jumbo-anno-box.svelte-1hi14hz>.svelte-1hi14hz{text-transform:uppercase;margin-bottom:1em}.jumbo-container.svelte-1hi14hz .jumbo-text.svelte-1hi14hz.svelte-1hi14hz{justify-self:start;font-weight:900}.how-to-container.svelte-1hi14hz.svelte-1hi14hz.svelte-1hi14hz{color:var(--on-primary-alt);text-transform:uppercase}.how-to-container.svelte-1hi14hz h4.svelte-1hi14hz.svelte-1hi14hz::after{content:"";display:inline-block;width:90px;height:2px;margin:auto 0 17px 40px;background:var(--on-primary-alt)}.how-to-container.svelte-1hi14hz .steps.svelte-1hi14hz.svelte-1hi14hz{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:2em}.how-to-container.svelte-1hi14hz .steps .request-container.svelte-1hi14hz.svelte-1hi14hz{grid-column:2}.how-to-container.svelte-1hi14hz .steps .request-container #order-email.svelte-1hi14hz.svelte-1hi14hz:focus{border-color:var(--secondary)}.how-to-container.svelte-1hi14hz .steps .request-container .request p.svelte-1hi14hz.svelte-1hi14hz{text-transform:initial}.how-to-container.svelte-1hi14hz .steps .request-container.svelte-1hi14hz.svelte-1hi14hz::before{content:"";display:inline-block;background-image:url("/icons/checklist.png");background-position:center;background-repeat:no-repeat;background-size:contain;width:50px;height:50px;position:absolute;left:-55px}',
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  const timeOuts = [];
-  onDestroy(() => {
-    for (const tm of timeOuts) {
-      clearTimeout(tm);
-    }
-  });
   $$result.css.add(css);
-  return `<main><section class="${"jumbo-container main-container svelte-mu6ykc"}"><div class="${"medium-padding jumbo-anno-box svelte-mu6ykc"}"><div class="${"y-border large-padding jumbo-text svelte-mu6ykc"}">ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
-      </div>
-      <p class="${"svelte-mu6ykc"}">ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
-      <button class="${"no-margin no-round primary filled svelte-mu6ykc"}">прайсы</button></div>
+  return `<section class="${"jumbo-container main-container svelte-1hi14hz"}"><div class="${"medium-padding jumbo-anno-box background svelte-1hi14hz"}"><div class="${"y-border large-padding jumbo-text svelte-1hi14hz"}">ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
+    </div>
+    <p class="${"svelte-1hi14hz"}">ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
+    <button class="${"no-margin no-round primary-container svelte-1hi14hz"}">прайсы</button></div>
 
-    ${validate_component(Swiper_1, "Swiper").$$render(
+  ${validate_component(Swiper_1, "Swiper").$$render(
     $$result,
     {
       spaceBetween: 30,
@@ -5521,16 +5465,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             return `<img src="${"/jumbo-slides/slide-1.png"}" alt="${"slide-1"}">`;
           }
         })}
-      ${validate_component(Swiper_slide, "SwiperSlide").$$render($$result, {}, {}, {
+    ${validate_component(Swiper_slide, "SwiperSlide").$$render($$result, {}, {}, {
           default: () => {
             return `<img src="${"/jumbo-slides/slide-2.png"}" alt="${"slide-2"}">`;
           }
         })}
-      `;
+    `;
       }
     }
   )}</section>
-  ${each$1(featuredProducts, (section, i) => {
+${each$1(featuredProducts, (section, i) => {
     return `${validate_component(FeaturedProducts, "FeaturedProducts").$$render(
       $$result,
       {
@@ -5541,17 +5485,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {}
     )}`;
   })}
-  <section class="${"primary-container medium-padding "}"><div class="${"how-to-container main-container svelte-mu6ykc"}"><h4 class="${"svelte-mu6ykc"}">Как заказать?</h4>
-      <div class="${"steps svelte-mu6ykc"}"><div class="${"request-container svelte-mu6ykc"}"><div class="${"request"}"><h6>Оставить заявку</h6>
-            <p class="${"svelte-mu6ykc"}">Вы можете оставить свой номер телефона в форме для обратной связи
-              и в ближайшее время наши менеджеры обязательно с Вами свяжутся.
-              Либо оставьте ваш почтовый адресс, и мы вам обязательно напишем.
-            </p></div>
-          <div class="${"field label prefix border "}"><i>email</i>
-            <input type="${"email"}" id="${"order-email"}" class="${"svelte-mu6ykc"}">
-            <label class="${"secondary transparent"}" for="${"order-email"}">Ваша почта</label></div></div></div></div></section>
-</main>`;
+<section class="${"primary-container medium-padding "}"><div class="${"how-to-container main-container svelte-1hi14hz"}"><h4 class="${"svelte-1hi14hz"}">Как заказать?</h4>
+    <div class="${"steps svelte-1hi14hz"}"><div class="${"request-container svelte-1hi14hz"}"><div class="${"request"}"><h6>Оставить заявку</h6>
+          <p class="${"svelte-1hi14hz"}">Вы можете оставить свой номер телефона в форме для обратной связи и
+            в ближайшее время наши менеджеры обязательно с Вами свяжутся. Либо
+            оставьте ваш почтовый адресс, и мы вам обязательно напишем.
+          </p></div>
+        <div class="${"field label prefix border "}"><i>email</i>
+          <input type="${"email"}" id="${"order-email"}" class="${"svelte-1hi14hz"}">
+          <label class="${"secondary transparent"}" for="${"order-email"}">Ваша почта</label></div></div></div></div>
+</section>`;
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-d67e3536.js.map
+//# sourceMappingURL=_page.svelte-0949a3cd.js.map
