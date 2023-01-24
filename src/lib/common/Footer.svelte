@@ -1,3 +1,7 @@
+<script lang="ts">
+  import GetCustomerEmail from "./GetCustomerEmail.svelte"
+</script>
+
 <footer class="secondary-container bottom">
   <div class="footer-content-grid main-container">
     <div class="location">
@@ -19,11 +23,14 @@
     </nav>
     <div class="help">
       <h6>поддержка</h6>
-      <div class="field label prefix border">
+      <!-- <div class="field label prefix border">
         <i>email</i>
         <input type="email" id="support-email" />
         <label for="support-email">Свяжитесь с нами</label>
-      </div>
+      </div> -->
+      <GetCustomerEmail
+        key="support-email"
+        placeholderText="свяжитесь с нами" />
     </div>
   </div>
 </footer>

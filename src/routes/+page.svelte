@@ -1,6 +1,7 @@
 <script lang="ts">
   import FeaturedProducts from "./home/FeaturedProducts.svelte"
   import featuredProducts from "./home/featuredProducts.json"
+  import GetCustomerEmail from "$lib/common/GetCustomerEmail.svelte"
 
   import { Swiper, SwiperSlide } from "swiper/svelte"
   import { Autoplay, Pagination } from "swiper"
@@ -65,12 +66,7 @@
             оставьте ваш почтовый адресс, и мы вам обязательно напишем.
           </p>
         </div>
-        <div class="field label prefix border ">
-          <i>email</i>
-          <input type="email" id="order-email" />
-          <label class="secondary transparent" for="order-email"
-            >Ваша почта</label>
-        </div>
+        <GetCustomerEmail key="order-email" />
       </div>
     </div>
   </div>
@@ -109,8 +105,6 @@
     column-gap: 2em
     .request-container
       grid-column: 2
-      #order-email:focus
-        border-color: var(--secondary)
       .request
         p
           text-transform: initial
