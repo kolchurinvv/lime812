@@ -1,3 +1,4 @@
 .eslintrc*
 svelte.config.js
 build/*
+static/smtp.js
