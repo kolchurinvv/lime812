@@ -1,7 +1,7 @@
 <script lang="ts">
-  const mode = () => {
+  const modeToggle = () => {
     //@ts-ignore
-    let newMode = ui("mode") == "dark" ? "light" : "dark"
+    const newMode = ui("mode") == "dark" ? "light" : "dark"
     //@ts-ignore
     ui("mode", newMode)
   }
@@ -29,7 +29,7 @@
       ><button class="no-round border upper extra small-elevate y-border"
         >прайс</button
       ></a>
-    <button on:click={mode} class="circle transparent">
+    <button on:click={modeToggle} class="circle transparent">
       <i>light_mode</i>
     </button>
   </nav>

@@ -8,6 +8,18 @@
   import "swiper/scss"
   import "swiper/scss/pagination"
   import "@/theme/swiper.scss"
+  import { onMount } from "svelte"
+
+  onMount(() => {
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)")
+    if (darkThemeMq.matches) {
+      //@ts-ignore
+      ui("mode", "dark")
+    } else {
+      //@ts-ignore
+      ui("mode", "light")
+    }
+  })
 </script>
 
 <section class="jumbo-container main-container">
