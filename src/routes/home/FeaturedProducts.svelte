@@ -17,7 +17,7 @@
   const selectElement = (event: Event) => {
     const element = event.target as HTMLButtonElement
     if (element.parentElement) {
-      ;[...element.parentElement.children].forEach((elem) => {
+      ;[...(<any>element.parentElement.children)].forEach((elem) => {
         if (elem !== element) {
           elem.classList.add("transparent")
         }
