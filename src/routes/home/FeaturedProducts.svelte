@@ -72,7 +72,7 @@
                   {item.description}
                 </p>
                 <nav>
-                  <button class="no-round">Скачать Прайс</button>
+                  <button class="no-round bottom">Скачать Прайс</button>
                 </nav>
               </div>
             </article>
@@ -113,9 +113,16 @@ section > div
     grid-auto-flow: column
     column-gap: 2em
     article
+      display: flex
+      flex-direction: column
       margin-top: 16rem
       text-transform: initial
       min-width: 210px
       & > img
         object-fit: contain
+      & > div
+        display: flex
+        flex-grow: 1
+        flex-direction: column
+        justify-content: space-between
 </style>

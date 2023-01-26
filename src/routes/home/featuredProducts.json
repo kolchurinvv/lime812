@@ -131,24 +131,24 @@
         "title": "Программируемые термостаты для теплого пола",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-2/in-therm_wl51.jpg",
+            "cardTitle": "In-therm WL51",
+            "description": ""
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-2/in-therm_e51.JPG",
+            "cardTitle": "In-therm Е51",
+            "description": ""
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-2/in-therm_wl91.jpg",
+            "cardTitle": "In-therm WL91",
+            "description": ""
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-2/in-therm_e91.JPG",
+            "cardTitle": "In-therm E91",
+            "description": ""
           }
         ]
       },
@@ -156,24 +156,24 @@
         "title": "Термостаты для наружного обогрева",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-3/eberle_tft_524004.jpg",
+            "cardTitle": "Eberle TFT 524 004",
+            "description": ""
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-3/eberle_DTR-E.jpg",
+            "cardTitle": "Eberle DTR-E",
+            "description": ""
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-3/eberle_ITR-4.jpg",
+            "cardTitle": "Eberle ITR-4",
+            "description": ""
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/thermostats/tab-3/eberle_esd424003.jpg",
+            "cardTitle": "Eberle ESD 424 003",
+            "description": ""
           }
         ]
       }
@@ -186,24 +186,24 @@
         "title": "Обогрев водостоков",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-1/in-therm_srl.jpg",
+            "cardTitle": "In-Term SRL",
+            "description": "Кабель используется для обогрева крыш, труб и водостоков."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-1/hemstedt_das.jpg",
+            "cardTitle": "Hemstedt DAS",
+            "description": "Кабель DAS со встроенным термостатом для обогрева крыш, водостоков и труб большого диаметра."
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-1/eltrace_traseco.jpg",
+            "cardTitle": "Eltrace TRASECO",
+            "description": "Кабель используется для обогрева крыш, труб и водостоков."
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-1/fenix_adpsv.jpg",
+            "cardTitle": "Fenix ADPSV",
+            "description": "Кабель ADPSV 30 Вт/м используется для обогрева водостоков, труб, открытых площадей, балконов."
           }
         ]
       },
@@ -211,24 +211,24 @@
         "title": "Обогрев труб",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-2/in-therm_srl.jpg",
+            "cardTitle": "In-Therm SRL",
+            "description": "Кабель используется для обогрева крыш, труб и водостоков."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-2/hemstedt_fs_10.jpg",
+            "cardTitle": "Hemstedt FS 10",
+            "description": "Кабель FS со встроенным термостатом для обогрева труб и водопроводов."
           },
           {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-2/hemstedt_das.jpg",
+            "cardTitle": "Hemstedt DAS",
+            "description": "Кабель DAS со встроенным термостатом для обогрева крыш, водостоков и труб большого диаметра."
           },
           {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-2/eltrace_traseco.jpg",
+            "cardTitle": "Eltrace TRASECO",
+            "description": "Кабель используется для обогрева крыш, труб и водостоков."
           }
         ]
       },
@@ -236,24 +236,14 @@
         "title": "Обогрев наружных площадей",
         "items": [
           {
-            "src": "/featured-1/eco_pdsv_20.jpg",
-            "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-3/fenix_adpsv.jpg",
+            "cardTitle": "Fenix ADPSV",
+            "description": "Кабель ADPSV 30 Вт/м используется для обогрева водостоков, труб, открытых площадей, балконов."
           },
           {
-            "src": "/featured-1/unifloor15.jpg",
-            "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/in-term_adsv_20.jpg",
-            "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
-          },
-          {
-            "src": "/featured-1/fenix_adsv_18.jpg",
-            "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "src": "/outdoor_heating/tab-3/hemstedt_brf-im.jpg",
+            "cardTitle": "Hemstedt BRF-IM ",
+            "description": "Кабель BRF-IM используется для обогрева водостоков, открытых площадей, балконов."
           }
         ]
       }
