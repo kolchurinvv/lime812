@@ -1,19 +1,18 @@
 <script lang="ts">
   import emailjs from "@emailjs/browser"
-
+  import { slide } from "svelte/transition"
   export let placeholderText: string = "Ваша почта"
   export let key: string
 
-  let sendersEmail: string = ""
-  let message: string
-  let status: boolean | null
+  let sendersEmail: string
+  let message: string | null
+  let customMessage: string | null = null
   switch (key) {
     case "support-email":
-      message = "Требуется помощь"
+      message = !customMessage ? customMessage : "Требуется помощь"
       break
-
     default:
-      message = "Пользователь проявил интерес"
+      message = !customMessage ? customMessage : "Пользователь проявил интерес"
       break
   }
   const serviceId: string = import.meta.env.VITE_EMAILJS_SERVICE
@@ -65,7 +64,7 @@
   }
 </script>
 
-<div class="field label prefix suffix border ">
+<div class="full-width field label prefix suffix border ">
   {#if !promise}
     <i>email</i>
   {:else}
@@ -87,6 +86,15 @@
     </button>
   {/if}
 </div>
+{#if sendersEmail}
+  <div transition:slide|local class="full-width field textarea label border">
+    <textarea bind:value={message} id="{key}-custom-message" />
+    <label class="secondary transparent" for="{key}-custom-message">
+      отправьте нам сообщение
+    </label>
+    <span class="helper">необязательное поле</span>
+  </div>
+{/if}
 {#if promise}
   {#await promise then response}
     <div class="toast active green white-text top">
@@ -102,8 +110,10 @@
 {/if}
 
 <style lang="sass">
+.full-width
+  width: 100%
 // currently this is the only one instance that's affected due to being on yellow background
-#order-email:focus
+#order-email:focus, #order-email-custom-message:focus
   border-color: var(--secondary)
 .loader.secondary
   border: 4rem solid var(--secondary)
