@@ -1,6 +1,7 @@
 <script lang="ts">
   import emailjs from "@emailjs/browser"
   import { slide } from "svelte/transition"
+  import { isEmailPattern } from "$lib/utils/regexPatterns"
   export let placeholderText: string = "Ваша почта"
   export let key: string
 
@@ -18,9 +19,12 @@
   const serviceId: string = import.meta.env.VITE_EMAILJS_SERVICE
   const templateId: string = import.meta.env.VITE_EMAILJS_TEMPLATE
   const pubKey: string = import.meta.env.VITE_EMAILJS_PUB_KEY
-  async function sendEmail(sendersEmail: string): Promise<boolean> {
-    if (!sendersEmail.length) {
-      throw new Error("email is required")
+  async function sendEmail(sendersEmail: string): Promise<string> {
+    if (!sendersEmail?.length) {
+      throw new ReferenceError("Почта обязательна!")
+    }
+    if (!isEmailPattern.test(sendersEmail)) {
+      throw new SyntaxError("Некорректный формат почты")
     }
     const res = await emailjs.send(
       serviceId,
@@ -33,12 +37,13 @@
       pubKey
     )
     if (res.status === 200) {
-      return true
+      return sendersEmail
     } else {
       throw new Error(`FAILED... ${res}`)
     }
   }
-  let promise: Promise<boolean> | boolean = false
+  let promise: Promise<string> | boolean = false
+  $: console.log("promise", promise)
   const timeOuts: number[] = []
   const submitEmail = (e: KeyboardEvent | MouseEvent) => {
     if (
@@ -57,7 +62,7 @@
             const classes = toast.classList
             classes.remove("active")
           })
-        }, 7000)
+        }, 5000)
       )
       return
     }
@@ -99,12 +104,12 @@
   {#await promise then response}
     <div class="toast active green white-text top">
       <i>done</i>
-      <span>Мы Вам обязательно напишем на {sendersEmail}</span>
+      <span>Мы Вам обязательно напишем на {response}</span>
     </div>
   {:catch error}
     <div class="toast active orange white-text top">
       <i>warning</i>
-      <span>Что-то пошло не так...</span>
+      <span>{error?.message ?? "Что-то пошло не так..."}</span>
     </div>
   {/await}
 {/if}
