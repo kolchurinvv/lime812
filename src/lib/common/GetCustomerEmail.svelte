@@ -43,7 +43,6 @@
     }
   }
   let promise: Promise<string> | boolean = false
-  $: console.log("promise", promise)
   const timeOuts: number[] = []
   const submitEmail = (e: KeyboardEvent | MouseEvent) => {
     if (
