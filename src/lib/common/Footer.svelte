@@ -16,18 +16,13 @@
     </div>
     <nav class="links">
       <h6>Навигация</h6>
-      <a href="/">о компании</a>
-      <a href="/">акции</a>
-      <a href="/">контакты</a>
-      <a href="/">прайс</a>
+      <a href="/about">о компании</a>
+      <a href="/promos">акции</a>
+      <a href="/contacts">контакты</a>
+      <a href="/catalog">прайс</a>
     </nav>
     <div class="help">
       <h6>поддержка</h6>
-      <!-- <div class="field label prefix border">
-        <i>email</i>
-        <input type="email" id="support-email" />
-        <label for="support-email">Свяжитесь с нами</label>
-      </div> -->
       <GetCustomerEmail
         key="support-email"
         placeholderText="свяжитесь с нами" />

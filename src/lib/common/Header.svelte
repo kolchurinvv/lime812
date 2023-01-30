@@ -13,19 +13,19 @@
       <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
     </a>
     <div class="max" />
-    <a href="?"
+    <a href="/about"
       ><button class="transparent no-round upper extra small-elevate"
         >О компании</button
       ></a>
-    <a href="?"
+    <a href="/promos"
       ><button class="transparent no-round upper extra small-elevate"
         >акции</button
       ></a>
-    <a href="?"
+    <a href="contacts"
       ><button class="transparent no-round upper extra small-elevate"
         >контакты</button
       ></a>
-    <a href="?"
+    <a href="/catalog"
       ><button class="no-round border upper extra small-elevate y-border"
         >прайс</button
       ></a>

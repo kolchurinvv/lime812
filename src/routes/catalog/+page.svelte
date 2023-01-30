@@ -1,0 +1,29 @@
+<h1>catalog</h1>
+<div>
+  <a
+    href="/static/catalogs/Fenix-Eltrace_2023.pdf"
+    download="Прайс для оптовиков Fenix, Eltrace 2023"
+    >Скачать: Прайс для оптовиков Fenix, Eltrace 2023</a>
+  <a
+    href="/static/catalogs/general_2023.pdf"
+    download="Прайс для оптовиков общестроит 2023"
+    >Скачать: Прайс для оптовиков общестроит 2023</a>
+  <a
+    href="/static/catalogs/HEMSTEDT1_2023.pdf"
+    download="Прайс для оптовиков HEMSTEDT1 2023"
+    >Скачать: Прайс для оптовиков HEMSTEDT1 2023</a>
+  <a
+    href="/static/catalogs/IN-THERM_WARM-LIFE_2023.pdf"
+    download="Прайс для оптовиков IN-THERM,  WARM LIFE 2023"
+    >Скачать: Прайс для оптовиков IN-THERM, WARM LIFE 2023</a>
+  <a
+    href="/static/catalogs/UNIFLOOR_2023.pdf"
+    download="Прайс для оптовиков  UNIFLOOR 2023"
+    >Скачать: Прайс для оптовиков UNIFLOOR 2023</a>
+</div>
+
+<style lang="sass">
+  div
+    display: flex
+    flex-direction: column
+</style>
