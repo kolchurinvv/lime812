@@ -40,6 +40,6 @@
     margin-bottom: 3em
     position: sticky
     top: 0
-    z-index: 9999
+    z-index: 800
     border-bottom: 2px solid var(--primary)
 </style>

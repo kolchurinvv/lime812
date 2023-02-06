@@ -1,7 +1,7 @@
 <article class="no-padding">
   <div class="grid no-space">
     <div class="s6">
-      <img class="responsive" src="/beer-and-woman.jpg" alt="promo-img" />
+      <img class="responsive" src="/fill-in-imgs/foto10.jpg" alt="promo-img" />
       <div class="absolute top left right padding top-shadow white-text">
         <h5>Январская скидка 15%</h5>
         <p>по промокоду «ЛАЙМ»</p>
@@ -32,10 +32,9 @@
 <article class="no-padding">
   <div class="grid no-space">
     <div class="s6">
-      <img class="responsive" src="/beer-and-woman.jpg" alt="promo-img" />
+      <img class="responsive" src="/fill-in-imgs/foto13.jpg" alt="promo-img" />
       <div class="absolute top left right padding top-shadow white-text">
         <h5>Предложение о сотрудничестве - 2023</h5>
-        <p>давайте работать вместе</p>
       </div>
     </div>
     <div class="s6">

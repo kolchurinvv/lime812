@@ -20,7 +20,7 @@
 </script>
 
 <Header />
-<main id="app-content">
+<main id="app-content" class="main-container">
   <slot />
 </main>
 <Footer />

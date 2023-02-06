@@ -11,13 +11,15 @@
   import "@/theme/swiper.scss"
 </script>
 
-<section class="jumbo-container main-container">
+<section class="jumbo-container">
   <div class="medium-padding jumbo-anno-box background">
     <div class="y-border large-padding jumbo-text">
       ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
     </div>
     <p>ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
-    <button class="no-margin no-round primary-container">прайсы</button>
+    <a
+      href="/catalog"
+      class="no-margin small-padding no-round primary-container">прайсы</a>
   </div>
 
   <Swiper

@@ -17,25 +17,37 @@
 <ul>
   <li>
     <div class="row">
-      <i class="light-green-text">check_circle</i>
+      <i class="light-green-text"
+        ><span class="material-symbols-outlined">
+          control_point_duplicate
+        </span></i>
       <div class="max">Прямые поставки от производителя</div>
     </div>
   </li>
   <li>
     <div class="row">
-      <i class="light-green-text">check_circle</i>
+      <i class="light-green-text"
+        ><span class="material-symbols-outlined">
+          control_point_duplicate
+        </span></i>
       <div class="max">Собственный склад</div>
     </div>
   </li>
   <li>
     <div class="row">
-      <i class="light-green-text">check_circle</i>
+      <i class="light-green-text"
+        ><span class="material-symbols-outlined">
+          control_point_duplicate
+        </span></i>
       <div class="max">Стабильная ценовая политика</div>
     </div>
   </li>
   <li>
     <div class="row">
-      <i class="light-green-text">check_circle</i>
+      <i class="light-green-text"
+        ><span class="material-symbols-outlined">
+          control_point_duplicate
+        </span></i>
       <div class="max">Программа партнерской поддержки</div>
     </div>
   </li>
@@ -43,5 +55,5 @@
 
 <style lang="sass">
 li 
-  list-style-type: circle
+  list-style-type: none
 </style>

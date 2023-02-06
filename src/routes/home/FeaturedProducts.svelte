@@ -1,12 +1,21 @@
 <script lang="ts">
   import { onDestroy, onMount } from "svelte"
+  import OrderModal from "$lib/common/OrderModal.svelte"
+  let unique: number = 0
+
   export let serialNumber: string
   export let tabs: {
     sectionTitle: string
     tabContent:
       | {
           title: string
-          items: { src: string; cardTitle: string; description: string }[]
+          items: {
+            src: string
+            cardTitle: string
+            description: string
+            SKU?: string | undefined
+            optionalMessage?: string
+          }[]
         }[]
   } = {
     sectionTitle: "",
@@ -30,6 +39,18 @@
       }, 200)
     )
   }
+  let activeModal: boolean = false
+  let subject: string
+  let message: string | undefined
+  function openModal(
+    SKU: string | undefined,
+    optionalMessage: string | undefined
+  ): void {
+    activeModal = true
+    subject = `Зaказ ${SKU}`
+    message = optionalMessage
+    unique++
+  }
   onMount(() => {
     // make first tab active
     const serialSelector = "0".concat(serialNumber)
@@ -43,6 +64,7 @@
     for (const tm of timeOuts) {
       clearTimeout(tm)
     }
+    unique = 0
   })
 </script>
 
@@ -72,7 +94,12 @@
                   {item.description}
                 </p>
                 <nav>
-                  <button class="no-round bottom">Скачать Прайс</button>
+                  <button
+                    on:click={() => {
+                      openModal(item.SKU, item.optionalMessage)
+                    }}
+                    class="no-round primary-container bottom"
+                    >заявка на продукт</button>
                 </nav>
               </div>
             </article>
@@ -82,6 +109,9 @@
     </div>
   </div>
 </section>
+{#key unique}
+  <OrderModal active={activeModal} {subject} {message} />
+{/key}
 
 <style lang="sass">
 section:nth-child(2n-2)

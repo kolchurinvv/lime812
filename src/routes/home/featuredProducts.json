@@ -8,22 +8,30 @@
           {
             "src": "/in-floor_heating/tab-1/eco_pdsv_20.jpg",
             "cardTitle": "In-Term ECO PDSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-1/unifloor15.jpg",
             "cardTitle": "Unifloor 15 Вт/м",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см.",
+            "SKU": "1",
+            "optionalMessage": "Я бы хотел(а) заказать 1"
           },
           {
             "src": "/in-floor_heating/tab-1/in-term_adsv_20.jpg",
             "cardTitle": "In-Therm ADSV 20",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см.",
+            "SKU": "2",
+            "optionalMessage": "Я бы хотел(а) заказать 2"
           },
           {
             "src": "/in-floor_heating/tab-1/fenix_adsv_18.jpg",
             "cardTitle": "Fenix ADSV 18",
-            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см."
+            "description": "Кабель для теплого пола используются для укладки в стяжку 3-8 см.",
+            "SKU": "3",
+            "optionalMessage": "Я бы хотел(а) заказать 3"
           }
         ]
       },
@@ -33,17 +41,23 @@
           {
             "src": "/in-floor_heating/tab-2/hemstedt_dr.jpg",
             "cardTitle": "Hemstedt DR",
-            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола."
+            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-2/Fenix_ADSV_10.JPG",
             "cardTitle": "Fenix ADSV 10",
-            "description": "Тонкий кабель для укладки под плитку. Монтаж производится на готовую стяжку под напольное покрытие в клеевой раствор или самовыравнивающую смесь. "
+            "description": "Тонкий кабель для укладки под плитку. Монтаж производится на готовую стяжку под напольное покрытие в клеевой раствор или самовыравнивающую смесь.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-2/Fenix_ADSA_12.JPG",
             "cardTitle": "Fenix ADSA 12",
-            "description": "Ультратонкий нагревательный кабель ADSA для укладки в плиточный клей для плитки или самовыравнивающую смесь."
+            "description": "Ультратонкий нагревательный кабель ADSA для укладки в плиточный клей для плитки или самовыравнивающую смесь.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       },
@@ -53,22 +67,30 @@
           {
             "src": "/in-floor_heating/tab-3/unifloor.jpg",
             "cardTitle": "Unifloor",
-            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола."
+            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-3/in-thermeco.jpg",
             "cardTitle": "In-Therm ECO",
-            "description": "Рекомендуем использование продукции Fenix и IN-THERM для укладки в плиточный клей"
+            "description": "Рекомендуем использование продукции Fenix и IN-THERM для укладки в плиточный клей",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-3/in-therm_ldts.jpg",
             "cardTitle": "In-Therm LDTS",
-            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола."
+            "description": "Нагревательные маты используются, когда необходимо минимально поднять уровень пола или для быстрого обогрева пола.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-3/fenix_ldts.jpg",
             "cardTitle": "Fenix LDTS",
-            "description": "Рекомендуем использование продукции Fenix и IN-THERM для укладки в плиточный клей"
+            "description": "Рекомендуем использование продукции Fenix и IN-THERM для укладки в плиточный клей",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       },
@@ -78,22 +100,30 @@
           {
             "src": "/in-floor_heating/tab-4/in-therm_t.png",
             "cardTitle": "In-Term T",
-            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания. "
+            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-4/in-therm_mh.png",
             "cardTitle": "In-Term MH",
-            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания. "
+            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-4/in-term_afmat.jpg",
             "cardTitle": "In-Therm AFMAT",
-            "description": "Алюминиевые маты используются для укладки под ламинат, паркетную доску и толстый ковролин (от 3 мм)."
+            "description": "Алюминиевые маты используются для укладки под ламинат, паркетную доску и толстый ковролин (от 3 мм).",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/in-floor_heating/tab-4/in-therm_aen.jpg",
             "cardTitle": "In-Term AEN",
-            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания. "
+            "description": "Нагревательная пленка состоит из нагревательного элемента (графита, параллельные черные полосы) и питающих медных шин для подвода питания.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       }
@@ -108,22 +138,30 @@
           {
             "src": "/thermostats/tab-1/eberle_rtr-e_61221.JPG",
             "cardTitle": "Eberle RTR-E 6121",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-1/in-therm_rtc_70.JPG",
             "cardTitle": "In-therm RTC 70",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-1/eberle_fre_525-31.JPG",
             "cardTitle": "Eberle FRE 525-31",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-1/eberle_f2a_50.JPG",
             "cardTitle": "Eberle F2A-50",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       },
@@ -133,22 +171,30 @@
           {
             "src": "/thermostats/tab-2/in-therm_wl51.jpg",
             "cardTitle": "In-therm WL51",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-2/in-therm_e51.JPG",
             "cardTitle": "In-therm Е51",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-2/in-therm_wl91.jpg",
             "cardTitle": "In-therm WL91",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-2/in-therm_e91.JPG",
             "cardTitle": "In-therm E91",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       },
@@ -158,22 +204,30 @@
           {
             "src": "/thermostats/tab-3/eberle_tft_524004.jpg",
             "cardTitle": "Eberle TFT 524 004",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-3/eberle_DTR-E.jpg",
             "cardTitle": "Eberle DTR-E",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-3/eberle_ITR-4.jpg",
             "cardTitle": "Eberle ITR-4",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/thermostats/tab-3/eberle_esd424003.jpg",
             "cardTitle": "Eberle ESD 424 003",
-            "description": ""
+            "description": "",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       }
@@ -188,22 +242,30 @@
           {
             "src": "/outdoor_heating/tab-1/in-therm_srl.jpg",
             "cardTitle": "In-Term SRL",
-            "description": "Кабель используется для обогрева крыш, труб и водостоков."
+            "description": "Кабель используется для обогрева крыш, труб и водостоков.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-1/hemstedt_das.jpg",
             "cardTitle": "Hemstedt DAS",
-            "description": "Кабель DAS со встроенным термостатом для обогрева крыш, водостоков и труб большого диаметра."
+            "description": "Кабель DAS со встроенным термостатом для обогрева крыш, водостоков и труб большого диаметра.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-1/eltrace_traseco.jpg",
             "cardTitle": "Eltrace TRASECO",
-            "description": "Кабель используется для обогрева крыш, труб и водостоков."
+            "description": "Кабель используется для обогрева крыш, труб и водостоков.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-1/fenix_adpsv.jpg",
             "cardTitle": "Fenix ADPSV",
-            "description": "Кабель ADPSV 30 Вт/м используется для обогрева водостоков, труб, открытых площадей, балконов."
+            "description": "Кабель ADPSV 30 Вт/м используется для обогрева водостоков, труб, открытых площадей, балконов.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       },
@@ -213,22 +275,30 @@
           {
             "src": "/outdoor_heating/tab-2/in-therm_srl.jpg",
             "cardTitle": "In-Therm SRL",
-            "description": "Кабель используется для обогрева крыш, труб и водостоков."
+            "description": "Кабель используется для обогрева крыш, труб и водостоков.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-2/hemstedt_fs_10.jpg",
             "cardTitle": "Hemstedt FS 10",
-            "description": "Кабель FS со встроенным термостатом для обогрева труб и водопроводов."
+            "description": "Кабель FS со встроенным термостатом для обогрева труб и водопроводов.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-2/hemstedt_das.jpg",
             "cardTitle": "Hemstedt DAS",
-            "description": "Кабель DAS со встроенным термостатом для обогрева крыш, водостоков и труб большого диаметра."
+            "description": "Кабель DAS со встроенным термостатом для обогрева крыш, водостоков и труб большого диаметра.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-2/eltrace_traseco.jpg",
             "cardTitle": "Eltrace TRASECO",
-            "description": "Кабель используется для обогрева крыш, труб и водостоков."
+            "description": "Кабель используется для обогрева крыш, труб и водостоков.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       },
@@ -238,12 +308,16 @@
           {
             "src": "/outdoor_heating/tab-3/fenix_adpsv.jpg",
             "cardTitle": "Fenix ADPSV",
-            "description": "Кабель ADPSV 30 Вт/м используется для обогрева водостоков, труб, открытых площадей, балконов."
+            "description": "Кабель ADPSV 30 Вт/м используется для обогрева водостоков, труб, открытых площадей, балконов.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           },
           {
             "src": "/outdoor_heating/tab-3/hemstedt_brf-im.jpg",
             "cardTitle": "Hemstedt BRF-IM ",
-            "description": "Кабель BRF-IM используется для обогрева водостоков, открытых площадей, балконов."
+            "description": "Кабель BRF-IM используется для обогрева водостоков, открытых площадей, балконов.",
+            "SKU": "eco_pdsv_20",
+            "optionalMessage": "Я бы хотел(а) заказать eco_pdsv_20"
           }
         ]
       }
