@@ -33,7 +33,6 @@
     node.type = type
   }
 
-  let sendersEmail: string
   switch (key) {
     case "support-email":
       message = customMessage ? customMessage : "Требуется помощь"
@@ -126,7 +125,7 @@
       return new Promise((resolve) => {
         timeOuts.push(
           window.setTimeout(() => {
-            sendersEmail = ""
+            requiredFields.email.fieldValue = ""
             promise = false
             ;[...(<any>toasts)].forEach((toast) => {
               const classes = toast.classList
