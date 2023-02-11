@@ -5,6 +5,7 @@
     //@ts-ignore
     ui("mode", newMode)
   }
+  import { page } from "$app/stores"
 </script>
 
 <header class="small-padding">
@@ -13,19 +14,19 @@
       <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
     </a>
     <div class="max" />
-    <a href="/about"
+    <a class:active={$page.route.id === "/about"} href="/about"
       ><button class="transparent no-round upper extra small-elevate"
         >О компании</button
       ></a>
-    <a href="/promos"
+    <a class:active={$page.route.id === "/promos"} href="/promos"
       ><button class="transparent no-round upper extra small-elevate"
         >акции</button
       ></a>
-    <a href="contacts"
+    <a class:active={$page.route.id === "/contacts"} href="/contacts"
       ><button class="transparent no-round upper extra small-elevate"
         >контакты</button
       ></a>
-    <a href="/catalog"
+    <a class:active={$page.route.id === "/catalog"} href="/catalog"
       ><button class="no-round border upper extra small-elevate y-border"
         >прайс</button
       ></a>
@@ -42,4 +43,14 @@
     top: 0
     z-index: 800
     border-bottom: 2px solid var(--primary)
+    a
+      text-decoration-color: transparent
+      transition: text-decoration-color 200ms ease-in-out
+      &:hover, &.active
+        text-decoration: underline
+        text-decoration-color: var(--primary)
+        text-decoration-thickness: 3px
+        text-decoration-style: solid
+        text-underline-offset: 5px
+
 </style>
