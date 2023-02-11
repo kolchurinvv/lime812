@@ -1,7 +1,49 @@
 <script lang="ts">
   import FeaturedProducts from "./home/FeaturedProducts.svelte"
-  import featuredProducts from "./home/featuredProducts.json"
   import GetCustomerEmail from "$lib/common/GetCustomerEmail.svelte"
+  import OrderModal from "$lib/common/OrderModal.svelte"
+  export let data: {
+    featuredProducts: [
+      | {
+          sectionTitle: string
+          tabContent: {
+            title: string
+            items: {
+              src: string
+              cardTitle: string
+              description: string
+              SKU: string
+              optionalMessage?: string | undefined
+            }[]
+          }[]
+        }
+      | undefined
+    ]
+  }
+  let unique: number = 0
+  let activeModal: boolean = false
+  let subject: string
+  let message: string | undefined
+  let orderItem: {
+    src: string
+    cardTitle: string
+    description: string
+    SKU: string
+    optionalMessage?: string
+  }
+  function openModal(item: {
+    src: string
+    cardTitle: string
+    description: string
+    SKU: string
+    optionalMessage?: string
+  }): void {
+    const { SKU } = item
+    orderItem = item
+    activeModal = true
+    subject = `Зaказ ${SKU}`
+    unique++
+  }
 
   import { Swiper, SwiperSlide } from "swiper/svelte"
   import { Autoplay, Pagination } from "swiper"
@@ -9,9 +51,14 @@
   import "swiper/scss"
   import "swiper/scss/pagination"
   import "@/theme/swiper.scss"
+  import { onDestroy } from "svelte"
+
+  onDestroy(() => {
+    unique = 0
+  })
 </script>
 
-<section class="jumbo-container">
+<section class="jumbo-container main-container">
   <div class="medium-padding jumbo-anno-box background">
     <div class="y-border large-padding jumbo-text">
       ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
@@ -40,10 +87,18 @@
       ><img src="/jumbo-slides/slide-3.png" alt="slide-3" /></SwiperSlide> -->
   </Swiper>
 </section>
-{#each featuredProducts as section, i}
-  <FeaturedProducts tabs={section} serialNumber={i.toLocaleString()} />
+{#each data.featuredProducts as section, i}
+  <FeaturedProducts
+    on:req:openModal={(payload) => {
+      openModal(payload.detail)
+    }}
+    tabs={section}
+    serialNumber={i.toString()} />
 {/each}
-<section class="primary-container medium-padding ">
+{#key unique}
+  <OrderModal active={activeModal} {subject} item={orderItem} />
+{/key}
+<section class="primary-container medium-padding wide">
   <div class="how-to-container main-container">
     <h4>Как заказать?</h4>
     <div class="steps">

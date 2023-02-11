@@ -1,8 +1,15 @@
 <script lang="ts">
-  import { onDestroy, onMount } from "svelte"
-  import OrderModal from "$lib/common/OrderModal.svelte"
-  let unique: number = 0
-
+  import { onDestroy, onMount, createEventDispatcher } from "svelte"
+  const dispatch = createEventDispatcher()
+  function openModal(item: {
+    src: string
+    cardTitle: string
+    description: string
+    SKU: string
+    optionalMessage?: string
+  }): void {
+    dispatch("req:openModal", item)
+  }
   export let serialNumber: string
   export let tabs: {
     sectionTitle: string
@@ -13,7 +20,7 @@
             src: string
             cardTitle: string
             description: string
-            SKU?: string | undefined
+            SKU: string
             optionalMessage?: string
           }[]
         }[]
@@ -39,18 +46,7 @@
       }, 200)
     )
   }
-  let activeModal: boolean = false
-  let subject: string
-  let message: string | undefined
-  function openModal(
-    SKU: string | undefined,
-    optionalMessage: string | undefined
-  ): void {
-    activeModal = true
-    subject = `Зaказ ${SKU}`
-    message = optionalMessage
-    unique++
-  }
+
   onMount(() => {
     // make first tab active
     const serialSelector = "0".concat(serialNumber)
@@ -64,11 +60,10 @@
     for (const tm of timeOuts) {
       clearTimeout(tm)
     }
-    unique = 0
   })
 </script>
 
-<section class="medium-padding">
+<section class="wide medium-padding">
   <div class="main-container">
     <h4>{tabs.sectionTitle}</h4>
     <nav class="no-space">
@@ -96,7 +91,7 @@
                 <nav>
                   <button
                     on:click={() => {
-                      openModal(item.SKU, item.optionalMessage)
+                      openModal(item)
                     }}
                     class="no-round primary-container bottom"
                     >заявка на продукт</button>
@@ -109,14 +104,10 @@
     </div>
   </div>
 </section>
-{#key unique}
-  <OrderModal active={activeModal} {subject} {message} />
-{/key}
 
 <style lang="sass">
-section:nth-child(2n-2)
+section:nth-child(even)
   background-color: var(--background)
-
 section > div
   text-transform: uppercase
   h4::after

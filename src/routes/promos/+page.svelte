@@ -42,23 +42,23 @@
         <h6>Предлагаем сотрудничество:</h6>
 
         <div class="row">
-          <i class="light-green-text">check_circle</i>
+          <i style="color: var(--primary)">check_circle</i>
           <div class="max">строительным бригадам</div>
         </div>
         <div class="row">
-          <i class="light-green-text">check_circle</i>
+          <i style="color: var(--primary)">check_circle</i>
           <div class="max">отделочникам</div>
         </div>
         <div class="row">
-          <i class="light-green-text">check_circle</i>
+          <i style="color: var(--primary)">check_circle</i>
           <div class="max">проектным и дизайнерским бюро</div>
         </div>
         <div class="row">
-          <i class="light-green-text">check_circle</i>
+          <i style="color: var(--primary)">check_circle</i>
           <div class="max">торговым предприятиям</div>
         </div>
         <div class="row">
-          <i class="light-green-text">check_circle</i>
+          <i style="color: var(--primary)">check_circle</i>
           <div class="max">маркетплейсам</div>
         </div>
         <p>
