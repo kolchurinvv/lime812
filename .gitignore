@@ -188,6 +188,7 @@ package
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 !.vscode/firefox
+!.vscode/scripts
 
 # Local History for Visual Studio Code
 .history/

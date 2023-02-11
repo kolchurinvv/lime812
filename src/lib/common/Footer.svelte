@@ -23,9 +23,7 @@
     </nav>
     <div class="help">
       <h6>поддержка</h6>
-      <GetCustomerEmail
-        key="support-email"
-        placeholderText="свяжитесь с нами" />
+      <GetCustomerEmail key="support-email" />
     </div>
   </div>
 </footer>

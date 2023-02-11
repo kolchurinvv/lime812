@@ -1,6 +1,6 @@
 import { sveltekit } from "@sveltejs/kit/vite"
 import { defineConfig, loadEnv } from "vite"
-import path from "path"
+// import path from "path"
 // TODO create a plugin that hooks into HMR to regenerate the theme when change is detected
 
 const config = defineConfig(({ mode }) => {
@@ -13,12 +13,12 @@ const config = defineConfig(({ mode }) => {
         strict: false,
       },
     },
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "./src"),
-        "@@": path.resolve(__dirname, "./"),
-      },
-    },
+    // resolve: {
+    //   alias: {
+    //     "@": path.resolve(__dirname, "./src"),
+    //     "@@": path.resolve(__dirname, "./"),
+    //   },
+    // },
   }
 })
 

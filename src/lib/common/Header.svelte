@@ -1,11 +1,13 @@
 <script lang="ts">
+  import { page } from "$app/stores"
+  import { mode } from "$lib/store/ui"
   const modeToggle = () => {
     //@ts-ignore
     const newMode = ui("mode") == "dark" ? "light" : "dark"
+    mode.set(newMode === "dark")
     //@ts-ignore
     ui("mode", newMode)
   }
-  import { page } from "$app/stores"
 </script>
 
 <header class="small-padding">
@@ -14,26 +16,31 @@
       <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
     </a>
     <div class="max" />
-    <a class:active={$page.route.id === "/"} href="/"
-      ><button class="transparent no-round upper extra small-elevate"
-        >Главная</button
-      ></a>
-    <a class:active={$page.route.id === "/about"} href="/about"
-      ><button class="transparent no-round upper extra small-elevate"
-        >О компании</button
-      ></a>
-    <a class:active={$page.route.id === "/promos"} href="/promos"
-      ><button class="transparent no-round upper extra small-elevate"
-        >акции</button
-      ></a>
-    <a class:active={$page.route.id === "/contacts"} href="/contacts"
-      ><button class="transparent no-round upper extra small-elevate"
-        >контакты</button
-      ></a>
-    <a class:active={$page.route.id === "/catalog"} href="/catalog"
-      ><button class="no-round border upper extra small-elevate y-border"
-        >прайс</button
-      ></a>
+    <a class:active={$page.route.id === "/"} href="/">
+      <button class="transparent no-round upper extra small-elevate">
+        Главная
+      </button>
+    </a>
+    <a class:active={$page.route.id === "/about"} href="/about">
+      <button class="transparent no-round upper extra small-elevate">
+        О компании
+      </button>
+    </a>
+    <a class:active={$page.route.id === "/promos"} href="/promos">
+      <button class="transparent no-round upper extra small-elevate">
+        акции
+      </button>
+    </a>
+    <a class:active={$page.route.id === "/contacts"} href="/contacts">
+      <button class="transparent no-round upper extra small-elevate">
+        контакты
+      </button>
+    </a>
+    <a class:active={$page.route.id === "/catalog"} href="/catalog">
+      <button class="no-round border upper extra small-elevate y-border">
+        прайс
+      </button>
+    </a>
     <button on:click={modeToggle} class="circle transparent">
       <i>light_mode</i>
     </button>

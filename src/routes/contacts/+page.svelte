@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { mode } from "$lib/store/ui"
+</script>
+
 <section class="contacts-grid">
   <div>
     <h4>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛАЙМ"</h4>
@@ -8,7 +12,7 @@
     </div>
   </div>
   <div>
-    <h4 class="with-line">Адрес:</h4>
+    <h4 class="with-line">Адрес</h4>
     <h6>
       <i>location_on</i>
       191144, РФ, город Санкт-Петербург, улица 8-я Советская, 48, литера А, помещение
@@ -71,6 +75,7 @@
     </ul>
   </div>
   <iframe
+    class:dark-map={$mode}
     title="location"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.844463347586!2d30.374978337534746!3d59.9347230239013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963195fbc31ab5%3A0x5078bf29fd779338!2s8-Ya%20Sovetskaya%20Ulitsa%2C%2048%2C%20Sankt-Peterburg%2C%20Russia%2C%20191036!5e0!3m2!1sen!2scz!4v1675203306891!5m2!1sen!2scz"
     width="600"
@@ -106,4 +111,6 @@
     height: 2px
     margin: auto 0 17px 40px
     background: var(--primary)
+  .dark-map
+    filter: invert(82%) contrast(83%)
 </style>
