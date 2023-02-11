@@ -14,6 +14,10 @@
       <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
     </a>
     <div class="max" />
+    <a class:active={$page.route.id === "/"} href="/"
+      ><button class="transparent no-round upper extra small-elevate"
+        >Главная</button
+      ></a>
     <a class:active={$page.route.id === "/about"} href="/about"
       ><button class="transparent no-round upper extra small-elevate"
         >О компании</button
