@@ -5,7 +5,12 @@
 <footer class="secondary-container bottom">
   <div class="footer-content-grid main-container">
     <div class="location">
-      <img src="/logo-w.png" alt="logo-alt" />
+      <a href="/">
+        <img
+          src="/new-logos/logo-black-bg.svg"
+          alt="logo"
+          style="height: 80px" />
+      </a>
       <h6>Магазин-склад ООО «ЛАЙМ»</h6>
       <p>191144, Санкт-Петербург, 8-я Советская, 48, лит А, пом 14Н</p>
       <p>
