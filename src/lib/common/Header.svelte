@@ -13,7 +13,12 @@
 <header class="small-padding">
   <nav class="main-container">
     <a href="/">
-      <img src="/home-logo.png" alt="logo" style="max-height: 80px" />
+      <img
+        src={$mode
+          ? "/new-logos/logo-black-bg.svg"
+          : "/new-logos/logo-white-bg.svg"}
+        alt="logo"
+        style="height: 80px" />
     </a>
     <div class="max" />
     <a class:active={$page.route.id === "/"} href="/">
