@@ -5,6 +5,7 @@ body.light {
   --on-primary-alt: #232323;
   --primary-container: #fbde1b;
   --on-primary-container: #21005e;
+  --primary-accent: #237131;
   --secondary: #1b262e;
   --on-secondary: #ffffff;
   --secondary-container: #1b262e;
@@ -47,8 +48,10 @@ body.light {
 body.dark {
   --primary: #b7a218;
   --on-primary: #232323;
+  --on-primary-alt: #fff;
   --primary-container: #b7a218;
   --on-primary-container: #eaddff;
+  --primary-accent: #237131;
   --secondary: #1b262e;
   --on-secondary: #332d41;
   --secondary-container: #1b262e;

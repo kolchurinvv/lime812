@@ -1,6 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores"
   import { mode } from "$lib/store/ui"
+  import Logo from "@/lib/common/logo.svelte"
+
   const modeToggle = () => {
     //@ts-ignore
     const newMode = ui("mode") == "dark" ? "light" : "dark"
@@ -13,12 +15,7 @@
 <header class="small-padding">
   <nav class="main-container">
     <a href="/">
-      <img
-        src={$mode
-          ? "/new-logos/logo-black-bg.svg"
-          : "/new-logos/logo-white-bg.svg"}
-        alt="logo"
-        style="height: 80px" />
+      <Logo style={{ style: "width: 160px" }} />
     </a>
     <div class="max" />
     <a class:active={$page.route.id === "/"} href="/">

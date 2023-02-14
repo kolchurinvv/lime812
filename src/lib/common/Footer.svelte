@@ -1,15 +1,13 @@
 <script lang="ts">
   import GetCustomerEmail from "./GetCustomerEmail.svelte"
+  import Logo from "@/lib/common/logo.svelte"
 </script>
 
 <footer class="secondary-container bottom">
   <div class="footer-content-grid main-container">
     <div class="location">
       <a href="/">
-        <img
-          src="/new-logos/logo-black-bg.svg"
-          alt="logo"
-          style="height: 80px" />
+        <Logo style={{ style: "width: 160px", wordColor: "fill: #FFF" }} />
       </a>
       <h6>Магазин-склад ООО «ЛАЙМ»</h6>
       <p>191144, Санкт-Петербург, 8-я Советская, 48, лит А, пом 14Н</p>
@@ -45,10 +43,10 @@
       flex-direction: column
       align-items: flex-start
       margin-top: 1em
-    .location
-      img
-        max-width: 100%
-        object-fit: contain
+    // .location
+    //   img
+    //     max-width: 100%
+    //     object-fit: contain
     .links
       grid-column: 3
 </style>
