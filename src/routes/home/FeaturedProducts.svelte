@@ -1,13 +1,8 @@
 <script lang="ts">
   import { onDestroy, onMount, createEventDispatcher } from "svelte"
+  import type { purchaseItem } from "$lib/types/emailOrder"
   const dispatch = createEventDispatcher()
-  function openModal(item: {
-    src: string
-    cardTitle: string
-    description: string
-    SKU: string
-    optionalMessage?: string
-  }): void {
+  function openModal(item: purchaseItem): void {
     dispatch("req:openModal", item)
   }
   export let serialNumber: string
@@ -70,17 +65,22 @@
       {#each tabs.tabContent as tab, index}
         <button
           on:click={(e) => selectElement(e)}
-          class="y-border no-round transparent tab-title primary filled"
-          data-ui="#page{index}{serialNumber}">{tab.title}</button>
+          class="y-border transparent tab-title primary filled"
+          data-ui="#page{index}{serialNumber}"
+          class:no-round={index !== 0 && index !== tabs.tabContent.length - 1}
+          class:left-round={index === 0}
+          class:right-round={index === tabs.tabContent.length - 1}>
+          {tab.title}
+        </button>
       {/each}
     </nav>
     <div class="featured-products">
       {#each tabs.tabContent as tab, index}
         <div class="page right" id="page{index}{serialNumber}">
           {#each tab.items as item}
-            <article class="no-padding no-round">
+            <article class="no-padding round  ">
               <img
-                class="responsive small no-round"
+                class="responsive top-round"
                 alt="featured product"
                 src={item.src} />
               <div class="padding">
@@ -93,8 +93,9 @@
                     on:click={() => {
                       openModal(item)
                     }}
-                    class="no-round primary-container bottom"
-                    >заявка на продукт</button>
+                    class=" primary-container bottom">
+                    заявка на продукт
+                  </button>
                 </nav>
               </div>
             </article>

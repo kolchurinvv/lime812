@@ -1,6 +1,5 @@
 <script lang="ts">
   import FeaturedProducts from "./home/FeaturedProducts.svelte"
-  import GetCustomerEmail from "$lib/common/GetCustomerEmail.svelte"
   import OrderModal from "$lib/common/OrderModal.svelte"
   export let data: {
     featuredProducts: [
@@ -23,7 +22,6 @@
   let unique: number = 0
   let activeModal: boolean = false
   let subject: string
-  let message: string | undefined
   let orderItem: {
     src: string
     cardTitle: string
@@ -52,6 +50,7 @@
   import "swiper/scss/pagination"
   import "@/theme/swiper.scss"
   import { onDestroy } from "svelte"
+  import EmailForm from "@/lib/common/EmailForm.svelte"
 
   onDestroy(() => {
     unique = 0
@@ -59,30 +58,32 @@
 </script>
 
 <section class="jumbo-container main-container">
-  <div class="medium-padding jumbo-anno-box background">
-    <div class="y-border large-padding jumbo-text">
+  <div class="large-padding round small-elevate jumbo-anno-box background">
+    <div class="y-border round large-padding jumbo-text">
       ЭЛЕКТРИЧЕСКИЙ ТЕПЛЫЙ ПОЛ
     </div>
     <p>ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
-    <a
-      href="/catalog"
-      class="no-margin small-padding no-round primary-container">прайсы</a>
+    <a href="/catalog" class="no-margin small-padding round primary-container">
+      прайсы
+    </a>
   </div>
 
   <Swiper
     spaceBetween={30}
     centeredSlides={true}
     pagination
+    modules={[Autoplay, Pagination]}
     autoplay={{
       delay: 3500,
       disableOnInteraction: false,
     }}
-    modules={[Autoplay, Pagination]}
     class="mySwiper">
-    <SwiperSlide
-      ><img src="/jumbo-slides/slide-1.png" alt="slide-1" /></SwiperSlide>
-    <SwiperSlide
-      ><img src="/jumbo-slides/slide-2.png" alt="slide-2" /></SwiperSlide>
+    <SwiperSlide>
+      <img src="/jumbo-slides/slide-1.png" alt="slide-1" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <img src="/jumbo-slides/slide-2.png" alt="slide-2" />
+    </SwiperSlide>
     <!-- <SwiperSlide
       ><img src="/jumbo-slides/slide-3.png" alt="slide-3" /></SwiperSlide> -->
   </Swiper>
@@ -111,7 +112,8 @@
             оставьте ваш почтовый адресс, и мы вам обязательно напишем.
           </p>
         </div>
-        <GetCustomerEmail key="order-email" />
+        <!-- <GetCustomerEmail key="order-email" /> -->
+        <EmailForm key="order-email" />
       </div>
     </div>
   </div>

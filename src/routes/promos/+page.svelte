@@ -1,7 +1,10 @@
 <article class="no-padding">
   <div class="grid no-space">
     <div class="s6">
-      <img class="responsive" src="/fill-in-imgs/foto10.jpg" alt="promo-img" />
+      <img
+        class="responsive y-border"
+        src="/fill-in-imgs/foto10.jpg"
+        alt="promo-img" />
       <div class="absolute top left right padding top-shadow white-text">
         <h5>Январская скидка 15%</h5>
         <p>по промокоду «ЛАЙМ»</p>
@@ -14,9 +17,10 @@
             href="https://in-therm.com/catalogs/"
             target="_blank"
             rel="noopener noreferrer"
-            style="text-decoration: underline;"
-            >In-Therm.com
-          </a> участвуют в акции!
+            style="text-decoration: underline;">
+            In-Therm.com
+          </a>
+           участвуют в акции!
         </p>
         <p>
           При заказе и оформлении товара на сайте партнера в комментариях
@@ -32,7 +36,10 @@
 <article class="no-padding">
   <div class="grid no-space">
     <div class="s6">
-      <img class="responsive" src="/fill-in-imgs/foto13.jpg" alt="promo-img" />
+      <img
+        class="responsive y-border"
+        src="/fill-in-imgs/foto13.jpg"
+        alt="promo-img" />
       <div class="absolute top left right padding top-shadow white-text">
         <h5>Предложение о сотрудничестве - 2023</h5>
       </div>
@@ -70,7 +77,8 @@
           Отправьте на почту <a
             href="mailto:plant812lime@gmail.com?subject=Сотрудничесво">
             plant812lime@gmail.com
-          </a>запрос на получение договора поставки – и скидка «приоритет»
+          </a>
+          запрос на получение договора поставки – и скидка «приоритет»
           активируется
         </p>
         <p>

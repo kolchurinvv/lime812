@@ -1,16 +1,12 @@
 <script lang="ts">
   import { onDestroy, SvelteComponentTyped } from "svelte"
-  import GetCustomerEmail from "./GetCustomerEmail.svelte"
+  import type { purchaseItem } from "@/lib/types/emailOrder"
+  // import GetCustomerEmail from "./GetCustomerEmail.svelte"
+  import EmailForm from "./EmailForm.svelte"
   export let active: boolean = false
   export let subject: string | undefined
 
-  export let item: {
-    src: string
-    cardTitle: string
-    description: string
-    SKU: string
-    optionalMessage?: string
-  } = {
+  export let item: purchaseItem = {
     src: "",
     cardTitle: "",
     description: "",
@@ -39,14 +35,14 @@
       optionalMessage: "",
     }
   })
-  let send: SvelteComponentTyped
+  // let send: SvelteComponentTyped
 </script>
 
 <div class="modal max" class:active={active === true}>
   <section class="order-container">
-    <article class="no-padding no-round">
+    <article class="no-padding ">
       <img
-        class="responsive small no-round"
+        class="responsive  top-round"
         alt="featured product"
         src={item.src} />
       <div class="padding">
@@ -56,8 +52,25 @@
         </p>
       </div>
     </article>
-
-    <GetCustomerEmail
+    <EmailForm
+      {templateId}
+      key="purchase-order"
+      expanded={true}
+      maxModal={true}
+      optional={false}
+      {item}
+      labelText="Суть заказа:"
+      on:close={() => {
+        closeDialog()
+      }}>
+      <nav slot="customActions">
+        <button class="primary-container" type="submit">заказать</button>
+        <button class="primary-container" on:click={() => closeDialog()}>
+          отменить
+        </button>
+      </nav>
+    </EmailForm>
+    <!-- <GetCustomerEmail
       key="purchase-order"
       customMessage={item.optionalMessage}
       required={false}
@@ -67,8 +80,9 @@
       {templateId}
       bind:this={send}>
       <nav slot="customActions">
-        <button class="primary-container" on:click={() => closeDialog()}
-          >отменить</button>
+        <button class="primary-container" on:click={() => closeDialog()}>
+          отменить
+        </button>
         <button
           class="primary-container"
           on:click={async (e) => {
@@ -76,9 +90,11 @@
             if (res === 200) {
               closeDialog()
             }
-          }}>заказать</button>
+          }}>
+          заказать
+        </button>
       </nav>
-    </GetCustomerEmail>
+    </GetCustomerEmail> -->
   </section>
 </div>
 
@@ -92,13 +108,14 @@
       display: flex
       flex-direction: column
       justify-content: center
-      button
-        text-transform: capitalize
+      // button
+      //   text-transform: capitalize
       article 
         display: flex
         flex-grow: 0
         width: 250px
         flex-direction: column
+        margin-bottom: 32rem
         & > img
           object-fit: contain
         & > div

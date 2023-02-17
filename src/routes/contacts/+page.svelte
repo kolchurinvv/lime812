@@ -4,7 +4,7 @@
 
 <section class="contacts-grid">
   <div>
-    <h4>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛАЙМ"</h4>
+    <h4>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «ЛАЙМ»</h4>
     <div class="with-line">
       <span>ИНН: 7842208838</span>
       <br />
@@ -19,9 +19,9 @@
       14-H
     </h6>
     <h6>
-      <a href="tel:+7-965-064-8741">
+      <a href="tel:8-800-700-4332">
         <i>phone</i>
-        +7-965-064-8741
+        8-800-700-4332
       </a>
     </h6>
   </div>
@@ -41,7 +41,9 @@
     </p>
     <ul class="socials">
       <li>
-        <a href="mailto:plant812lime@gmail.com?subject=Запрос Обратной Связи">
+        <a
+          class="medium-elevate round"
+          href="mailto:plant812lime@gmail.com?subject=Запрос Обратной Связи">
           <i>alternate_email</i>
           <div class="tooltip tertiary-container small-elevate left">
             plant812lime@gmail.com
@@ -49,7 +51,7 @@
         </a>
       </li>
       <li>
-        <a href="https://vk.com/public217958875">
+        <a class="medium-elevate round" href="https://vk.com/public217958875">
           <img src="/icons/vk.svg" alt="vk logo" />
           <div class="tooltip tertiary-container small-elevate left">
             https://vk.com/public217958875
@@ -57,7 +59,7 @@
         </a>
       </li>
       <li>
-        <a href="https://t.me/LimeCompany812">
+        <a class="medium-elevate round" href="https://t.me/LimeCompany812">
           <img src="/icons/telegram.svg" alt="telegram logo" />
           <div class="tooltip tertiary-container small-elevate left">
             https://t.me/LimeCompany812
@@ -65,10 +67,10 @@
         </a>
       </li>
       <li>
-        <a href="tel:+7-965-064-8741">
+        <a class="medium-elevate round" href="tel:8-800-700-4332">
           <i>phone</i>
           <div class="tooltip tertiary-container small-elevate left">
-            +7-965-064-8741
+            8-800-700-4332
           </div>
         </a>
       </li>
@@ -76,6 +78,7 @@
   </div>
   <iframe
     class:dark-map={$mode}
+    class="round small-elevate y-border"
     title="location"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.844463347586!2d30.374978337534746!3d59.9347230239013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963195fbc31ab5%3A0x5078bf29fd779338!2s8-Ya%20Sovetskaya%20Ulitsa%2C%2048%2C%20Sankt-Peterburg%2C%20Russia%2C%20191036!5e0!3m2!1sen!2scz!4v1675203306891!5m2!1sen!2scz"
     width="600"
@@ -90,6 +93,7 @@
   display: grid
   grid-template-columns: 1fr 1fr
   column-gap: 1em
+  padding-bottom: 1em
   .socials
     position: absolute
     bottom: 0

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import GetCustomerEmail from "./GetCustomerEmail.svelte"
   import Logo from "@/lib/common/logo.svelte"
+  import EmailForm from "./EmailForm.svelte"
 </script>
 
 <footer class="secondary-container bottom">
@@ -26,7 +26,7 @@
     </nav>
     <div class="help">
       <h6>поддержка</h6>
-      <GetCustomerEmail key="support-email" />
+      <EmailForm key="support-email" />
     </div>
   </div>
 </footer>

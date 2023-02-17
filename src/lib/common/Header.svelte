@@ -18,30 +18,21 @@
       <Logo style={{ style: "width: 160px" }} />
     </a>
     <div class="max" />
+    <a style="text-s" href="tel:8-800-700-4332">8-800-700-4332</a>
     <a class:active={$page.route.id === "/"} href="/">
-      <button class="transparent no-round upper extra small-elevate">
-        Главная
-      </button>
+      <button class="transparent  upper extra small-elevate">Главная</button>
     </a>
     <a class:active={$page.route.id === "/about"} href="/about">
-      <button class="transparent no-round upper extra small-elevate">
-        О компании
-      </button>
+      <button class="transparent  upper extra small-elevate">О компании</button>
     </a>
     <a class:active={$page.route.id === "/promos"} href="/promos">
-      <button class="transparent no-round upper extra small-elevate">
-        акции
-      </button>
+      <button class="transparent  upper extra small-elevate">акции</button>
     </a>
     <a class:active={$page.route.id === "/contacts"} href="/contacts">
-      <button class="transparent no-round upper extra small-elevate">
-        контакты
-      </button>
+      <button class="transparent  upper extra small-elevate">контакты</button>
     </a>
     <a class:active={$page.route.id === "/catalog"} href="/catalog">
-      <button class="no-round border upper extra small-elevate y-border">
-        прайс
-      </button>
+      <button class=" border upper extra small-elevate y-border">прайс</button>
     </a>
     <button on:click={modeToggle} class="circle transparent">
       <i>light_mode</i>

@@ -61,6 +61,7 @@ li
   list-style-type: none
 img
   max-width: 34em
+  border-radius: 8rem
 .about-grid
   display: grid
   grid-template-columns: 1fr 3fr
