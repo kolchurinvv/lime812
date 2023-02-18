@@ -53,7 +53,7 @@
           class="medium-elevate round"
           href="mailto:plant812lime@gmail.com?subject=Запрос Обратной Связи">
           <i>alternate_email</i>
-          <div class="tooltip tertiary-container small-elevate left">
+          <div class="tooltip primary-container small-elevate left">
             plant812lime@gmail.com
           </div>
         </a>
@@ -61,7 +61,7 @@
       <li>
         <a class="medium-elevate round" href="https://vk.com/public217958875">
           <img src="/icons/vk.svg" alt="vk logo" />
-          <div class="tooltip tertiary-container small-elevate left">
+          <div class="tooltip primary-container small-elevate left">
             https://vk.com/public217958875
           </div>
         </a>
@@ -69,7 +69,7 @@
       <li>
         <a class="medium-elevate round" href="https://t.me/LimeCompany812">
           <img src="/icons/telegram.svg" alt="telegram logo" />
-          <div class="tooltip tertiary-container small-elevate left">
+          <div class="tooltip primary-container small-elevate left">
             https://t.me/LimeCompany812
           </div>
         </a>
@@ -77,7 +77,7 @@
       <li>
         <a class="medium-elevate round" href="tel:8-800-700-4332">
           <i>phone</i>
-          <div class="tooltip tertiary-container small-elevate left">
+          <div class="tooltip primary-container small-elevate left">
             8-800-700-4332
           </div>
         </a>

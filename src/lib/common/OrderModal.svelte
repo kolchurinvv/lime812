@@ -64,37 +64,12 @@
         closeDialog()
       }}>
       <nav slot="customActions">
-        <button class="primary-container" type="submit">заказать</button>
-        <button class="primary-container" on:click={() => closeDialog()}>
+        <button class="accent-container" type="submit">заказать</button>
+        <button class="tertiary-container" on:click={() => closeDialog()}>
           отменить
         </button>
       </nav>
     </EmailForm>
-    <!-- <GetCustomerEmail
-      key="purchase-order"
-      customMessage={item.optionalMessage}
-      required={false}
-      maxModal={true}
-      expanded={true}
-      labelText="Суть заказа:"
-      {templateId}
-      bind:this={send}>
-      <nav slot="customActions">
-        <button class="primary-container" on:click={() => closeDialog()}>
-          отменить
-        </button>
-        <button
-          class="primary-container"
-          on:click={async (e) => {
-            const res = await send.submitEmail(e)
-            if (res === 200) {
-              closeDialog()
-            }
-          }}>
-          заказать
-        </button>
-      </nav>
-    </GetCustomerEmail> -->
   </section>
 </div>
 
@@ -103,19 +78,15 @@
     z-index: 9999
     .order-container
       max-width: 500px
-      height: 100%
       margin: 0 auto
       display: flex
       flex-direction: column
       justify-content: center
-      // button
-      //   text-transform: capitalize
       article 
         display: flex
         flex-grow: 0
         width: 250px
         flex-direction: column
-        margin-bottom: 32rem
         & > img
           object-fit: contain
         & > div
@@ -123,4 +94,7 @@
           flex-grow: 1
           flex-direction: column
           justify-content: space-between
+      .accent-container
+        background-color: var(--primary-accent)
+
 </style>

@@ -35,7 +35,7 @@
   .footer-content-grid
     padding-top: 1em
     display: grid
-    grid-template-columns: 1.5fr 1fr 1fr 1fr
+    grid-template-columns: 1.5fr 1fr 1fr
     column-gap: 2em
     & > *
       text-transform: capitalize
@@ -43,10 +43,6 @@
       flex-direction: column
       align-items: flex-start
       margin-top: 1em
-    // .location
-    //   img
-    //     max-width: 100%
-    //     object-fit: contain
     .links
-      grid-column: 3
+      grid-column: 2
 </style>

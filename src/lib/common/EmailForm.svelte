@@ -219,6 +219,16 @@
         <span class="helper">необязательное поле</span>
       {/if}
     </div>
+    <div class="data-processing-info">
+      <p>
+        Отправив сообщение, Вы даете согласие на обработку персональных данных в
+        соответствии с законом от 27.07.2006 №152-ФЗ "О персональных данных."
+      </p>
+      <p>
+        <i>verified_user</i>
+        Мы гарантируем безопасность и сохранность Ваших данных.
+      </p>
+    </div>
   {/if}
   <slot name="customActions" />
 </form>
@@ -257,5 +267,9 @@ form
     right: 0
     &.primary-alt
       color: var(--on-primary-alt)
+  .data-processing-info
+    font-size: 0.75em
+    text-transform: initial
+
 
 </style>
