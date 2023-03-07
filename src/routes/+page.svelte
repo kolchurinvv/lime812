@@ -112,7 +112,6 @@
             оставьте ваш почтовый адресс, и мы вам обязательно напишем.
           </p>
         </div>
-        <!-- <GetCustomerEmail key="order-email" /> -->
         <EmailForm key="order-email" />
       </div>
     </div>
