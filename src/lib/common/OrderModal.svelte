@@ -94,7 +94,5 @@
           flex-grow: 1
           flex-direction: column
           justify-content: space-between
-      .accent-container
-        background-color: var(--primary-accent)
 
 </style>
