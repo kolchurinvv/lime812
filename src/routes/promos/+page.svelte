@@ -3,32 +3,43 @@
     <div class="s6">
       <img
         class="responsive y-border"
-        src="/fill-in-imgs/foto10.jpg"
+        src="/fill-in-imgs/15-off.png"
         alt="promo-img" />
       <div class="absolute top left right padding top-shadow white-text">
-        <h5>Январская скидка 15%</h5>
-        <p>по промокоду «ЛАЙМ»</p>
+        <h5>Промокод "ТОЧКА"</h5>
+        <p>гарантирует скидку 15%</p>
       </div>
     </div>
     <div class="s6">
       <div class="padding">
         <p>
-          Все товары сайта <a
-            href="https://in-therm.com/catalogs/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="text-decoration: underline;">
-            In-Therm.com
-          </a>
-          участвуют в акции!
+          Всем организациям, которые имеют расчетный счет в
+          <span class="bold underline">
+            банке "ТОЧКА",
+            <div class="tooltip primary-container small-elevate top">
+              ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ", БИК 044525999
+            </div>
+          </span>
+          компания "ЛАЙМ" предоставляет скидку 15% на материалы для обустройства
+          теплого электрического пола.
         </p>
         <p>
-          При заказе и оформлении товара на сайте партнера в комментариях
-          укажите промокод "ЛАЙМ" и получите скидку 15% от заявленной цены на
-          сайте. Данная скидка действует на все товары, представленные на сайте.
+          Для активации 15% - скидки необходимо зайти на сайт "ТОЧКА-ВИТРИНА" и
+          оформить заявку на товар компании "ЛАЙМ".
         </p>
-        <p>Условия акции: промокод "ЛАЙМ"</p>
-        <p>Срок окончания: 31.01.2023</p>
+        <p>
+          Все цены для оптовых покупателей размещены на <a
+            class="link"
+            href="/">
+            lime812.com
+          </a>
+          в разделе
+          <a class="link" href="/catalog">Прайс</a>
+        </p>
+        <p>
+          <span class="bold">Срок окончания:</span>
+          31.12.2023
+        </p>
       </div>
     </div>
   </div>
@@ -75,6 +86,7 @@
         </p>
         <p>
           Отправьте на почту <a
+            class="link"
             href="mailto:plant812lime@gmail.com?subject=Сотрудничесво">
             plant812lime@gmail.com
           </a>
@@ -88,8 +100,47 @@
     </div>
   </div>
 </article>
+<article class="no-padding">
+  <div class="grid no-space">
+    <div class="s6">
+      <img
+        class="responsive y-border"
+        src="/fill-in-imgs/foto10.jpg"
+        alt="promo-img" />
+      <div class="absolute top left right padding top-shadow white-text">
+        <h5>Январская скидка 15%</h5>
+        <p>по промокоду «ЛАЙМ»</p>
+      </div>
+    </div>
+    <div class="s6">
+      <div class="padding">
+        <p>
+          Все товары сайта <a
+            href="https://in-therm.com/catalogs/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: underline;">
+            In-Therm.com
+          </a>
+          участвуют в акции!
+        </p>
+        <p>
+          При заказе и оформлении товара на сайте партнера в комментариях
+          укажите промокод "ЛАЙМ" и получите скидку 15% от заявленной цены на
+          сайте. Данная скидка действует на все товары, представленные на сайте.
+        </p>
+        <p>Условия акции: промокод "ЛАЙМ"</p>
+        <p>Срок окончания: 31.01.2023</p>
+      </div>
+    </div>
+  </div>
+</article>
 
 <style lang="sass">
   article:last-child
     margin-bottom: 16rem
+  span
+    display: inline-block
+  .tooltip.top
+    top: -5px
 </style>
