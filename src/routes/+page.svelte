@@ -135,34 +135,36 @@
     justify-self: start
     font-weight: 900
 
-.how-to-container
-  color: var(--on-primary-alt)
-  text-transform: uppercase
-  h4::after
-    content: ''
-    display: inline-block
-    width: 90px
-    height: 2px
-    margin: auto 0 17px 40px
-    background: var(--on-primary-alt)
-  .steps
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    column-gap: 2em
-    .request-container
-      grid-column: 2
-      .request
-        p
-          text-transform: initial
-      &::before
-        content: ''
-        display: inline-block
-        background-image: url('/icons/checklist.png')
-        background-position: center
-        background-repeat: no-repeat
-        background-size: contain
-        width: 50px
-        height: 50px
-        position: absolute
-        left: -55px
+section
+  margin-bottom: -2em
+  .how-to-container
+    color: var(--on-primary-alt)
+    text-transform: uppercase
+    h4::after
+      content: ''
+      display: inline-block
+      width: 90px
+      height: 2px
+      margin: auto 0 17px 40px
+      background: var(--on-primary-alt)
+    .steps
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      column-gap: 2em
+      .request-container
+        grid-column: 2
+        .request
+          p
+            text-transform: initial
+        &::before
+          content: ''
+          display: inline-block
+          background-image: url('/icons/checklist.png')
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          width: 50px
+          height: 50px
+          position: absolute
+          left: -55px
 </style>
