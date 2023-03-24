@@ -3,6 +3,46 @@
     <div class="s6">
       <img
         class="responsive y-border"
+        src="/promos/house_tools.jpg"
+        alt="дом и строительство" />
+      <div class="absolute top left right padding top-shadow white-text">
+        <h5>Услуги по ремонту помещений</h5>
+        <p>проведение реновации, строительные работы</p>
+      </div>
+    </div>
+    <div class="s6">
+      <div class="padding">
+        <p>
+          Наша компания предлагает организациям и физическим лицам комплексные
+          работы по ремонту жилых, офисных помещений.
+        </p>
+        <p>
+          Специалисты помогут разработать дизайн-проект, рассчитать смету и
+          провести аудит предполагаемого объема работ.
+        </p>
+        <p>
+          Вы сможете решить вопрос косметического ремонта, а также задачи
+          капитального ремонта и переоборудования.
+        </p>
+        <p>
+          Подробности на
+          <a
+            class="link"
+            href="https://profiremont-spb.ru/"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://profiremont-spb.ru/
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="no-padding">
+  <div class="grid no-space">
+    <div class="s6">
+      <img
+        class="responsive y-border"
         src="/fill-in-imgs/15-off.png"
         alt="promo-img" />
       <div class="absolute top left right padding top-shadow white-text">
