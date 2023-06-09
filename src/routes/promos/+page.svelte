@@ -3,6 +3,29 @@
     <div class="s6">
       <img
         class="responsive y-border"
+        src="/promos/permium-granite.jpg"
+        alt="дом и строительство" />
+      <div class="absolute top left right padding top-shadow white-text">
+        <h5>Гранит премиум-класса</h5>
+      </div>
+    </div>
+    <div class="s6">
+      <div class="padding">
+        <h5>Поступление новой товарной группы - гранит премиум-класса.</h5>
+        <p>
+          Для покупателей-оптовиков от 60 тонн есть индивидуальные условия.
+          Каталог-прайс - по запросу, цены ниже рыночных.
+        </p>
+        <p>Отгрузка из Москвы</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="no-padding">
+  <div class="grid no-space">
+    <div class="s6">
+      <img
+        class="responsive y-border"
         src="/promos/house_tools.jpg"
         alt="дом и строительство" />
       <div class="absolute top left right padding top-shadow white-text">

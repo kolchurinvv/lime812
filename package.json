@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/kit": "latest",
     "@types/swiper": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
@@ -22,7 +22,6 @@
     "eslint-plugin-svelte3": "^4.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-svelte": "^2.9.0",
-    "sass": "^1.57.1",
     "svelte": "^3.55.0",
     "svelte-check": "^2.10.2",
     "svelte-preprocess": "^5.0.0",
@@ -38,6 +37,8 @@
     "@rollup/plugin-commonjs": "^24.0.0",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "beercss": "^3.2.9",
+    "material-dynamic-colors": "^0.1.7",
     "rollup": "^3.7.5",
     "swiper": "^8.4.5"
   }
