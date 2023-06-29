@@ -181,7 +181,7 @@
   }}>
   {#each Object.keys(requiredFields) as field}
     <div
-      class="full-width field label prefix border "
+      class="full-width field label prefix border"
       class:suffix={requiredFields[field]?.suffixIcon}>
       {#if !disabled}
         <i>{requiredFields[field].prefixIcon}</i>
@@ -251,14 +251,16 @@
 
 <style lang="sass">
 form
-  margin-top:16rem
+  margin-top:2rem
   .full-width
     width: 100%
+  & > *
+    margin-bottom: 1.5rem
   // currently this is the only one instance that's affected due to being on yellow background
   #order-email-email:focus, #order-email-custom-message:focus
     border-color: var(--secondary)
-  #order-email-email:not(:focus), #order-email-custom-message:not(:focus)
-    border-width: 2rem
+  // #order-email-email:not(:focus), #order-email-custom-message:not(:focus)
+  //   border-width: 2rem
   .loader.secondary
     border: 4rem solid var(--secondary)
   .suffix-action

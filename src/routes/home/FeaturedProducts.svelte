@@ -78,7 +78,7 @@
       {#each tabs.tabContent as tab, index}
         <div class="page right" id="page{index}{serialNumber}">
           {#each tab.items as item}
-            <article class="no-padding round  ">
+            <article class="no-padding round">
               <img
                 class="responsive top-round"
                 alt="featured product"
@@ -137,7 +137,7 @@ section > div
     article
       display: flex
       flex-direction: column
-      margin-top: 16rem
+      margin-top: 1rem
       text-transform: initial
       min-width: 210px
       & > img

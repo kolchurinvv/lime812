@@ -186,6 +186,7 @@
       <div class="padding">
         <p>
           Все товары сайта <a
+            class="link"
             href="https://in-therm.com/catalogs/"
             target="_blank"
             rel="noopener noreferrer"

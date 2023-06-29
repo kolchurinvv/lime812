@@ -1,6 +1,6 @@
 <script lang="ts">
   import FeaturedProducts from "./home/FeaturedProducts.svelte"
-  import OrderModal from "$lib/common/OrderModal.svelte"
+  import OrderDialog from "@/lib/common/OrderDialog.svelte"
   export let data: {
     featuredProducts: [
       | {
@@ -20,7 +20,7 @@
     ]
   }
   let unique: number = 0
-  let activeModal: boolean = false
+  let activeDialog: boolean = false
   let subject: string
   let orderItem: {
     src: string
@@ -38,7 +38,7 @@
   }): void {
     const { SKU } = item
     orderItem = item
-    activeModal = true
+    activeDialog = true
     subject = `Зaказ ${SKU}`
     unique++
   }
@@ -97,7 +97,7 @@
     serialNumber={i.toString()} />
 {/each}
 {#key unique}
-  <OrderModal active={activeModal} {subject} item={orderItem} />
+  <OrderDialog active={activeDialog} {subject} item={orderItem} />
 {/key}
 <section class="primary-container medium-padding wide">
   <div class="how-to-container main-container">

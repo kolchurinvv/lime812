@@ -38,12 +38,12 @@
   // let send: SvelteComponentTyped
 </script>
 
-<div class="modal max" class:active={active === true}>
+<dialog class="modal max" class:active={active === true}>
   <section class="order-container">
-    <article class="no-padding ">
+    <article class="no-padding">
       <img
-        class="responsive  top-round"
-        alt="featured product"
+        class="responsive top-round"
+        alt="selected featured product"
         src={item.src} />
       <div class="padding">
         <h6>{item.cardTitle}</h6>
@@ -63,15 +63,19 @@
       on:close={() => {
         closeDialog()
       }}>
-      <nav slot="customActions">
-        <button class="accent-container" type="submit">заказать</button>
-        <button class="tertiary-container" on:click={() => closeDialog()}>
+      <nav slot="customActions" class="center-align">
+        <button class="accent-container small-elevate" type="submit">
+          заказать
+        </button>
+        <button
+          class="tertiary-container small-elevate"
+          on:click={() => closeDialog()}>
           отменить
         </button>
       </nav>
     </EmailForm>
   </section>
-</div>
+</dialog>
 
 <style lang="sass">
   .modal
@@ -83,6 +87,7 @@
       flex-direction: column
       justify-content: center
       article 
+        align-self: center
         display: flex
         flex-grow: 0
         width: 250px

@@ -4,11 +4,13 @@
   import Logo from "@/lib/common/logo.svelte"
 
   const modeToggle = () => {
+    // ! ui() comes from beercss which is imported via cdn in app.html
     //@ts-ignore
     const newMode = ui("mode") == "dark" ? "light" : "dark"
     mode.set(newMode === "dark")
     //@ts-ignore
     ui("mode", newMode)
+    console.log("mode toggled")
   }
 </script>
 
@@ -20,16 +22,16 @@
     <div class="max" />
     <a style="text-s" href="tel:8-800-700-4332">8-800-700-4332</a>
     <a class:active={$page.route.id === "/"} href="/">
-      <button class="transparent  upper extra small-elevate">Главная</button>
+      <button class="transparent upper extra small-elevate">Главная</button>
     </a>
     <a class:active={$page.route.id === "/about"} href="/about">
-      <button class="transparent  upper extra small-elevate">О компании</button>
+      <button class="transparent upper extra small-elevate">О компании</button>
     </a>
     <a class:active={$page.route.id === "/promos"} href="/promos">
-      <button class="transparent  upper extra small-elevate">акции</button>
+      <button class="transparent upper extra small-elevate">акции</button>
     </a>
     <a class:active={$page.route.id === "/contacts"} href="/contacts">
-      <button class="transparent  upper extra small-elevate">контакты</button>
+      <button class="transparent upper extra small-elevate">контакты</button>
     </a>
     <a class:active={$page.route.id === "/catalog"} href="/catalog">
       <button class=" border upper extra small-elevate y-border">прайс</button>
@@ -42,7 +44,7 @@
 
 <style lang="sass">
   header
-    margin-bottom: 3em
+    margin-bottom: 2em
     position: sticky
     top: 0
     z-index: 800
