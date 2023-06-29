@@ -1,4 +1,6 @@
 <script lang="ts">
+  import "beercss"
+  import "material-dynamic-colors"
   import "@/theme/theme.scss"
   import "@/theme/global.sass"
   import Header from "$lib/common/Header.svelte"
@@ -6,7 +8,6 @@
   import { onMount } from "svelte"
   import { mode } from "$lib/store/ui"
   import { page } from "$app/stores"
-  import "material-dynamic-colors"
 
   $: routeId = String($page.route.id).toString()
   const routeMap: { [key: string]: string } = {
@@ -18,15 +19,13 @@
     "/catalog": "Прайс",
   }
 
-  onMount(() => {
+  onMount(async () => {
     // ! ui() comes from beercss which is imported via cdn in app.html
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)")
     if (darkThemeMq.matches) {
-      //@ts-ignore
       ui("mode", "dark")
       mode.set(true)
     } else {
-      //@ts-ignore
       ui("mode", "light")
       mode.set(false)
     }

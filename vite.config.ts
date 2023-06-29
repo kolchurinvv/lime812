@@ -10,6 +10,9 @@ const config = defineConfig(({ mode }) => {
         strict: false,
       },
     },
+    ssr: {
+      noExternal: ["beercss"],
+    },
     // resolve: {
     //   alias: {
     //     "@": path.resolve(__dirname, "./src"),

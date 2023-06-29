@@ -4,13 +4,9 @@
   import Logo from "@/lib/common/logo.svelte"
 
   const modeToggle = () => {
-    // ! ui() comes from beercss which is imported via cdn in app.html
-    //@ts-ignore
     const newMode = ui("mode") == "dark" ? "light" : "dark"
     mode.set(newMode === "dark")
-    //@ts-ignore
     ui("mode", newMode)
-    console.log("mode toggled")
   }
 </script>
 
