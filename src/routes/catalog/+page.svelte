@@ -200,7 +200,7 @@
   column-gap: 1em
   row-gap: 1em
   article
-    margin-top: 16rem
+    margin-top: 2rem
     display: flex
     flex-direction: column
     & > div

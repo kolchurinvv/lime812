@@ -209,7 +209,7 @@
 
 <style lang="sass">
   article:last-child
-    margin-bottom: 16rem
+    margin-bottom: 4rem
   span
     display: inline-block
   .tooltip.top

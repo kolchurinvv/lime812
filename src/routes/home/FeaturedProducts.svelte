@@ -27,6 +27,7 @@
   const timeOuts: number[] = []
   const selectElement = (event: Event) => {
     const element = event.target as HTMLButtonElement
+    console.log("hi ", element.parentElement)
     if (element.parentElement) {
       ;[...(<any>element.parentElement.children)].forEach((elem) => {
         if (elem !== element) {
@@ -35,6 +36,28 @@
       })
     }
     const classes = element.classList
+    classes.add("active")
+    const activeId = element.dataset.ui?.substring(1)
+    if (!activeId) {
+      console.error("data-ui attribute is not set on the button", element)
+      return
+    }
+    const tabPage = document.getElementById(activeId)
+    if (!tabPage) {
+      console.error("page with id", activeId, "is not found")
+      return
+    }
+    tabPage.classList.add("active")
+    const siblings = tabPage.parentElement?.children
+    if (!siblings) {
+      return
+    }
+    ;[...(<any>siblings)].forEach((elem) => {
+      if (elem !== tabPage) {
+        elem.classList.remove("active")
+      }
+    })
+
     timeOuts.push(
       window.setTimeout(() => {
         classes.remove("transparent")

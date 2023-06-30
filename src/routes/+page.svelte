@@ -136,7 +136,7 @@
     font-weight: 900
 
 section
-  margin-bottom: -2em
+  margin-bottom: -3em // depends on the globals.sass .main container = allows the front page to be flush with the footer
   .how-to-container
     color: var(--on-primary-alt)
     text-transform: uppercase

@@ -22,7 +22,7 @@
       Армении, Китая и Ирана по разным номенклатурным наименованиям.
     </p>
   </div>
-  <div class="top-margin ">
+  <div class="top-margin">
     <h4>Наши приоритеты</h4>
     <ul>
       <li>
@@ -62,7 +62,7 @@ li
   list-style-type: none
 img
   max-width: 34em
-  border-radius: 8rem
+  border-radius: 1rem
 .about-grid
   display: grid
   grid-template-columns: 1fr 3fr

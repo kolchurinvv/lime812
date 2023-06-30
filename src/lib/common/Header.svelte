@@ -16,7 +16,7 @@
       <Logo style={{ style: "width: 160px" }} />
     </a>
     <div class="max" />
-    <a style="text-s" href="tel:8-800-700-4332">8-800-700-4332</a>
+    <!-- <a style="text-s" href="tel:8-800-700-4332">8-800-700-4332</a> -->
     <a class:active={$page.route.id === "/"} href="/">
       <button class="transparent upper extra small-elevate">Главная</button>
     </a>
