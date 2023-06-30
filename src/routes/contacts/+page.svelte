@@ -1,5 +1,27 @@
 <script lang="ts">
   import { mode } from "$lib/store/ui"
+  import { onMount } from "svelte"
+
+  let chat: HTMLElement | null
+
+  function findChatElement() {
+    chat = document.querySelector("#alternative-to-phone")
+  }
+  onMount(() => {
+    findChatElement()
+    const isChatVisible = chat && chat.offsetWidth > 0 && chat.offsetHeight > 0
+    const altCallBtn = document.getElementById("alt-call-method") as HTMLElement
+    const altCallBtnClasses = altCallBtn.classList
+    if (isChatVisible) {
+      altCallBtnClasses.add("alternative-call-visible")
+      altCallBtnClasses.remove("alternative-call-hidden")
+    }
+  })
+
+  const openChat = () => {
+    if (!chat) return
+    chat.click()
+  }
 </script>
 
 <section class="contacts-grid">
@@ -19,11 +41,20 @@
       14-H
     </h6>
     <h6>
+      <button
+        id="alt-call-method"
+        class="upper alternative-call-hidden tertiary small-elevate"
+        on:click={() => openChat()}>
+        <i class="extra">contact_support</i>
+        Свяжиетсь с нами через чат
+      </button>
+    </h6>
+    <!-- <h6>
       <a href="tel:8-800-700-4332">
         <i>phone</i>
         8-800-700-4332
       </a>
-    </h6>
+    </h6> -->
   </div>
   <div class="padding-right">
     <h5>Наш склад</h5>
@@ -102,6 +133,10 @@
   grid-template-columns: 1fr 1fr
   column-gap: 1em
   padding-bottom: 1em
+  .alternative-call-hidden
+    display: none
+  .alternative-call-visible 
+    display: block
   .padding-right
     padding-right: 48px
   .socials
