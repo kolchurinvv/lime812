@@ -5,7 +5,7 @@
   let chat: HTMLElement | null
 
   function findChatElement() {
-    chat = document.querySelector("alternative-to-phone")
+    chat = document.getElementById("alternative-to-phone")
   }
   onMount(() => {
     findChatElement()
