@@ -5,7 +5,7 @@
   let chat: HTMLElement | null
 
   function findChatElement() {
-    chat = document.getElementById("alternative-to-phone")
+    chat = document.getElementById("wplc-chat-button")
   }
   onMount(() => {
     findChatElement()
@@ -15,14 +15,6 @@
       getComputedStyle(chat).visibility !== "hidden"
     const altCallBtn = document.getElementById("alt-call-method") as HTMLElement
     const altCallBtnClasses = altCallBtn.classList
-
-    console.log("isChatVisible", isChatVisible, chat)
-    if (chat) {
-      console.log(
-        getComputedStyle(chat).visibility,
-        getComputedStyle(chat).display
-      )
-    }
     if (isChatVisible) {
       altCallBtnClasses.add("alternative-call-visible")
       altCallBtnClasses.remove("alternative-call-hidden")
