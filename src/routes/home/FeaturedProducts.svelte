@@ -27,7 +27,6 @@
   const timeOuts: number[] = []
   const selectElement = (event: Event) => {
     const element = event.target as HTMLButtonElement
-    console.log("hi ", element.parentElement)
     if (element.parentElement) {
       ;[...(<any>element.parentElement.children)].forEach((elem) => {
         if (elem !== element) {
@@ -84,7 +83,7 @@
 <section class="wide medium-padding">
   <div class="main-container">
     <h4>{tabs.sectionTitle}</h4>
-    <nav class="no-space">
+    <nav class="responsive no-space">
       {#each tabs.tabContent as tab, index}
         <button
           on:click={(e) => selectElement(e)}
@@ -151,7 +150,7 @@ section > div
       background-image: radial-gradient(circle,var(--primary) 1%,transparent 1%)
       z-index: -1
   nav > .tab-title
-    flex-grow: 1
+    flex: 1 1 auto
   .featured-products > *
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr
