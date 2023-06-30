@@ -12,6 +12,7 @@
     const isChatVisible = chat && chat.offsetWidth > 0 && chat.offsetHeight > 0
     const altCallBtn = document.getElementById("alt-call-method") as HTMLElement
     const altCallBtnClasses = altCallBtn.classList
+    console.log("isChatVisible", isChatVisible)
     if (isChatVisible) {
       altCallBtnClasses.add("alternative-call-visible")
       altCallBtnClasses.remove("alternative-call-hidden")
@@ -105,14 +106,14 @@
           </div>
         </a>
       </li>
-      <li>
+      <!-- <li>
         <a class="medium-elevate round" href="tel:8-800-700-4332">
           <i>phone</i>
           <div class="tooltip primary-container small-elevate left">
             8-800-700-4332
           </div>
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
   <iframe
