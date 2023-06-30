@@ -5,11 +5,14 @@
   let chat: HTMLElement | null
 
   function findChatElement() {
-    chat = document.querySelector("#alternative-to-phone")
+    chat = document.querySelector("alternative-to-phone")
   }
   onMount(() => {
     findChatElement()
-    const isChatVisible = chat && chat.offsetWidth > 0 && chat.offsetHeight > 0
+    const isChatVisible =
+      chat &&
+      getComputedStyle(chat).display !== "none" &&
+      getComputedStyle(chat).visibility !== "hidden"
     const altCallBtn = document.getElementById("alt-call-method") as HTMLElement
     const altCallBtnClasses = altCallBtn.classList
     console.log("isChatVisible", isChatVisible)
