@@ -6,7 +6,7 @@
     purchaseItem,
     payloadProps,
     requiredFieldsType,
-  } from "@/lib/types/emailOrder"
+  } from "$lib/types/emailOrder"
   import { isEmailPattern } from "$lib/utils/regexPatterns"
   import { onMount } from "svelte"
   export let item: purchaseItem | undefined = undefined

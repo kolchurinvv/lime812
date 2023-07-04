@@ -40,7 +40,7 @@
 </svelte:head>
 
 <Header routeName={routeMap[routeId]} />
-<!-- <main id="app-content" class="main-container">
+<main id="app-content" class="main-container">
   <slot />
-</main> -->
-<!-- <Footer /> -->
+</main>
+<Footer />

@@ -13,13 +13,6 @@ const config = defineConfig(({ mode }) => {
     ssr: {
       noExternal: ["beercss"],
     },
-    // resolve: {
-    //   alias: {
-    //     "@": path.resolve(__dirname, "./src"),
-    //     "@@": path.resolve(__dirname, "./"),
-    //   },
-    // },
-    // },
   } as UserConfig
 })
 

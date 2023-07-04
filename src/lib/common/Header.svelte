@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores"
   import { mode } from "$lib/store/ui"
-  import Logo from "@/lib/common/logo.svelte"
+  import Logo from "$lib/common/logo.svelte"
   import MenuBurger from "./MenuBurger.svelte"
 
   export let routeName: string
@@ -27,8 +27,10 @@
   $: {
     if (mainMenu && isBurgerChecked) {
       mainMenu.style.transform = "translateX(0)"
+      mainMenu.classList.add("large-blur")
     } else if (mainMenu && !isBurgerChecked) {
       mainMenu.style.transform = "translateX(-100%)"
+      mainMenu.classList.remove("large-blur")
     }
   }
 </script>
@@ -84,7 +86,9 @@ header
     display: grid
     grid-auto-flow: row
     grid-template-columns: 1fr
-    top: 5rem
+    margin-top: 3.5rem !important
+    padding: 1rem 0
+    top: 0
     left: 0
     transform: translateX(-100%)
     transition: transform 200ms ease-in-out
@@ -124,6 +128,8 @@ header
     .main-container
       position: initial
       display: flex
+      padding: 0 0
+      margin-top: 0 !important
       margin-bottom: 0 !important
       transform: translateX(0%) !important
       transition: none

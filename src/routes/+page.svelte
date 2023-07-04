@@ -1,6 +1,6 @@
 <script lang="ts">
   import FeaturedProducts from "./home/FeaturedProducts.svelte"
-  import OrderDialog from "@/lib/common/OrderDialog.svelte"
+  import OrderDialog from "$lib/common/OrderDialog.svelte"
   export let data: {
     featuredProducts: [
       | {
@@ -19,8 +19,8 @@
       | undefined
     ]
   }
-  let unique: number = 0
-  let activeDialog: boolean = false
+  let unique = 0
+  let activeDialog = false
   let subject: string
   let orderItem: {
     src: string
@@ -29,13 +29,9 @@
     SKU: string
     optionalMessage?: string
   }
-  function openModal(item: {
-    src: string
-    cardTitle: string
-    description: string
-    SKU: string
-    optionalMessage?: string
-  }): void {
+  import type { purchaseItem } from "$lib/types/emailOrder"
+  function openModal(_: CustomEvent<purchaseItem>): void {
+    const item = _.detail
     const { SKU } = item
     orderItem = item
     activeDialog = true
@@ -50,7 +46,7 @@
   import "swiper/scss/pagination"
   import "@/theme/swiper.scss"
   import { onDestroy } from "svelte"
-  import EmailForm from "@/lib/common/EmailForm.svelte"
+  import EmailForm from "$lib/common/EmailForm.svelte"
 
   onDestroy(() => {
     unique = 0
@@ -90,9 +86,7 @@
 </section>
 {#each data.featuredProducts as section, i}
   <FeaturedProducts
-    on:req:openModal={(payload) => {
-      openModal(payload.detail)
-    }}
+    on:OpenModal={openModal}
     tabs={section}
     serialNumber={i.toString()} />
 {/each}
@@ -118,53 +112,64 @@
   </div>
 </section>
 
-<style lang="sass">
-.jumbo-container
-  .jumbo-anno-box
-    display: grid
-    position: absolute
-    bottom: 10%
-    z-index: 2
-    line-height: 1.1
-    letter-spacing: 1.2px
-    font-size: 1.4em
-    & > *
-      text-transform: uppercase
-      margin-bottom: 1em
-  .jumbo-text
-    justify-self: start
-    font-weight: 900
-
-section
-  margin-bottom: -3em // depends on the globals.sass .main container = allows the front page to be flush with the footer
-  .how-to-container
-    color: var(--on-primary-alt)
-    text-transform: uppercase
-    h4::after
-      content: ''
-      display: inline-block
-      width: 90px
-      height: 2px
-      margin: auto 0 17px 40px
-      background: var(--on-primary-alt)
-    .steps
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr
-      column-gap: 2em
-      .request-container
-        grid-column: 2
-        .request
-          p
-            text-transform: initial
-        &::before
-          content: ''
-          display: inline-block
-          background-image: url('/icons/checklist.png')
-          background-position: center
-          background-repeat: no-repeat
-          background-size: contain
-          width: 50px
-          height: 50px
-          position: absolute
-          left: -55px
+<style lang="scss">
+  .jumbo-container {
+    .jumbo-anno-box {
+      display: grid;
+      position: absolute;
+      bottom: 10%;
+      z-index: 2;
+      line-height: 1.1;
+      letter-spacing: 1.2px;
+      font-size: 1.4em;
+      & > * {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+      }
+    }
+    .jumbo-text {
+      justify-self: start;
+      font-weight: 900;
+    }
+  }
+  section {
+    margin-bottom: -3em; // depends on the globals.sass .main container = allows the front page to be flush with the footer
+    .how-to-container {
+      color: var(--on-primary-alt);
+      text-transform: uppercase;
+      h4::after {
+        content: "";
+        display: inline-block;
+        width: 90px;
+        height: 2px;
+        margin: auto 0 17px 40px;
+        background: var(--on-primary-alt);
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em;
+        .request-container {
+          grid-column: 2;
+          .request {
+            p {
+              text-transform: initial;
+            }
+          }
+          &::before {
+            content: "";
+            display: inline-block;
+            background-image: url("/icons/checklist.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: -55px;
+          }
+        }
+      }
+    }
+  }
 </style>

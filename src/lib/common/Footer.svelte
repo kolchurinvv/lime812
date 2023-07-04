@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Logo from "@/lib/common/logo.svelte"
+  import Logo from "$lib/common/logo.svelte"
   import EmailForm from "./EmailForm.svelte"
 </script>
 

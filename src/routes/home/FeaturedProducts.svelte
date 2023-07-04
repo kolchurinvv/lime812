@@ -1,10 +1,9 @@
 <script lang="ts">
   import { onDestroy, onMount, createEventDispatcher } from "svelte"
   import type { purchaseItem } from "$lib/types/emailOrder"
-  const dispatch = createEventDispatcher()
-  function openModal(item: purchaseItem): void {
-    dispatch("req:openModal", item)
-  }
+  type OpenModal = { OpenModal: purchaseItem }
+  const dispatch = createEventDispatcher<OpenModal>()
+
   export let serialNumber: string
   export let tabs: {
     sectionTitle: string
@@ -113,7 +112,8 @@
                 <nav>
                   <button
                     on:click={() => {
-                      openModal(item)
+                      // openModal(item)
+                      dispatch("OpenModal", item)
                     }}
                     class=" primary-container bottom">
                     заявка на продукт

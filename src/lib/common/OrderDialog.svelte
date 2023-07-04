@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onDestroy, SvelteComponentTyped } from "svelte"
-  import type { purchaseItem } from "@/lib/types/emailOrder"
+  import type { purchaseItem } from "$lib/types/emailOrder"
   // import GetCustomerEmail from "./GetCustomerEmail.svelte"
   import EmailForm from "./EmailForm.svelte"
   export let active: boolean = false
