@@ -249,29 +249,34 @@
   </div>
 {/if}
 
-<style lang="sass">
-form
-  margin-top:2rem
-  .full-width
-    width: 100%
-  & > *
-    margin-bottom: 1.5rem
-  // currently this is the only one instance that's affected due to being on yellow background
-  #order-email-email:focus, #order-email-custom-message:focus
-    border-color: var(--secondary)
-  // #order-email-email:not(:focus), #order-email-custom-message:not(:focus)
+<style lang="scss">
+  form {
+  margin-top: 2rem;
+  .full-width {
+    width: 100%;
+  }
+  & > * {
+    margin-bottom: 1.5rem;
+  }  // currently this is the only one instance that's affected due to being on yellow background
+  #order-email-email:focus,
+  #order-email-custom-message:focus {
+    border-color: var(--secondary);
+  }  // #order-email-email:not(:focus), #order-email-custom-message:not(:focus)
   //   border-width: 2rem
-  .loader.secondary
-    border: 4rem solid var(--secondary)
-  .suffix-action
-    position: absolute
-    top: 4rem
-    right: 0
-    &.primary-alt
-      color: var(--on-primary-alt)
-  .data-processing-info
-    font-size: 0.75em
-    text-transform: initial
-
-
+  .loader.secondary {
+    border: 4rem solid var(--secondary);
+  }
+  .suffix-action {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    &.primary-alt {
+      color: var(--on-primary-alt);
+    }
+  }
+  .data-processing-info {
+    font-size: 0.75em;
+    text-transform: initial;
+  }
+}
 </style>

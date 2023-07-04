@@ -73,74 +73,88 @@
   </nav>
 </header>
 
-<style lang="sass" scoped>
-// default aka small screens
-header
-  position: sticky
-  top: 0
-  z-index: 800
-  border-bottom: 2px solid var(--primary)
+<style lang="scss" scoped>
+  // default aka small screens
+header {
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  border-bottom: 2px solid var(--primary);
 
-  .main-container
-    position: absolute
-    display: grid
-    grid-auto-flow: row
-    grid-template-columns: 1fr
-    margin-top: 3.5rem !important
-    padding: 1rem 0
-    top: 0
-    left: 0
-    transform: translateX(-100%)
-    transition: transform 200ms ease-in-out
-    a:first-child
-      display: none
-    a:nth-child(2)
-      width: initial
-    *:last-child
-      justify-self: center
+  .main-container {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    margin-top: 3.5rem !important;
+    padding: 1rem 0;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 200ms ease-in-out;
+    a:first-child {
+      display: none;
+    }
+    a:nth-child(2) {
+      width: initial;
+    }
+    *:last-child {
+      justify-self: center;
+    }
+  }
+  nav {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 4fr 1fr;
+    min-height: initial;
+    & > a:first-child {
+      width: 71px;
+    }
+    & > *:last-child {
+      justify-self: end;
+    }
+    a {
+      text-decoration-color: transparent;
+      transition: text-decoration-color 200ms ease-in-out;
+      & > button {
+        font-size: 1rem;
+      }
+      &:hover,
+      &.active {
+        text-decoration: underline;
+        text-decoration-color: var(--primary);
+        text-decoration-thickness: 3px;
+        text-decoration-style: solid;
+        text-underline-offset: 5px;
+      }// large screens
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  header {
+    margin-bottom: 2em;
+    .main-container {
+      position: initial;
+      display: flex;
+      padding: 0 0;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      transform: translateX(0%) !important;
+      transition: none;
+      justify-content: space-between;
 
-  
-  nav
-    width: 100%
-    display: grid
-    grid-auto-flow: column
-    grid-template-columns: 1fr 4fr 1fr
-    min-height: initial
-    & > a:first-child
-      width: 71px
-    & > *:last-child
-      justify-self: end
-    a
-      text-decoration-color: transparent
-      transition: text-decoration-color 200ms ease-in-out
-      & > button
-        font-size: 1rem
-      &:hover, &.active
-        text-decoration: underline
-        text-decoration-color: var(--primary)
-        text-decoration-thickness: 3px
-        text-decoration-style: solid
-        text-underline-offset: 5px
-// large screens
-@media screen and (min-width: 576px)
-  header
-    margin-bottom: 2em
-    .main-container
-      position: initial
-      display: flex
-      padding: 0 0
-      margin-top: 0 !important
-      margin-bottom: 0 !important
-      transform: translateX(0%) !important
-      transition: none
-      justify-content: space-between
-    
-      a:first-child
-        display: flex
-        width: 100%
-        min-width: 6rem
-        max-width: 10rem
-    .mobile-container
-      display: none
-      visibility: hidden
+      a:first-child {
+        display: flex;
+        width: 100%;
+        min-width: 6rem;
+        max-width: 10rem;
+      }
+    }
+    .mobile-container {
+      display: none;
+      visibility: hidden;
+    }
+  }
+};
 </style>

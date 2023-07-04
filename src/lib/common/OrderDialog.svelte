@@ -77,27 +77,31 @@
   </section>
 </dialog>
 
-<style lang="sass">
-  .modal
-    z-index: 9999
-    .order-container
-      max-width: 500px
-      margin: 0 auto
-      display: flex
-      flex-direction: column
-      justify-content: center
-      article 
-        align-self: center
-        display: flex
-        flex-grow: 0
-        width: 250px
-        flex-direction: column
-        & > img
-          object-fit: contain
-        & > div
-          display: flex
-          flex-grow: 1
-          flex-direction: column
-          justify-content: space-between
-
+<style lang="scss">
+  .modal {
+  z-index: 9999;
+  .order-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    article {
+      align-self: center;
+      display: flex;
+      flex-grow: 0;
+      width: 250px;
+      flex-direction: column;
+      & > img {
+        object-fit: contain;
+      }
+      & > div {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+}
 </style>

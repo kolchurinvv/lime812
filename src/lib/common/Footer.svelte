@@ -31,18 +31,21 @@
   </div>
 </footer>
 
-<style lang="sass">
-  .footer-content-grid
-    padding-top: 1em
-    display: grid
-    grid-template-columns: 1.5fr 1fr 1fr
-    column-gap: 2em
-    & > *
-      text-transform: capitalize
-      display: flex
-      flex-direction: column
-      align-items: flex-start
-      margin-top: 1em
-    .links
-      grid-column: 2
+<style lang="scss">
+  .footer-content-grid {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  column-gap: 2em;
+  & > * {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1em;
+  }
+  .links {
+    grid-column: 2;
+  }
+}
 </style>

@@ -66,11 +66,14 @@
   </svg>
 </div>
 
-<style lang="sass">
-  .cls-1
-    fill: var(--primary)
-  .cls-2
-    fill: var(--primary-accent)
-  .cls-3
-    fill: var(--on-primary-alt)
+<style lang="scss">
+  .cls-1 {
+  fill: var(--primary);
+}
+.cls-2 {
+  fill: var(--primary-accent);
+}
+.cls-3 {
+  fill: var(--on-primary-alt);
+}
 </style>
