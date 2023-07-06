@@ -1,9 +1,10 @@
 <script lang="ts">
   import { onDestroy, onMount, createEventDispatcher } from "svelte"
   import type { purchaseItem } from "$lib/types/emailOrder"
-  type OpenModal = { OpenModal: purchaseItem }
-  const dispatch = createEventDispatcher<OpenModal>()
-
+  const dispatch = createEventDispatcher()
+  function openModal(item: purchaseItem): void {
+    dispatch("req:openModal", item)
+  }
   export let serialNumber: string
   export let tabs: {
     sectionTitle: string
@@ -26,6 +27,7 @@
   const timeOuts: number[] = []
   const selectElement = (event: Event) => {
     const element = event.target as HTMLButtonElement
+    console.log("hi ", element.parentElement)
     if (element.parentElement) {
       ;[...(<any>element.parentElement.children)].forEach((elem) => {
         if (elem !== element) {
@@ -82,7 +84,7 @@
 <section class="wide medium-padding">
   <div class="main-container">
     <h4>{tabs.sectionTitle}</h4>
-    <nav class="responsive no-space">
+    <nav class="no-space">
       {#each tabs.tabContent as tab, index}
         <button
           on:click={(e) => selectElement(e)}
@@ -112,8 +114,7 @@
                 <nav>
                   <button
                     on:click={() => {
-                      // openModal(item)
-                      dispatch("OpenModal", item)
+                      openModal(item)
                     }}
                     class=" primary-container bottom">
                     заявка на продукт
@@ -128,57 +129,45 @@
   </div>
 </section>
 
-<style lang="scss">
-section:nth-child(even) {
-  background-color: var(--background);
-}
-section > div {
-  text-transform: uppercase;
-  h4::after {
-    content: '';
-    display: inline-block;
-    width: 90px;
-    height: 2px;
-    margin: auto 0 17px 40px;
-    background: var(--primary);
-  }
-  nav {
-    width: 100%;
-  }
-  nav > button {
-    position: relative;
-    z-index: 1;
-    text-transform: uppercase;
-    &:hover::after,
-    &:focus::after {
-      background-image: radial-gradient(circle,var(--primary) 1%,transparent 1%);
-      z-index: -1;
-    }
-  }
-  nav > .tab-title {
-    flex: 1 1 auto;
-  }
-  .featured-products > * {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: column;
-    column-gap: 2em;
-    article {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      text-transform: initial;
-      min-width: 210px;
-      & > img {
-        object-fit: contain;
-      }
-      & > div {
-        display: flex;
-        flex-grow: 1;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-    }
-  }
-}
+<style lang="sass">
+section:nth-child(even)
+  background-color: var(--background)
+section > div
+  text-transform: uppercase
+  h4::after
+    content: ''
+    display: inline-block
+    width: 90px
+    height: 2px
+    margin: auto 0 17px 40px
+    background: var(--primary)
+  nav
+    width: 100%
+  nav > button
+    position: relative
+    z-index: 1
+    text-transform: uppercase
+    &:hover::after, &:focus::after
+      background-image: radial-gradient(circle,var(--primary) 1%,transparent 1%)
+      z-index: -1
+  nav > .tab-title
+    flex-grow: 1
+  .featured-products > *
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-auto-flow: column
+    column-gap: 2em
+    article
+      display: flex
+      flex-direction: column
+      margin-top: 1rem
+      text-transform: initial
+      min-width: 210px
+      & > img
+        object-fit: contain
+      & > div
+        display: flex
+        flex-grow: 1
+        flex-direction: column
+        justify-content: space-between
 </style>

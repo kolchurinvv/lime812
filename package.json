@@ -1,6 +1,6 @@
 {
   "name": "lime812",
-  "version": "0.0.14",
+  "version": "0.0.13",
   "scripts": {
     "dev": "vite dev --host",
     "build": "vite build",
@@ -11,6 +11,8 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "latest",
     "@types/swiper": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
@@ -21,18 +23,16 @@
     "prettier": "^2.8.4",
     "prettier-plugin-svelte": "^2.9.0",
     "svelte": "^3.55.0",
+    "svelte-adapter-bun": "^0.4.3",
     "svelte-check": "^2.10.2",
+    "svelte-preprocess": "^5.0.0",
+    "svelte-reactive-preprocessor": "^0.8.3",
     "tslib": "^2.4.1",
     "typescript": "latest",
     "vite": "^4.3.9"
   },
   "type": "module",
   "dependencies": {
-    "svelte-preprocess": "^5.0.0",
-    "svelte-reactive-preprocessor": "^0.8.3",
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "latest",
-    "svelte-adapter-bun": "^0.4.3",
     "@emailjs/browser": "^3.10.0",
     "@rollup/plugin-commonjs": "^24.0.0",
     "@rollup/plugin-json": "^6.0.0",
