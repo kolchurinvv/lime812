@@ -1,6 +1,7 @@
 #app
   min-height: 100vh
   display: grid
+  // font-size: 16rem
   grid-template-columns: 1fr
   grid-template-rows: auto 1fr auto
   grid-template-areas: 'header''main''footer'
@@ -15,15 +16,8 @@
   border: 2px solid var(--primary) !important
   color: inherit !important
 .main-container
-  max-width: 576px !important
   margin: 0 auto 3em auto !important
-@media (min-width: 768px)
-  .main-container
-    max-width: 768px !important
-@media (min-width: 1171px)
-  .main-container
-    min-width: 1171px !important
-
+  max-width: 1170px !important
 .wide
   min-width: 100vw
   position: relative

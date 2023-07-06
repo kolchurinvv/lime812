@@ -57,29 +57,24 @@
     alt="installation during construction" />
 </section>
 
-<style lang="scss">
-li {
-  list-style-type: none;
-}
-img {
-  max-width: 34em;
-  border-radius: 1rem;
-}
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  column-gap: 1em;
-  grid-auto-flow: row;
-  .top-margin {
-    margin-top: 3em;
-    h4::after {
-      content: '';
-      display: inline-block;
-      width: 90px;
-      height: 2px;
-      margin: auto 0 17px 40px;
-      background: var(--primary);
-    }
-  }
-}
+<style lang="sass">
+li 
+  list-style-type: none
+img
+  max-width: 34em
+  border-radius: 1rem
+.about-grid
+  display: grid
+  grid-template-columns: 1fr 3fr
+  column-gap: 1em
+  grid-auto-flow: row
+  .top-margin
+    margin-top: 3em
+    h4::after
+      content: ''
+      display: inline-block
+      width: 90px
+      height: 2px
+      margin: auto 0 17px 40px
+      background: var(--primary)
 </style>
