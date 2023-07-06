@@ -193,19 +193,22 @@
   </article>
 </div>
 
-<style lang="sass">
-.catalog-grid
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr
-  column-gap: 1em
-  row-gap: 1em
-  article
-    margin-top: 2rem
-    display: flex
-    flex-direction: column
-    & > div
-      display: flex
-      flex-grow: 1
-      flex-direction: row
-      justify-content: space-between
+<style lang="scss">
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+  article {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    & > div {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
 </style>

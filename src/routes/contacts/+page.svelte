@@ -130,39 +130,49 @@
     referrerpolicy="no-referrer-when-downgrade" />
 </section>
 
-<style lang="sass">
-.contacts-grid
-  display: grid
-  grid-template-columns: 1fr 1fr
-  column-gap: 1em
-  padding-bottom: 1em
-  .alternative-call-hidden
-    display: none
-  .alternative-call-visible 
-    display: block
-  .padding-right
-    padding-right: 48px
-  .socials
-    position: absolute
-    bottom: 0
-    right: 0
-    li
-      list-style-type: none
-      margin-top: 5px
-    img, i
-      width: 40px
-      height: 40px
-      font-size: 40px
-    .tooltip.left
-      left:-5px
-
-  .with-line::after
-    content: ''
-    display: inline-block
-    width: 90px
-    height: 2px
-    margin: auto 0 17px 40px
-    background: var(--primary)
-  .dark-map
-    filter: invert(82%) contrast(83%)
+<style lang="scss">
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  padding-bottom: 1em;
+  .alternative-call-hidden {
+    display: none;
+  }
+  .alternative-call-visible {
+    display: block;
+  }
+  .padding-right {
+    padding-right: 48px;
+  }
+  .socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    li {
+      list-style-type: none;
+      margin-top: 5px;
+    }
+    img,
+    i {
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+    }
+    .tooltip.left {
+      left: -5px;
+    }
+  }
+  .with-line::after {
+    content: '';
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    margin: auto 0 17px 40px;
+    background: var(--primary);
+  }
+  .dark-map {
+    filter: invert(82%) contrast(83%);
+  }
+}
 </style>
