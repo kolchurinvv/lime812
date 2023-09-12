@@ -19,7 +19,7 @@
     "/catalog": "Прайс",
   }
 
-  onMount(async () => {
+  onMount(() => {
     // ! ui() comes from beercss which is imported via cdn in app.html
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)")
     if (darkThemeMq.matches) {
