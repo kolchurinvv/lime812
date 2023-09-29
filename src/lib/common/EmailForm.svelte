@@ -257,15 +257,11 @@ form
   & > *
     margin-bottom: 1.5rem
   // currently this is the only one instance that's affected due to being on yellow background
-  #order-email-email:focus, #order-email-custom-message:focus
+  #order-email-email:focus, #order-email-custom-message:focus, #order-email-email:focus + label::after, #order-email-custom-message:focus + label::after
     border-color: var(--secondary)
-  // #order-email-email:not(:focus), #order-email-custom-message:not(:focus)
-  //   border-width: 2rem
-  .loader.secondary
-    border: 4rem solid var(--secondary)
   .suffix-action
     position: absolute
-    top: 4rem
+    top: 0.2rem
     right: 0
     &.primary-alt
       color: var(--on-primary-alt)
