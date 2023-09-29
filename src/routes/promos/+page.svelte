@@ -207,14 +207,11 @@
   </div>
 </article>
 
-<style lang="scss">
-  article:last-child {
-  margin-bottom: 4rem;
-}
-span {
-  display: inline-block;
-}
-.tooltip.top {
-  top: -5px;
-}
+<style lang="sass">
+  article:last-child
+    margin-bottom: 4rem
+  span
+    display: inline-block
+  .tooltip.top
+    top: -5px
 </style>
