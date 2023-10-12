@@ -64,7 +64,7 @@
     </div>
     <p>ПРОДАЖА ОТ ПРЯМОГО ИМПОРТЕРА</p>
     <a href="/catalog" class="no-margin small-padding round primary-container">
-      прайсы
+      прайс
     </a>
   </div>
 

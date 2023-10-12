@@ -11,7 +11,7 @@
 </script>
 
 <header class="small-padding">
-  <nav class="main-container">
+  <nav class="">
     <a href="/">
       <Logo style={{ style: "width: 160px" }} />
     </a>
@@ -40,7 +40,7 @@
 
 <style lang="sass">
   header
-    margin-bottom: 2em
+    margin-bottom: 2rem
     position: sticky
     top: 0
     z-index: 800
