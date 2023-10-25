@@ -103,7 +103,7 @@
           {#each tab.items as item}
             <article class="no-padding round">
               <img
-                class="responsive top-round"
+                class="top-round"
                 alt="featured product"
                 src={item.src} />
               <div class="padding">
@@ -154,11 +154,12 @@ section > div
     flex-grow: 1
   .featured-products > *
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-auto-columns: minmax(210px ,1fr) 
     grid-auto-flow: column
     column-gap: 2em
     article
       display: flex
+      flex: 0 1 auto
       flex-direction: column
       margin-top: 1rem
       text-transform: initial
