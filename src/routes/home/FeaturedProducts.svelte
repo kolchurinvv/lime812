@@ -102,10 +102,7 @@
         <div class="page right" id="page{index}{serialNumber}">
           {#each tab.items as item}
             <article class="no-padding round">
-              <img
-                class="top-round"
-                alt="featured product"
-                src={item.src} />
+              <img class="top-round" alt="featured product" src={item.src} />
               <div class="padding">
                 <h6>{item.cardTitle}</h6>
                 <p>
@@ -154,12 +151,12 @@ section > div
     flex-grow: 1
   .featured-products > *
     display: grid
-    grid-auto-columns: minmax(210px ,1fr) 
+    grid-template-columns: repeat(4, 1fr)
+    // grid-auto-columns: minmax(210px, 1fr)
     grid-auto-flow: column
     column-gap: 2em
     article
       display: flex
-      flex: 0 1 auto
       flex-direction: column
       margin-top: 1rem
       text-transform: initial

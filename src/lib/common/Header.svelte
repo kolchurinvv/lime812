@@ -45,6 +45,7 @@
     top: 0
     z-index: 800
     border-bottom: 2px solid var(--primary)
+    background-color: var(--surface)
     a
       text-decoration-color: transparent
       transition: text-decoration-color 200ms ease-in-out
@@ -54,5 +55,4 @@
         text-decoration-thickness: 3px
         text-decoration-style: solid
         text-underline-offset: 5px
-
 </style>
