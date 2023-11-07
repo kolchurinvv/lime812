@@ -27,7 +27,6 @@
   const timeOuts: number[] = []
   const selectElement = (event: Event) => {
     const element = event.target as HTMLButtonElement
-    console.log("hi ", element.parentElement)
     if (element.parentElement) {
       ;[...(<any>element.parentElement.children)].forEach((elem) => {
         if (elem !== element) {
@@ -126,46 +125,61 @@
   </div>
 </section>
 
-<style lang="sass">
-section:nth-child(even)
-  background-color: var(--background)
-section > div
-  text-transform: uppercase
-  h4::after
-    content: ''
-    display: inline-block
-    width: 90px
-    height: 2px
-    margin: auto 0 17px 40px
-    background: var(--primary)
-  nav
-    width: 100%
-  nav > button
-    position: relative
-    z-index: 1
-    text-transform: uppercase
-    &:hover::after, &:focus::after
-      background-image: radial-gradient(circle,var(--primary) 1%,transparent 1%)
-      z-index: -1
-  nav > .tab-title
-    flex-grow: 1
-  .featured-products > *
-    display: grid
-    grid-template-columns: repeat(4, 1fr)
-    // grid-auto-columns: minmax(210px, 1fr)
-    grid-auto-flow: column
-    column-gap: 2em
-    article
-      display: flex
-      flex-direction: column
-      margin-top: 1rem
-      text-transform: initial
-      min-width: 210px
-      & > img
-        object-fit: contain
-      & > div
-        display: flex
-        flex-grow: 1
-        flex-direction: column
-        justify-content: space-between
+<style lang="scss">
+  section:nth-child(even) {
+    background-color: var(--background);
+  }
+  section > div {
+    text-transform: uppercase;
+    h4::after {
+      content: "";
+      display: inline-block;
+      width: 90px;
+      height: 2px;
+      margin: auto 0 17px 40px;
+      background: var(--primary);
+    }
+    nav {
+      width: 100%;
+    }
+    nav > button {
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      &:hover::after,
+      &:focus::after {
+        background-image: radial-gradient(
+          circle,
+          var(--primary) 1%,
+          transparent 1%
+        );
+        z-index: -1;
+      }
+    }
+    nav > .tab-title {
+      flex-grow: 1;
+    }
+    .featured-products > * {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-flow: column;
+      column-gap: 2em;
+      article {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        text-transform: initial;
+        min-width: 210px;
+        & > img {
+          object-fit: contain;
+        }
+        & > div {
+          display: flex;
+          flex-grow: 1;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
 </style>
