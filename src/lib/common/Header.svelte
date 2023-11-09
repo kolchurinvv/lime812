@@ -38,21 +38,29 @@
   </nav>
 </header>
 
-<style lang="sass">
-  header
-    margin-bottom: 2rem
-    position: sticky
-    top: 0
-    z-index: 800
-    border-bottom: 2px solid var(--primary)
-    a
-      text-decoration-color: transparent
-      transition: text-decoration-color 200ms ease-in-out
-      &:hover, &.active
-        text-decoration: underline
-        text-decoration-color: var(--primary)
-        text-decoration-thickness: 3px
-        text-decoration-style: solid
-        text-underline-offset: 5px
-
+<style lang="scss">
+  header {
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 800;
+    border-bottom: 2px solid var(--primary);
+    background-color: var(--surface);
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      a {
+        text-decoration-color: transparent;
+        transition: text-decoration-color 200ms ease-in-out;
+        &:hover,
+        &.active {
+          text-decoration: underline;
+          text-decoration-color: var(--primary);
+          text-decoration-thickness: 3px;
+          text-decoration-style: solid;
+          text-underline-offset: 5px;
+        }
+      }
+    }
+  }
 </style>

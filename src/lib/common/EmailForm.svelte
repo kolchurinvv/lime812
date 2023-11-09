@@ -195,7 +195,9 @@
         use:typeSwitch={requiredFields[field].type}
         bind:value={requiredFields[field].fieldValue}
         id="{key}-{field}" />
-      <label class="secondary transparent" for="{key}-{field}">
+      <label
+        class="secondary transparent"
+        class:active={!!requiredFields[field].fieldValue}>
         {requiredFields[field].label_placeholder}
       </label>
       {#if requiredFields.email.fieldValue.length && !maxModal}
@@ -212,7 +214,7 @@
   {#if requiredFields.email.fieldValue.length || expanded}
     <div transition:slide|local class="full-width field textarea label border">
       <textarea {disabled} bind:value={message} id="{key}-custom-message" />
-      <label class="secondary transparent" for="{key}-custom-message">
+      <label class="secondary transparent" class:active={!!message}>
         {labelText}
       </label>
       {#if optional}
@@ -249,25 +251,32 @@
   </div>
 {/if}
 
-<style lang="sass">
-form
-  margin-top:2rem
-  .full-width
-    width: 100%
-  & > *
-    margin-bottom: 1.5rem
-  // currently this is the only one instance that's affected due to being on yellow background
-  #order-email-email:focus, #order-email-custom-message:focus, #order-email-email:focus + label::after, #order-email-custom-message:focus + label::after
-    border-color: var(--secondary)
-  .suffix-action
-    position: absolute
-    top: 0.2rem
-    right: 0
-    &.primary-alt
-      color: var(--on-primary-alt)
-  .data-processing-info
-    font-size: 0.75em
-    text-transform: initial
-
-
+<style lang="scss">
+  form {
+    margin-top: 2rem;
+    .full-width {
+      width: 100%;
+    }
+    & > * {
+      margin-bottom: 1.5rem;
+    } // currently this is the only one instance that's affected due to being on yellow background
+    #order-email-email:focus,
+    #order-email-custom-message:focus,
+    #order-email-email:focus + label::after,
+    #order-email-custom-message:focus + label::after {
+      border-color: var(--secondary);
+    }
+    .suffix-action {
+      position: absolute;
+      top: 0.2rem;
+      right: 0;
+      &.primary-alt {
+        color: var(--on-primary-alt);
+      }
+    }
+    .data-processing-info {
+      font-size: 0.75em;
+      text-transform: initial;
+    }
+  }
 </style>
