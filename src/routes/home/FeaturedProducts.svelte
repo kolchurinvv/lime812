@@ -157,7 +157,7 @@
       }
     }
     nav > .tab-title {
-      flex-grow: 1;
+      flex: 1 1 auto;
     }
     .featured-products > * {
       display: grid;
