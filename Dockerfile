@@ -1,4 +1,4 @@
-FROM liminor/bun-node:latest
+FROM liminor/bun-node-20:arm
 
 WORKDIR /app
 
