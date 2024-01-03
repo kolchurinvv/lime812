@@ -43,8 +43,8 @@
     unique++
   }
 
-  import { Swiper, SwiperSlide } from "swiper/svelte"
-  import { Autoplay, Pagination } from "swiper"
+  import { register } from "swiper/element/bundle"
+  register()
 
   import "swiper/scss"
   import "swiper/scss/pagination"
@@ -68,25 +68,25 @@
     </a>
   </div>
 
-  <Swiper
+  <!-- modules={[Autoplay, Pagination]} -->
+  <swiper-container
     spaceBetween={30}
     centeredSlides={true}
     pagination
-    modules={[Autoplay, Pagination]}
     autoplay={{
       delay: 3500,
       disableOnInteraction: false,
     }}
     class="mySwiper">
-    <SwiperSlide>
+    <swiper-slide>
       <img src="/jumbo-slides/slide-1.png" alt="slide-1" />
-    </SwiperSlide>
-    <SwiperSlide>
+    </swiper-slide>
+    <swiper-slide>
       <img src="/jumbo-slides/slide-2.png" alt="slide-2" />
-    </SwiperSlide>
-    <!-- <SwiperSlide
-      ><img src="/jumbo-slides/slide-3.png" alt="slide-3" /></SwiperSlide> -->
-  </Swiper>
+    </swiper-slide>
+    <!-- <swiper-slide
+      ><img src="/jumbo-slides/slide-3.png" alt="slide-3" /></swiper-slide> -->
+  </swiper-container>
 </section>
 {#each data.featuredProducts as section, i}
   <FeaturedProducts

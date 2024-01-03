@@ -122,8 +122,8 @@
     class:dark-map={$mode}
     class="round small-elevate y-border"
     title="location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.844463347586!2d30.374978337534746!3d59.9347230239013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963195fbc31ab5%3A0x5078bf29fd779338!2s8-Ya%20Sovetskaya%20Ulitsa%2C%2048%2C%20Sankt-Peterburg%2C%20Russia%2C%20191036!5e0!3m2!1sen!2scz!4v1675203306891!5m2!1sen!2scz"
     width="600"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.8443360408255!2d30.377498000476493!3d59.93472513630241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963195fbc31ab5%3A0x5078bf29fd779338!2zOC3RjyDQodC-0LLQtdGC0YHQutCw0Y8g0YPQuy4sIDQ4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExNDQ!5e0!3m2!1sru!2scz!4v1704301093371!5m2!1sru!2scz"
     height="450"
     style="border:0;"
     loading="lazy"

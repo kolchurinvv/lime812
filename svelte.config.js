@@ -1,4 +1,4 @@
-import adapter from "svelte-adapter-bun"
+import adapter from "@catdadcode/svelte-adapter-bun"
 // import sveltePreprocess from "svelte-preprocess"
 import preprocess from "svelte-preprocess"
 
