@@ -1,6 +1,6 @@
 <script lang="ts">
   import "beercss"
-  // import "material-dynamic-colors"
+  import "material-dynamic-colors"
   import "@/theme/theme.scss"
   import "@/theme/global.sass"
   import Header from "$lib/common/Header.svelte"
@@ -39,8 +39,16 @@
     content="Профлист, Купить профлист, Гвоздь дюбель, Водосточка, Водосточные системы, Купить снегозадержатели, Водосточка ПВХ, ПВХ, Металлический водосток, Защита кровли, Профлист оцинкованный, Натуральный гранит, Столешница из гранита, Еврошифер, Профнастил, Купить профнастил, Профлист для забора, Кровельный профнастил, Фигурный профлист, Шуруп, дюбель , крепеж монтажный, клямер , купить дюбель, саморезы, кровельные саморезы, купить кровельные саморезы, кровельные проходки, кровельный мостик, снегозащита, снегозадержатели, гранит габбро" />
 </svelte:head>
 
-<Header />
+<header id="wip-new-site"><h3>Отсчет до новой версии: Скоро!</h3></header>
+<Header routeName={routeMap[routeId]} />
 <main id="app-content" class="main-container">
   <slot />
 </main>
 <Footer />
+
+<style lang="scss">
+  #wip-new-site > h3 {
+    display: block;
+    text-align: center;
+  }
+</style>

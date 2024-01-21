@@ -36,6 +36,7 @@
 </script>
 
 <header class="small-padding">
+  <h5 class="tertiary small-padding">Отсчет до новой версии: Скоро!</h5>
   <nav bind:this={mobileMenu} class="mobile-container">
     <a href="/">
       <Logo style={{ style: "width: 100%" }} />
@@ -80,6 +81,11 @@
     top: 0;
     z-index: 800;
     border-bottom: 2px solid var(--primary);
+
+    h5 {
+      display: block;
+      text-align: center;
+    }
 
     .main-container {
       position: absolute;
@@ -133,7 +139,7 @@
   }
   @media screen and (min-width: 576px) {
     header {
-      margin-bottom: 2em;
+      // margin-bottom: 2em;
       background-color: var(--surface);
       .main-container {
         position: initial;
