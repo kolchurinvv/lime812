@@ -92,6 +92,7 @@
         flex-grow: 0
         width: 250px
         flex-direction: column
+        background: initial
         & > img
           object-fit: contain
         & > div
