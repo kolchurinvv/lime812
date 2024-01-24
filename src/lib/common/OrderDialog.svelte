@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { onDestroy, SvelteComponentTyped } from "svelte"
+  import { onDestroy } from "svelte"
   import type { purchaseItem } from "@/lib/types/emailOrder"
-  // import GetCustomerEmail from "./GetCustomerEmail.svelte"
   import EmailForm from "./EmailForm.svelte"
+
   export let active: boolean = false
   export let subject: string | undefined
 
@@ -35,7 +35,6 @@
       optionalMessage: "",
     }
   })
-  // let send: SvelteComponentTyped
 </script>
 
 <dialog class="modal max" class:active={active === true}>
@@ -100,5 +99,4 @@
           flex-grow: 1
           flex-direction: column
           justify-content: space-between
-
 </style>
