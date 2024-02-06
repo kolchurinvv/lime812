@@ -52,12 +52,12 @@
         Свяжиетсь с нами через чат
       </button>
     </h6>
-    <!-- <h6>
-      <a href="tel:8-800-700-4332">
+    <h6>
+      <a href="tel:+79522116836">
         <i>phone</i>
-        8-800-700-4332
+        +7 952-211-6836
       </a>
-    </h6> -->
+    </h6>
   </div>
   <div class="padding-right">
     <h5>Наш склад</h5>
@@ -108,16 +108,17 @@
           </div>
         </a>
       </li>
-      <!-- <li>
-        <a class="medium-elevate round" href="tel:8-800-700-4332">
+      <li>
+        <a class="medium-elevate round" href="tel:+7 952-211-6836">
           <i>phone</i>
           <div class="tooltip primary-container small-elevate left">
-            8-800-700-4332
+            +7 952-211-6836
           </div>
         </a>
-      </li> -->
+      </li>
     </ul>
   </div>
+
   <iframe
     class:dark-map={$mode}
     class="round small-elevate y-border"
