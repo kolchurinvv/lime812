@@ -53,10 +53,10 @@
       </button>
     </h6>
     <h6>
-      <a href="tel:+79522116836">
+      <a href="tel:+79013238824">
         <i>phone</i>
-        +7 952-211-6836
       </a>
+      +7-901-323-8824
     </h6>
   </div>
   <div class="padding-right">
@@ -109,10 +109,10 @@
         </a>
       </li>
       <li>
-        <a class="medium-elevate round" href="tel:+7 952-211-6836">
+        <a class="medium-elevate round" href="tel:+79013238824">
           <i>phone</i>
           <div class="tooltip primary-container small-elevate left">
-            +7 952-211-6836
+            +7-901-323-8824
           </div>
         </a>
       </li>
